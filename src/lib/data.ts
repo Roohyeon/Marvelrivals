@@ -10,7 +10,16 @@ import teamupsJson from "@/data/teamups.json";
 import mapsJson from "@/data/maps.json";
 import mapModesJson from "@/data/map-modes.json";
 import metaJson from "@/data/meta.json";
-import type { DataMeta, GameMap, Hero, HeroStat, MapModeInfo, Skill, TeamUp } from "./types";
+import type {
+  DataMeta,
+  GameMap,
+  Hero,
+  HeroListItem,
+  HeroStat,
+  MapModeInfo,
+  Skill,
+  TeamUp,
+} from "./types";
 
 export const heroes = heroesJson as Hero[];
 export const stats = statsJson as HeroStat[];
@@ -35,3 +44,29 @@ export const getHeroSkills = (slug: string): Skill[] => skills.filter((s) => s.h
 /** 이 영웅이 가진 협공 + 이 영웅이 파트너인 협공 */
 export const getHeroTeamUps = (slug: string): TeamUp[] =>
   teamups.filter((t) => t.heroSlug === slug || t.partnerSlug === slug);
+
+/** 영웅 목록·미리보기용 데이터 (/api/heroes 와 서버 미리 채움이 같은 함수를 씀) */
+export function getHeroList(): HeroListItem[] {
+  return heroes.map((h) => ({
+    slug: h.slug,
+    nameKo: h.nameKo,
+    nameEn: h.nameEn,
+    roles: h.roles,
+    healthText: h.healthText,
+    healthTotal: h.healthTotal,
+    difficulty: h.difficulty,
+    ultimateName: h.ultimateName,
+    ultimateCostText: h.ultimateCostText,
+    forms: h.forms,
+    ultimateDescription: skills.find((s) => s.heroSlug === h.slug && s.type === "ultimate")?.description ?? "",
+    stats: getHeroStats(h.slug).map(({ id, label, variantRole, tier, winRate, playstyles, pdr }) => ({
+      id,
+      label,
+      variantRole,
+      tier,
+      winRate,
+      playstyles,
+      pdr,
+    })),
+  }));
+}

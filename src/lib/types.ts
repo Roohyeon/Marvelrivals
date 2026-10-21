@@ -128,6 +128,31 @@ export interface MapModeInfo {
   description: string;
 }
 
+// ───────── 화면용 가공 데이터 (API 응답) ─────────
+
+/** 목록·미리보기에 필요한 통계만 추린 것 */
+export type HeroListStat = Pick<HeroStat, "id" | "label" | "variantRole" | "tier" | "winRate" | "playstyles" | "pdr">;
+
+/** /api/heroes 응답 한 줄 — 영웅 목록·미리보기 패널용 */
+export interface HeroListItem
+  extends Pick<
+    Hero,
+    | "slug"
+    | "nameKo"
+    | "nameEn"
+    | "roles"
+    | "healthText"
+    | "healthTotal"
+    | "difficulty"
+    | "ultimateName"
+    | "ultimateCostText"
+    | "forms"
+  > {
+  ultimateDescription: string;
+  /** 데드풀만 3개 (역할 순서) */
+  stats: HeroListStat[];
+}
+
 export interface DataMeta {
   collectedAt: string;
   statsUpdatedAt: string;
