@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown, LayoutGrid, Search, SlidersHorizontal, X } from "lucide-react";
+import { ChevronDown, LayoutGrid, Search, SlidersHorizontal, Star, X } from "lucide-react";
 import type { ReactNode } from "react";
 import { RoleIcon } from "@/components/ui/RoleIcon";
 import { DIFFICULTIES, SORT_LABEL, toggle, type HeroFilters, type SortKey } from "@/lib/hero-filters";
@@ -55,9 +55,13 @@ export function RoleFilterBar({
   onRole,
   activeCount,
   onOpenFilters,
+  favOnly,
+  onFav,
 }: {
   role: Role | null;
   onRole: (role: Role | null) => void;
+  favOnly: boolean;
+  onFav: () => void;
   activeCount: number;
   onOpenFilters: () => void;
 }) {
@@ -67,15 +71,15 @@ export function RoleFilterBar({
     `relative flex h-11 w-full items-center justify-center rounded-md transition-colors ${
       active ? "bg-accent text-white" : "text-secondary group-hover:text-primary"
     }`;
-  const label = (active: boolean) => `text-tiny ${active ? "font-bold text-accent" : "font-medium text-secondary"}`;
+  const label = (active: boolean) => `text-tiny ${active ? "font-bold text-accent-text" : "font-medium text-secondary"}`;
 
   return (
-    <div className="grid grid-cols-5 gap-1 rounded-md bg-surface p-1 pb-1.5" role="group" aria-label="역할 필터">
-      <button type="button" aria-pressed={role === null} onClick={() => onRole(null)} className={`group ${item}`}>
-        <span className={icon(role === null)}>
+    <div className="grid grid-cols-6 gap-1 rounded-md bg-surface p-1 pb-1.5" role="group" aria-label="역할 필터">
+      <button type="button" aria-pressed={role === null && !favOnly} onClick={() => onRole(null)} className={`group ${item}`}>
+        <span className={icon(role === null && !favOnly)}>
           <LayoutGrid className="size-5" aria-hidden />
         </span>
-        <span className={label(role === null)}>전체</span>
+        <span className={label(role === null && !favOnly)}>전체</span>
       </button>
       {ROLES.map((r) => (
         <button key={r} type="button" aria-pressed={role === r} onClick={() => onRole(r)} className={`group ${item}`}>
@@ -85,6 +89,12 @@ export function RoleFilterBar({
           <span className={label(role === r)}>{r === "duelist" ? "듀얼" : ROLE_LABEL[r]}</span>
         </button>
       ))}
+      <button type="button" aria-pressed={favOnly} onClick={onFav} className={`group ${item}`}>
+        <span className={icon(favOnly)}>
+          <Star className={`size-5 ${favOnly ? "fill-current" : ""}`} aria-hidden />
+        </span>
+        <span className={label(favOnly)}>즐겨찾기</span>
+      </button>
       <button
         type="button"
         onClick={onOpenFilters}
@@ -121,7 +131,7 @@ function ChipButton({
   pressed,
   onClick,
   children,
-  activeClass = "border-accent bg-accent/10 text-accent font-bold",
+  activeClass = "border-accent bg-accent/10 text-accent-text font-bold",
   label,
 }: {
   pressed: boolean;

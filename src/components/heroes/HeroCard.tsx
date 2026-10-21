@@ -1,4 +1,6 @@
+import { Star } from "lucide-react";
 import Image from "next/image";
+import { useCollectionStore } from "@/stores/collection-store";
 import { PlaystyleBadge, TierBadge } from "@/components/ui/Badges";
 import { RoleIcon } from "@/components/ui/RoleIcon";
 import type { HeroListItem, HeroListStat, Role } from "@/lib/types";
@@ -42,10 +44,14 @@ export function HeroCard({ hero, stat, selected, index, onSelect }: HeroCardProp
               src={`/images/heroes/${hero.slug}.png`}
               alt={`${hero.nameKo} 전신 이미지`}
               fill
+              loading={index < 8 ? "eager" : "lazy"}
+              fetchPriority={index < 4 ? "high" : "auto"}
               sizes="(min-width: 1536px) 180px, (min-width: 1280px) 200px, (min-width: 768px) 16vw, 25vw"
               className="object-cover object-[50%_12%] transition-transform duration-200 ease-out xl:object-top xl:group-hover:scale-105 motion-reduce:transition-none"
             />
           </div>
+
+          <FavoriteMark slug={hero.slug} />
 
           {/* 모바일: 오른쪽 아래 티어 미니 배지 */}
           <span className="absolute bottom-1 right-1 xl:hidden">
@@ -86,5 +92,17 @@ export function HeroCardSkeleton() {
       <div className="aspect-square animate-pulse rounded-sm bg-elevated xl:aspect-[3/4] xl:-skew-x-6 xl:rounded-none" />
       <div className="mx-auto mt-1 h-3 w-3/4 animate-pulse rounded bg-elevated xl:mt-3 xl:h-5 xl:w-1/2" />
     </li>
+  );
+}
+
+/** 즐겨찾기한 영웅: 왼쪽 위 ★ 배지 */
+function FavoriteMark({ slug }: { slug: string }) {
+  const on = useCollectionStore((s) => s.favorites.includes(slug));
+  if (!on) return null;
+  return (
+    <span className="absolute left-1 top-1 inline-flex size-5 items-center justify-center rounded-full bg-accent text-white xl:left-2 xl:top-2 xl:skew-x-6">
+      <Star className="size-3 fill-current" aria-hidden />
+      <span className="sr-only">즐겨찾기</span>
+    </span>
   );
 }

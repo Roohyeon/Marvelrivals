@@ -20,7 +20,7 @@ import type {
   Skill,
   TeamUp,
 } from "./types";
-import type { TeamData } from "./team-types";
+import type { CompareHero, TeamData } from "./team-types";
 
 export const heroes = heroesJson as Hero[];
 export const stats = statsJson as HeroStat[];
@@ -94,4 +94,38 @@ export function getTeamData(): TeamData {
     teamups: teamups.map(({ id, heroSlug, partnerSlug, name, key }) => ({ id, heroSlug, partnerSlug, name, key })),
     counters: Object.fromEntries(stats.map((s) => [s.id, s.counters.map(({ statId, score }) => ({ statId, score }))])),
   };
+}
+
+/** 영웅 비교용 데이터 (/api/compare-data) */
+export function getCompareData(): CompareHero[] {
+  return heroes.map((h) => {
+    const seen = new Set<string>();
+    const cooldowns = skills
+      .filter((s) => s.heroSlug === h.slug && s.type === "ability" && s.cooldown)
+      .filter((s) => {
+        // 같은 이름(강화판·폼 중복)은 한 번만
+        const key = s.name.replace(/ - 강화$/, "");
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      })
+      .slice(0, 8)
+      .map((s) => ({ name: s.name, key: s.key, cooldown: s.cooldown!, form: s.form }));
+    return {
+      slug: h.slug,
+      nameKo: h.nameKo,
+      nameEn: h.nameEn,
+      roles: h.roles,
+      healthText: h.healthText,
+      healthTotal: h.healthTotal,
+      difficulty: h.difficulty,
+      moveSpeed: h.moveSpeed,
+      moveSpeedVerified: h.moveSpeedVerified,
+      ultimateName: h.ultimateName,
+      ultimateCostText: h.ultimateCostText,
+      ultimateCost: h.ultimateCost,
+      stats: getHeroStats(h.slug).map(({ id, label, tier, winRate, pdr }) => ({ id, label, tier, winRate, pdr })),
+      cooldowns,
+    };
+  });
 }

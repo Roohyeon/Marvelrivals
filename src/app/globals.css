@@ -18,27 +18,32 @@
   --header: #2f3237;
   --line: #ececef;
   --primary: #1f1f24;
-  --secondary: #6b6b76;
-  --muted: #8c8a95;
+  /* 대비 보정(axe 점검): 디자인 문서 값은 흰 배경 기준이라 라벤더·연한 배지 위에서 4.5:1 미만 → 한 단계 진하게 */
+  --secondary: #5c5c68; /* 문서 #6B6B76 — 라벤더(#D9E1F4) 위 4.0 → 5.0 */
+  --muted: #6d6b76; /* 문서 #8C8A95 — 출처 문구도 글자이므로 4.5:1 이상으로 */
   --accent: #2563eb;
+  /* 파란 '글자'용 — 연한 파란 칩 배경 위에서도 4.5:1 이상 (배경용 accent 는 그대로) */
+  --accent-text: #1d4ed8;
   --selected: #f8e040;
   --brand: #f0965a;
+  /* 주황 "글자"용 — #F0965A 는 밝은 배경 대비 2.2:1 이라 라이트에서는 진하게 */
+  --brand-text: #c2410c;
   --on-brand: #08090a;
   --card-label: #353346;
 
   /* 데이터 색 */
   --positive: #17805f;
   --negative: #c81e45;
-  --meta: #c2410c;
+  --meta: #b23b0b; /* 문서 #C2410C — 연한 주황 배경 위 4.5 → 5.1 */
   --pick: #0369a1;
   --track: #ececef;
 
   /* 역할 색 (글자·아이콘 / 연한 배경) */
   --vanguard: #1d4ed8;
   --vanguard-soft: #ddebf7;
-  --duelist: #c2410c;
+  --duelist: #ad3a0a; /* 문서 #C2410C — 배지 배경(#FCE4D6) 위 4.2 → 5.1 */
   --duelist-soft: #fce4d6;
-  --strategist: #15803d;
+  --strategist: #116b32; /* 문서 #15803D — 배지 배경(#E2EFDA) 위 4.2 → 5.5 */
   --strategist-soft: #e2efda;
 
   /* 성향 색 (image/WEB/Design.md 4-2) */
@@ -79,8 +84,10 @@
   --line: #2a2a30;
   --primary: #f6f6f6;
   --secondary: #a1a1aa;
-  --muted: #71717a;
+  --muted: #8a8a93; /* 문서 #71717A — 표면(#18181B) 위 3.7 → 5.2 */
   --accent: #5383e8;
+  --accent-text: #7099f0; /* 흰 아이콘이 올라가는 배경용 accent 는 그대로 */
+  --brand-text: #f0965a;
 
   --positive: #00ba78;
   --negative: #ff5c7a;
@@ -120,7 +127,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --font-sans: var(--font-pretendard), system-ui, sans-serif;
+  --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", sans-serif;
 
   --color-base: var(--base);
   --color-surface: var(--surface);
@@ -133,8 +141,10 @@
   --color-secondary: var(--secondary);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
+  --color-accent-text: var(--accent-text);
   --color-selected: var(--selected);
   --color-brand: var(--brand);
+  --color-brand-text: var(--brand-text);
   --color-on-brand: var(--on-brand);
   --color-card-label: var(--card-label);
 
@@ -205,8 +215,9 @@
   --text-label--line-height: 16px;
   --text-caption: 12px;
   --text-caption--line-height: 16px;
-  --text-tiny: 11px;
-  --text-tiny--line-height: 14px;
+  /* 문서 최소 11px → 12px: Lighthouse "읽기 쉬운 글자 크기"(12px 이상) 기준 */
+  --text-tiny: 12px;
+  --text-tiny--line-height: 16px;
 
   /* 하단 탭바 높이 (안전 영역 제외) */
   --spacing-tabbar: 64px;

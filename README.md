@@ -1,36 +1,192 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rivals Dex — 마블 라이벌즈 영웅 도감
 
-## Getting Started
+마블 라이벌즈 영웅 **54명**의 스킬·상성·티어·조합 성향·맵 정보를 **한글로, 한 화면 흐름 안에서** 볼 수 있는 반응형 웹 도감입니다.
+"정보를 나열하는 도감"에서 끝나지 않고 **"누구를 고를까?"** 에 답하도록 카운터 추천과 팀 성향 분석을 넣었습니다.
 
-First, run the development server:
+> 비상업적 포트폴리오 프로젝트입니다. Marvel Rivals 및 캐릭터·맵 이미지의 저작권은 NetEase Games / Marvel에 있습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+| 항목 | 내용 |
+|---|---|
+| 기간 | 2026-10 (기획서 4주 일정 기준) |
+| 형태 | 반응형 웹 (모바일 우선, 360 ~ 1920px) · 라이트/다크 테마 |
+| 스택 | Next.js 16 (App Router, Cache Components) · React 19 · TypeScript · Tailwind CSS v4 · TanStack Query · Zustand |
+| 데이터 | 영웅 54 · 통계 56(데드풀 역할별) · 스킬 601 · 협공 112 · 맵 18 — 2026-10-15 수집 |
+| 배포 | (Vercel 배포 후 주소 추가) |
+
+<!-- SCREENSHOTS -->
+
+---
+
+## 1. 기획 의도
+
+마블 라이벌즈 영웅을 고를 때 필요한 정보가 흩어져 있습니다.
+
+| 필요한 정보 | 기존에 찾던 곳 | 불편한 점 |
+|---|---|---|
+| 스킬·쿨타임·궁극기 비용 | 영문 팬 위키 | 영어, 영웅마다 문서를 따로 열어야 함 |
+| 티어·승률·카운터 | 통계 사이트 | 영어, 스킬 정보와 따로 봐야 함 |
+| 한글 영웅명 | 공식 홈페이지 | 33명만 게재 |
+
+엑셀로 모아 둔 데이터를 **타입 안전한 JSON**으로 바꾸고, 영웅 한 명의 페이지 안에서 스킬 → 상성 → 협공 → 성향이 이어지게 만들었습니다.
+카운터 영웅을 누르면 그 영웅 페이지로 이동해 **상성을 따라 계속 탐색**할 수 있습니다.
+
+### 타깃 사용자와 해결 기능
+
+| 사용자 | 원하는 것 | 해결 기능 |
+|---|---|---|
+| 입문 유저 | 쉬운 영웅, 한글 스킬 설명 | 역할·난이도 필터, 한글 스킬 탭(원문 병기) |
+| 경쟁전 유저 | 상대 영웅에 맞춘 카운터 | 상세의 카운터 TOP5, 팀 빌더 카운터 추천 |
+| 팀 플레이 유저 | 조합 성향·협공 | 팀 빌더 P/D/R 레이더, 발동되는 협공 목록 |
+
+---
+
+## 2. 주요 기능
+
+| 화면 | 기능 |
+|---|---|
+| **홈** `/` | 검색(JS 없이도 동작), 역할별 승률 Top 5, 맵 메타 가로 스크롤, 팀 빌더 바로가기 |
+| **영웅 목록** `/heroes` | 역할·티어·성향·난이도·즐겨찾기 필터, 한글/영문 검색, 정렬 — **조건이 URL에 반영**(`?role=duelist&tier=S`)되어 새로고침·공유 가능. 미리보기는 모바일 하단 시트 / 데스크톱 오른쪽 패널 |
+| **영웅 상세** `/heroes/[slug]` | 54개 페이지 정적 생성. 스킬 유형 탭 + 폼 선택(헐크 3폼, 데드풀 역할·무기), 카운터 TOP5·강한 상대, 협공(발동/참여), P/D/R(모바일 막대 · 데스크톱 레이더), 데드풀 역할별 통계 전환 |
+| **티어** `/tier` | S~F 그룹, 역할 탭, 50% 기준 양방향 승률 막대 |
+| **맵** `/maps` | 경쟁·호송·경쟁+호송 탭, 모드 규칙, 맵별 승률 TOP5 |
+| **팀 빌더** `/team-builder` | 우리 팀/상대 팀 6칸, 팀 P/D/R 평균(상대 팀 겹쳐 보기)과 주 성향 문장, 발동되는 협공 + "한 명만 더하면" 협공, 상대 팀 기준 카운터 추천 3명, **공유 링크**(`?team=…&enemy=…`), 기기 저장 |
+| **비교** `/compare` | 2~3명 나란히: 체력·궁극기 비용(최고값 표시)·쿨타임·성향 |
+| **공통** | 라이트/다크/시스템 테마, 하단 탭바(모바일·태블릿) ↔ 상단 헤더(데스크톱), 즐겨찾기, 데이터 출처 표시, 404 |
+
+### 팀 빌더 계산 규칙
+- 팀 성향 = 고른 영웅 P·D·R 점수의 각각 평균, 가장 높은 성향(0.05 이내는 함께)을 주 성향으로
+- 상성 순환 안내: 포킹 > 러쉬 > 다이브 > 포킹
+- 카운터 추천 = 상대 영웅마다 "이 영웅을 잡는 영웅" 지수를 후보별로 합산 → 상위 3명 (지수는 승률이 아님을 화면에 안내)
+- 같은 영웅은 한 팀에 한 번(데드풀 역할 변형 포함), 팀이 가득 차면 같은 영웅의 역할 교체만 허용
+
+---
+
+## 3. 기술 선택과 이유
+
+| 기술 | 맡은 일 | 선택 이유 |
+|---|---|---|
+| **Next.js 16 App Router + Cache Components** | 영웅 54개 상세·목록·티어·맵을 빌드 때 정적 생성, API Route, 페이지별 메타데이터 | 데이터가 빌드 시점에 고정 → 정적 HTML이 가장 빠르고 SEO에 유리 |
+| **TypeScript** | 영웅·스킬·통계·맵 타입, 연결 키(slug) 오타 방지 | 엑셀 → JSON 변환 결과를 컴파일 단계에서 검증 |
+| **Tailwind CSS v4** | 시맨틱 색 토큰(CSS 변수) → 유틸리티 클래스, `.dark` 클래스 테마, 모바일 우선 반응형 | 테마 전환이 "변수 값 교체"로 끝남. 컴포넌트에 HEX 직접 사용 0건 |
+| **TanStack Query** | 목록·팀 빌더·비교 데이터 요청과 캐시 | 서버 미리 채움(HydrationBoundary)과 같은 캐시 키 사용 → 첫 화면은 정적, 이후 요청 없음 |
+| **Zustand (persist)** | 테마 설정, 팀 구성, 즐겨찾기·비교 목록 | 기기 저장이 필요한 화면 상태만 담당 (필터는 URL이 기준) |
+| 직접 그린 SVG 레이더 | P/D/R 차트 | 축 3개뿐이라 라이브러리 없이 60줄. 테마 CSS 변수를 그대로 사용 |
+
+### 서버 데이터와 화면 상태 분리
+- **서버 데이터**(영웅·통계·맵): 빌드 때 JSON → 서버 컴포넌트 props 또는 TanStack Query
+- **URL 상태**(필터·탭·팀 공유): `useSearchParams` — 새로고침·링크 공유에서 그대로 복원
+- **기기 상태**(테마·팀·즐겨찾기): Zustand `persist` — `skipHydration`으로 서버 렌더와 첫 화면을 맞춘 뒤 불러옴
+
+---
+
+## 4. 데이터 파이프라인
+
+```
+마블라이벌즈_영웅_데이터_한글1015.xlsx ─┐
+marvel_rivals_wiki_data.json (교차 검증) ┼─ scripts/build-data.ts ─→ src/data/*.json (7개)
+image/Maps/*.png (선택)                  ┘        │                    public/images/maps/*.webp
+                                                 └─ 검증 실패 시 exit 1 → npm run build 중단 (prebuild)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **연결 키**: 엑셀 "위키 문서" 셀의 하이퍼링크 주소에서 slug 생성 (`Cloak_&_Dagger` → `cloak-and-dagger`) — 이미지 파일명·URL과 동일
+- **파싱**: `"블랙 팬서 (+10.7, 팀 단위 압박)"` 같은 카운터 문자열, `"페니 파커 57.4%, …"` 맵 승률, `"피해: 60; 탄약: 15"` 세부 수치(괄호 안 `;`는 나누지 않음)
+- **검증**: 개수(54/56/601/18), 모든 이름 → slug 연결, 이미지 존재, 영웅별 스킬 수(요약 시트 vs 상세 시트), 점수 범위, 위키 JSON과 역할·난이도·스킬 수 교차 비교
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run data   # 엑셀 수정 후 JSON 다시 생성 (build 전에 자동 실행)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 5. 트러블슈팅
 
-To learn more about Next.js, take a look at the following resources:
+### ① 새로고침 시 테마 깜빡임 (FOUC)
+- **문제**: 저장된 테마를 React가 읽으면 이미 라이트 화면이 한 번 그려진 뒤라 다크로 "번쩍" 바뀜
+- **해결**: `<head>`의 인라인 스크립트가 HTML을 읽는 도중(첫 페인트 전) `localStorage`를 읽어 `<html class="dark">`를 붙임. Zustand persist와 **같은 저장 키·같은 형식**을 읽게 해 둘이 항상 일치
+  - 첫 클라이언트 렌더를 서버(기본값)와 맞추려고 `skipHydration` 후 마운트 직후 불러옴
+  - 개발 모드 Strict Mode 재마운트 때 React가 `<html>` 속성을 지우는 문제는 `useLayoutEffect`로 다시 적용
+  - 해·달 아이콘은 상태가 아니라 `dark:` 클래스로 전환 → 하이드레이션 불일치 없음
+- **검증**: 기기=라이트, 저장값=다크로 설정 후 `requestAnimationFrame` 첫 프레임에서 `dark` 클래스 확인 → `true`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ② Cache Components에서 TanStack Query 미리 채움이 빌드를 막음
+- **문제**: `prefetchQuery`가 데이터 받은 시각을 `Date.now()`로 기록 → "unstable value `Date.now()` while prerendering" 빌드 오류. 서버 쪽을 고친 뒤에는 클라이언트 렌더에서도 같은 오류
+- **원인 추적**: 설치된 `@tanstack/query-core` 소스에서 `staleTime: Infinity`도 "남은 시간"을 `Date.now()`로 계산함을 확인 (`timeUntilStale`)
+- **해결**: 서버 미리 채움을 `"use cache"` + `cacheLife("max")`로 감싸 빌드 때 한 번만 계산, 클라이언트는 `staleTime: "static"`(계산 자체를 건너뜀)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ③ 통계 데이터와 영웅 이름이 서로 다름
+- **문제**: 통계 사이트는 데드풀을 역할별 3명(`데드풀(전략가)` 등)으로 집계, 협공 파트너는 `헐크(브루스 배너)`처럼 폼이 붙어 있음
+- **해결**: 선택 단위를 "영웅"이 아닌 **통계 항목(56개)** 으로 두고(`deadpool-strategist`), 폼 표기는 괄호를 떼고 영웅으로 연결. 연결 실패 이름이 하나라도 있으면 변환 스크립트가 종료 코드 1로 빌드를 막음
 
-## Deploy on Vercel
+### ④ 한글 웹폰트 때문에 LCP 12~16초
+- **문제**: Lighthouse(모바일, 느린 4G) LCP 12.5~16.5초인데 FCP는 1.4초. 제목이 대체 글꼴로 먼저 그려진 뒤 **2MB 가변 폰트**가 도착해 다시 그려지는 시점이 LCP로 잡힘
+- **해결**: `next/font`로 한 파일 전체를 preload하던 방식 → Pretendard **동적 서브셋**(글자 범위별 92조각, `unicode-range`)으로 교체. 페이지에 쓰인 글자 조각만 내려받음
+- **결과**: LCP 12.5~16.5초 → 3.6~6.9초 (3회 측정 중앙값), 저장소에서 2MB 폰트 파일 제거. 이어서 렌더 차단 CSS를 인라인으로 바꿔 추가 개선 (6장 표)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### ⑤ 닫힌 하단 시트가 화면·키보드 탐색에 남음
+- **문제**: 네이티브 `<dialog>`에 `flex` 클래스를 주자 닫혀 있어도 `display:flex`가 되어(브라우저 기본 `display:none`을 덮어씀) 화면 밖에 그려지고, 키보드 포커스·스크린 리더가 안의 내용에 접근
+- **해결**: `open:flex`로 열렸을 때만 표시. 자동 점검(열림/닫힘 시 `display` 값)으로 확인
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### ⑥ 디자인 문서의 색이 배경에 따라 대비 기준 미달
+- **문제**: 문서의 대비 계산은 흰 배경 기준 → 라벤더 히어로(#D9E1F4)·연한 배지 위에서 4.0~4.2:1, 출처 문구(`text-muted`) 3.3:1 등 axe 위반 25건
+- **해결**: 컴포넌트를 하나씩 고치지 않고 **토큰 값**을 계산해 보정(아래 표), 파란·주황 "글자"용 토큰(`accent-text`, `brand-text`)을 따로 둠 — 다크에서 흰 아이콘이 올라가는 파란 배경은 그대로 유지
+- 차트 색(P/D/R)은 성향 배지 글자색이 색각 이상 검사(ΔE)에서 실패해 dataviz 팔레트 검증을 통과한 별도 색 사용
+
+---
+
+## 6. 품질 점검
+
+<!-- LIGHTHOUSE -->
+
+**접근성 자동 점검 (axe-core 4.10)**: 10개 화면 × 라이트/다크 × 모바일(390)/데스크톱(1440) = 40회 → **위반 0건**
+
+| 점검 | 결과 |
+|---|---|
+| 테마 깜빡임 | 첫 프레임부터 저장된 테마 적용, 하이드레이션 경고 0 |
+| 브레이크포인트 360·767·768·1279·1280·1536·1920 | 하단 탭바 ↔ 상단 메뉴 전환 정확, 가로 스크롤 없음 |
+| 콘솔 에러 | 0건 (주요 화면 브라우저 자동 테스트) |
+| 없는 영웅 주소 | Proxy에서 slug 확인 → **404 상태 코드** + 404 화면 |
+| 정적 HTML | 영웅 목록 HTML에 54명 카드가 모두 포함(필터 없는 목록을 Suspense fallback으로), 첫 로드 때 `/api/heroes` 요청 0회 |
+
+### 디자인 문서와 달라진 값
+| 토큰 | 문서 | 적용 | 이유 |
+|---|---|---|---|
+| `text-secondary`(라이트) | #6B6B76 | #5C5C68 | 라벤더 히어로 위 4.0 → 5.0:1 |
+| `text-muted` | #8C8A95 / #71717A | #6D6B76 / #8A8A93 | 출처 문구도 글자 → 4.5:1 이상 |
+| 듀얼리스트·전략가(라이트) | #C2410C / #15803D | #AD3A0A / #116B32 | 연한 역할 배지 배경 위 4.2 → 5.1·5.5:1 |
+| `data-meta`(라이트) | #C2410C | #B23B0B | 주황 칩 배경 위 4.5 → 5.1:1 |
+| `accent-text` (신규) | — | #1D4ED8 / #7099F0 | 연한 파란 칩 위 파란 글자 4.3 → 5.7:1 |
+| 최소 글자 크기 | 11px | 12px | Lighthouse "읽기 쉬운 글자 크기" |
+| 차트 P/D/R | 배지 글자색 | #6250D6·#E87BA4·#EDA100 (다크 별도) | 색각 이상 ΔE 7.2 → 16.3 |
+
+---
+
+## 7. 프로젝트 구조
+
+```
+scripts/build-data.ts        엑셀·위키 JSON → src/data/*.json (+ 맵 이미지 WebP 변환, 검증)
+src/
+  app/                       라우트 (/, heroes, heroes/[slug], tier, maps, team-builder, compare, about, api/*)
+  components/
+    layout/ theme/ ui/       헤더·탭바·푸터, 테마 전환, 배지·하단 시트·승률 막대 등 공통
+    heroes/ hero-detail/     영웅 목록(카드·필터·미리보기), 상세(헤더·스킬·상성·협공·성향)
+    team/ compare/ tier/ maps/ charts/
+  lib/                       타입, 데이터 접근(server-only), 필터·팀 분석 순수 함수, 쿼리, 미리 채움
+  stores/                    Zustand: 테마 · 팀 · 즐겨찾기/비교
+  proxy.ts                   없는 영웅 주소 → 404
+  data/                      생성된 JSON (직접 수정하지 않음)
+```
+
+## 8. 실행
+
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # npm run data(변환·검증) → next build
+npm run start
+```
+
+맵 이미지는 위키 이미지 서버가 자동 다운로드를 막아 직접 내려받아야 합니다 → [`image/Maps/다운로드_목록.md`](image/Maps/다운로드_목록.md). 없으면 디자인 카드로 표시됩니다.
+
+## 9. 데이터 출처 · 한계
+- 영웅·스킬·협공·맵: [Marvel Rivals Wiki (Fandom)](https://marvelrivals.fandom.com/wiki/Heroes) · 한글 영웅명: [공식 홈페이지](https://www.marvelrivals.com/kr/heroes/index.html) · 티어·카운터·P/D/R·맵 승률: [counterwatch.gg](https://www.counterwatch.gg/stats/marvel-rivals) (2026-10-15 갱신분)
+- 스킬·맵 이름 한글은 비공식 번역(원문 병기), 이동 속도는 개별값 미확인, 통계는 수집일 기준 — 자세한 내용은 사이트의 `/about`

@@ -80,6 +80,7 @@ export default function Home() {
                 width={680}
                 height={961}
                 sizes="220px"
+                loading="eager"
                 fetchPriority={i === 1 ? "high" : "auto"}
                 className={`absolute bottom-0 h-full w-auto [mask-image:linear-gradient(to_top,transparent,black_18%)] ${
                   ["left-0 z-10 scale-90", "left-1/2 z-20 -translate-x-1/2", "right-0 z-10 scale-90"][i]
@@ -110,7 +111,7 @@ export default function Home() {
                 <span className="text-caption text-secondary">{count(role)}명</span>
                 <Link
                   href={`/tier?role=${role}`}
-                  className="ml-auto inline-flex h-9 items-center text-caption font-semibold text-accent hover:underline"
+                  className="ml-auto inline-flex h-9 items-center text-caption font-semibold text-accent-text hover:underline"
                 >
                   더 보기 <ChevronRight className="size-3.5" aria-hidden />
                 </Link>
@@ -134,7 +135,7 @@ export default function Home() {
             </h2>
             <p className="text-caption text-secondary">맵별 승률 1위 영웅</p>
           </div>
-          <Link href="/maps" className="inline-flex h-9 items-center text-caption font-semibold text-accent hover:underline">
+          <Link href="/maps" className="inline-flex h-9 items-center text-caption font-semibold text-accent-text hover:underline">
             전체 맵 <ChevronRight className="size-3.5" aria-hidden />
           </Link>
         </Container>

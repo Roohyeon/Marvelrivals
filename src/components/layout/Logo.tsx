@@ -6,7 +6,7 @@ export function Logo({ className = "" }: { className?: string }) {
     <Link href="/" className={`inline-flex items-center gap-2 font-extrabold tracking-tight ${className}`}>
       <span aria-hidden className="inline-block h-5 w-2.5 -skew-x-12 bg-brand" />
       <span className="text-[17px] leading-none">
-        RIVALS <span className="text-brand">DEX</span>
+        RIVALS <span className="text-brand-text xl:text-brand">DEX</span>
       </span>
     </Link>
   );

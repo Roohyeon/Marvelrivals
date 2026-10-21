@@ -14,7 +14,7 @@ function TeamUpCard({ t, mode }: { t: TeamUpWithPartner; mode: "own" | "joined" 
           <p className="text-table font-bold">{t.name}</p>
           <p className="text-caption text-secondary">
             {mode === "own" ? "파트너 " : "발동 영웅 "}
-            <Link href={`/heroes/${t.other.slug}`} className="font-semibold text-accent hover:underline">
+            <Link href={`/heroes/${t.other.slug}`} className="font-semibold text-accent-text hover:underline">
               {t.other.nameKo}
             </Link>
           </p>

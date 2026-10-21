@@ -54,7 +54,7 @@ export function PickerGrid({
               aria-pressed={role === r}
               onClick={() => setRole(r)}
               className={`inline-flex h-11 shrink-0 items-center gap-1.5 rounded-full border px-3 text-label xl:h-9 ${
-                role === r ? "border-accent bg-accent/10 font-bold text-accent" : "border-line bg-surface text-secondary"
+                role === r ? "border-accent bg-accent/10 font-bold text-accent-text" : "border-line bg-surface text-secondary"
               }`}
             >
               {r && <RoleIcon role={r} className="size-3.5" />}
@@ -65,7 +65,7 @@ export function PickerGrid({
       </div>
 
       <ul className="mt-3 grid grid-cols-4 gap-x-2 gap-y-3 md:grid-cols-6 xl:grid-cols-6 2xl:grid-cols-8">
-        {list.map((e) => {
+        {list.map((e, i) => {
           const selected = picked.has(e.statId);
           const disabled = blocked.has(e.statId);
           return (
@@ -85,6 +85,8 @@ export function PickerGrid({
                     src={`/images/heroes/${e.slug}.png`}
                     alt=""
                     fill
+                    loading={i < 8 ? "eager" : "lazy"}
+                    fetchPriority={i < 4 ? "high" : "auto"}
                     sizes="(min-width: 1536px) 9vw, (min-width: 768px) 14vw, 25vw"
                     className={`object-cover object-[50%_12%] ${selected ? "opacity-40 grayscale" : ""}`}
                   />

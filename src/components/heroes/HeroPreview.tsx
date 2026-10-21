@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Chip, PlaystyleBadge, RoleBadge, SourceNote, TierBadge } from "@/components/ui/Badges";
+import { CompareButton, FavoriteButton } from "@/components/ui/CollectionButtons";
 import { DifficultyStars } from "@/components/ui/DifficultyStars";
 import { WinRateBar, WinRateText } from "@/components/ui/WinRateBar";
 import { ROLE_LABEL } from "@/lib/labels";
@@ -80,9 +81,14 @@ export function HeroPreview({ hero, headingId }: { hero: HeroListItem; headingId
         <SourceNote />
       </div>
 
+      <div className="mt-5 flex flex-wrap justify-center gap-1.5">
+        <FavoriteButton slug={hero.slug} name={hero.nameKo} />
+        <CompareButton slug={hero.slug} name={hero.nameKo} />
+      </div>
+
       <Link
         href={`/heroes/${hero.slug}`}
-        className="mt-5 inline-flex h-12 w-full items-center justify-center gap-2 rounded-full border border-line bg-surface text-table font-bold transition-colors hover:bg-elevated"
+        className="mt-3 inline-flex h-12 w-full items-center justify-center gap-2 rounded-full border border-line bg-surface text-table font-bold transition-colors hover:bg-elevated"
       >
         상세 보기
         <ArrowRight className="size-4" aria-hidden />

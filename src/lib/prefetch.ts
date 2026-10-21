@@ -2,8 +2,8 @@ import "server-only";
 
 import { dehydrate, QueryClient, type DehydratedState } from "@tanstack/react-query";
 import { cacheLife } from "next/cache";
-import { getHeroList, getTeamData } from "./data";
-import { heroListQuery, teamDataQuery } from "./queries";
+import { getCompareData, getHeroList, getTeamData } from "./data";
+import { compareDataQuery, heroListQuery, teamDataQuery } from "./queries";
 
 /**
  * 서버 미리 채움 결과(dehydrated state)를 만들어 캐시합니다.
@@ -25,5 +25,13 @@ export async function prefetchTeamData(): Promise<DehydratedState> {
   cacheLife("max");
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({ ...teamDataQuery, queryFn: getTeamData });
+  return dehydrate(queryClient);
+}
+
+export async function prefetchCompareData(): Promise<DehydratedState> {
+  "use cache";
+  cacheLife("max");
+  const queryClient = new QueryClient();
+  await queryClient.prefetchQuery({ ...compareDataQuery, queryFn: getCompareData });
   return dehydrate(queryClient);
 }

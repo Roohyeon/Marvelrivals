@@ -22,7 +22,7 @@ export function BottomTabBar() {
                 href={href}
                 aria-current={active ? "page" : undefined}
                 className={`flex h-full flex-col items-center justify-center gap-1 transition-[color,transform] duration-100 active:scale-[0.97] ${
-                  active ? "text-accent" : "text-secondary hover:text-primary"
+                  active ? "text-accent-text" : "text-secondary hover:text-primary"
                 }`}
               >
                 <Icon className="size-[22px]" strokeWidth={active ? 2.4 : 1.8} aria-hidden />

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { PlaystyleBadge, RoleBadge, TierBadge } from "@/components/ui/Badges";
+import { CompareButton, FavoriteButton } from "@/components/ui/CollectionButtons";
 import { DifficultyStars } from "@/components/ui/DifficultyStars";
 import { WinRateText } from "@/components/ui/WinRateBar";
 import type { HeroDetail } from "@/lib/hero-detail";
@@ -42,6 +43,7 @@ export function HeroHeader({ detail }: { detail: HeroDetail }) {
             alt={`${hero.nameKo} 전신 이미지`}
             width={680}
             height={961}
+            loading="eager"
             fetchPriority="high"
             sizes="(min-width: 1280px) 400px, 60vw"
             // 원본 그림이 이미지 경계에서 잘려 있어(세로 직선이 보임) 좌우·아래 끝을 부드럽게 흐림
@@ -94,6 +96,11 @@ export function HeroHeader({ detail }: { detail: HeroDetail }) {
             <StatCard label="난이도" value={<DifficultyStars value={hero.difficulty} />} />
             <StatCard label="궁극기 비용" value={hero.ultimateCost?.toLocaleString("ko-KR") ?? hero.ultimateCostText} />
           </dl>
+
+          <div className="mt-4 flex flex-wrap gap-1.5">
+            <FavoriteButton slug={hero.slug} name={hero.nameKo} />
+            <CompareButton slug={hero.slug} name={hero.nameKo} />
+          </div>
 
           <p className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-caption text-secondary">
             <span>

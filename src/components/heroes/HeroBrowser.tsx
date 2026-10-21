@@ -1,7 +1,7 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { RotateCcw } from "lucide-react";
+import { RotateCcw, Star } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useId, useMemo, useRef, useState } from "react";
 import { BottomSheet } from "@/components/ui/BottomSheet";
@@ -16,6 +16,7 @@ import {
   type HeroFilters,
 } from "@/lib/hero-filters";
 import { heroListQuery } from "@/lib/queries";
+import { useCollectionStore } from "@/stores/collection-store";
 import { HeroCard, HeroCardSkeleton } from "./HeroCard";
 import { FilterGroups, HeroSearch, RoleFilterBar, RoleSelect, SortSelect } from "./HeroFilters";
 import { HeroPreview } from "./HeroPreview";
@@ -60,6 +61,7 @@ interface ViewProps {
 
 function HeroBrowserView({ filters, onChange, autoFocusSearch }: ViewProps) {
   const { data, isPending, isError, refetch } = useQuery(heroListQuery);
+  const favorites = useCollectionStore((s) => s.favorites);
   const isDesktop = useMediaQuery(DESKTOP_QUERY);
 
   // 검색어는 입력 즉시 목록에 반영하고, 주소(URL)에는 잠깐 멈췄을 때만 반영
@@ -75,7 +77,7 @@ function HeroBrowserView({ filters, onChange, autoFocusSearch }: ViewProps) {
   }, [query, filters.q]);
 
   const effective = useMemo(() => ({ ...filters, q: query }), [filters, query]);
-  const rows = useMemo(() => (data ? applyFilters(data, effective) : []), [data, effective]);
+  const rows = useMemo(() => (data ? applyFilters(data, effective, favorites) : []), [data, effective, favorites]);
 
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [previewOpen, setPreviewOpen] = useState(false);
@@ -115,6 +117,17 @@ function HeroBrowserView({ filters, onChange, autoFocusSearch }: ViewProps) {
               영웅 <span className="tabular text-secondary">{total}</span>
             </h1>
             <HeroSearch value={query} onChange={setQuery} autoFocus={autoFocusSearch} className="ml-auto w-72" />
+            <button
+              type="button"
+              aria-pressed={filters.favOnly}
+              onClick={() => onChange({ favOnly: !filters.favOnly })}
+              className={`inline-flex h-10 items-center gap-1.5 rounded-full border px-4 text-label font-semibold ${
+                filters.favOnly ? "border-meta bg-meta/10 text-meta" : "border-line bg-surface/80 text-primary"
+              }`}
+            >
+              <Star className={`size-4 ${filters.favOnly ? "fill-current" : ""}`} aria-hidden />
+              즐겨찾기 <span className="tabular">{favorites.length}</span>
+            </button>
             <RoleSelect value={filters.role} onChange={(role) => onChange({ role })} />
             <SortSelect value={filters.sort} onChange={(sort) => onChange({ sort })} />
           </div>
@@ -124,7 +137,7 @@ function HeroBrowserView({ filters, onChange, autoFocusSearch }: ViewProps) {
               <button
                 type="button"
                 onClick={reset}
-                className="inline-flex h-9 items-center gap-1 rounded-full px-3 text-label font-semibold text-accent hover:bg-surface/60"
+                className="inline-flex h-9 items-center gap-1 rounded-full px-3 text-label font-semibold text-accent-text hover:bg-surface/60"
               >
                 <RotateCcw className="size-3.5" aria-hidden />
                 초기화
@@ -141,7 +154,9 @@ function HeroBrowserView({ filters, onChange, autoFocusSearch }: ViewProps) {
         <div className="sticky top-14 z-30 -mx-4 bg-base/90 px-4 py-2 backdrop-blur-md md:-mx-6 md:px-6 xl:hidden">
           <RoleFilterBar
             role={filters.role}
-            onRole={(role) => onChange({ role })}
+            onRole={(role) => onChange({ role, favOnly: false })}
+            favOnly={filters.favOnly}
+            onFav={() => onChange({ favOnly: !filters.favOnly, role: null })}
             activeCount={activeCount}
             onOpenFilters={() => setFilterOpen(true)}
           />
@@ -167,7 +182,11 @@ function HeroBrowserView({ filters, onChange, autoFocusSearch }: ViewProps) {
                 ))}
               </ul>
             ) : rows.length === 0 ? (
-              <StateMessage title="조건에 맞는 영웅이 없어요" action="필터 초기화" onAction={reset} />
+              <StateMessage
+                title={filters.favOnly && !favorites.length ? "즐겨찾기한 영웅이 없어요" : "조건에 맞는 영웅이 없어요"}
+                action="필터 초기화"
+                onAction={reset}
+              />
             ) : (
               <ul className={GRID}>
                 {rows.map(({ hero, stat }, i) => (

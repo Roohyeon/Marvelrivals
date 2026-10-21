@@ -22,3 +22,22 @@ export interface TeamData {
   /** 통계 ID → 이 영웅을 잡는 영웅 (카운터 지수) */
   counters: Record<string, { statId: string; score: number }[]>;
 }
+
+/** /api/compare-data 한 줄 — 영웅 비교 화면용 */
+export interface CompareHero {
+  slug: string;
+  nameKo: string;
+  nameEn: string;
+  roles: Role[];
+  healthText: string;
+  healthTotal: number;
+  difficulty: number | null;
+  moveSpeed: number;
+  moveSpeedVerified: boolean;
+  ultimateName: string;
+  ultimateCostText: string;
+  ultimateCost: number | null;
+  stats: { id: string; label: string; tier: Tier; winRate: number; pdr: { p: number; d: number; r: number } }[];
+  /** 쿨타임이 있는 일반 스킬 (이름·키·쿨타임) */
+  cooldowns: { name: string; key: string; cooldown: string; form: string | null }[];
+}

@@ -1,19 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
 import { BottomTabBar } from "@/components/layout/BottomTabBar";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { Providers } from "@/components/Providers";
+import { StoreHydrator } from "@/components/StoreHydrator";
 import { ThemeController } from "@/components/theme/ThemeController";
 import { themeInitScript } from "@/lib/theme";
+// Pretendard 동적 서브셋: 글자 범위별로 92조각(unicode-range)으로 나눈 웹폰트 — 페이지에 쓰인 글자 조각만 내려받음.
+// (한 파일 2MB 가변 폰트를 next/font 로 미리 불러오면 느린 모바일에서 글꼴 교체가 늦어 LCP 12초 → 교체)
+import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 import "./globals.css";
-
-const pretendard = localFont({
-  src: "./fonts/PretendardVariable.woff2",
-  variable: "--font-pretendard",
-  weight: "45 920",
-  display: "swap",
-});
 
 // OG 이미지 등 절대 주소의 기준. Vercel 배포 시 자동 제공되는 운영 도메인을 쓰고, 없으면 로컬 주소
 const siteUrl =
@@ -44,12 +40,13 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     // 초기화 스크립트가 class="dark"를 미리 붙이므로, <html>의 속성 차이는 경고하지 않음
-    <html lang="ko" className={`${pretendard.variable} h-full antialiased`} suppressHydrationWarning>
+    <html lang="ko" className="h-full antialiased" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body className="flex min-h-full flex-col">
         <ThemeController />
+        <StoreHydrator />
         <Providers>
           <SiteHeader />
           <div className="flex flex-1 flex-col pb-tabbar-safe xl:pb-0">

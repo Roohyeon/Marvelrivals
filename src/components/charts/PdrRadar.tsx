@@ -29,7 +29,7 @@ const point = (angle: number, ratio: number) => {
 /**
  * P/D/R 레이더 (데스크톱). 직접 그린 SVG — 테마 색은 CSS 변수로 받아 다크/라이트 자동 전환
  * - 선 2px · 면 10% · 격자는 가는 실선 · 꼭짓점 r=4 + 2px 표면색 링 (dataviz 표식 규칙)
- * - 꼭짓점에 마우스를 올리거나 키보드로 포커스하면 값 표시, 숫자는 옆의 칩에도 항상 표시
+ * - 꼭짓점에 마우스를 올리면 값 표시. 같은 숫자를 옆의 칩·표에 항상 글자로 두므로 키보드·스크린 리더는 그쪽을 읽음
  * - 계열이 2개 이상이면 범례 표시 (팀 빌더: 내 팀 / 상대 팀)
  */
 export function PdrRadar({ series, title }: { series: RadarSeries[]; title: string }) {
@@ -102,13 +102,10 @@ export function PdrRadar({ series, title }: { series: RadarSeries[]; title: stri
                       cy={y}
                       r={12}
                       fill="transparent"
-                      tabIndex={0}
-                      aria-label={`${s.label} ${PLAYSTYLE_LABEL[a.key.toUpperCase() as "P"]} ${Math.round(s.value[a.key] * 100)}%`}
+                      aria-hidden
                       onMouseEnter={() => setHover({ s: si, key: a.key })}
                       onMouseLeave={() => setHover(null)}
-                      onFocus={() => setHover({ s: si, key: a.key })}
-                      onBlur={() => setHover(null)}
-                      className="cursor-default outline-none"
+                      className="cursor-default"
                     />
                     <circle
                       cx={x}

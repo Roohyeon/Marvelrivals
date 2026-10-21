@@ -56,7 +56,8 @@ export function TeamSlots({
                   </span>
                   <span className="absolute inset-x-0 bottom-0 hidden items-center gap-1 bg-card-label px-1.5 py-1 text-white xl:flex">
                     <RoleIcon role={e.role} className="size-2.5 shrink-0 skew-x-6" />
-                    <span className="skew-x-6 truncate text-tiny font-bold">{e.label}</span>
+                    {/* 글자에도 띠와 같은 배경 — 기울인(transform) 부모 너머의 배경은 자동 대비 검사기가 못 읽음 */}
+                    <span className="skew-x-6 truncate bg-card-label text-tiny font-bold">{e.label}</span>
                   </span>
                   <span className="absolute inset-0 hidden items-center justify-center bg-black/50 text-white group-hover:flex group-focus-visible:flex">
                     <X className="size-5" aria-hidden />

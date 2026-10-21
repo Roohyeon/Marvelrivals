@@ -19,10 +19,10 @@ import type { TeamData, TeamEntry } from "@/lib/team-types";
 function Card({ title, icon, children }: { title: string; icon?: React.ReactNode; children: React.ReactNode }) {
   return (
     <section className="rounded-panel border border-line bg-surface p-4 shadow-panel">
-      <h3 className="mb-3 flex items-center gap-1.5 text-table font-bold">
+      <h2 className="mb-3 flex items-center gap-1.5 text-table font-bold">
         {icon}
         {title}
-      </h3>
+      </h2>
       {children}
     </section>
   );
@@ -94,7 +94,7 @@ export function TeamAnalysis({ ally, enemy, data }: { ally: TeamEntry[]; enemy: 
             <table className="mx-auto mt-3 text-caption">
               <thead>
                 <tr className="text-secondary">
-                  <th scope="col" className="px-2 text-left font-medium" />
+                  <td className="px-2" />
                   {PDR_KEYS.map(({ style }) => (
                     <th key={style} scope="col" className="px-2 font-medium">
                       {style} {PLAYSTYLE_LABEL[style]}
@@ -122,7 +122,7 @@ export function TeamAnalysis({ ally, enemy, data }: { ally: TeamEntry[]; enemy: 
       )}
 
       {ally.length > 0 && (
-        <Card title={`발동되는 협공 ${active.length}`} icon={<Link2 className="size-4 text-accent" aria-hidden />}>
+        <Card title={`발동되는 협공 ${active.length}`} icon={<Link2 className="size-4 text-accent-text" aria-hidden />}>
           {active.length ? (
             <ul className="space-y-2">
               {active.map((t) => (

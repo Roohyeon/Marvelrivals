@@ -1,6 +1,6 @@
 "use client";
 
-import { Info, Settings } from "lucide-react";
+import { Columns3, Info, Settings } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 import { ThemeSelect } from "@/components/theme/ThemeSelect";
@@ -53,9 +53,17 @@ export function SettingsMenu({ buttonClassName = "" }: { buttonClassName?: strin
           <p className="mb-2 text-caption font-bold text-secondary">테마</p>
           <ThemeSelect />
           <Link
-            href="/about"
+            href="/compare"
             onClick={() => setOpen(false)}
             className="mt-4 flex min-h-11 items-center gap-2 rounded-md px-2 text-table hover:bg-elevated"
+          >
+            <Columns3 className="size-4 text-secondary" aria-hidden />
+            영웅 비교
+          </Link>
+          <Link
+            href="/about"
+            onClick={() => setOpen(false)}
+            className="flex min-h-11 items-center gap-2 rounded-md px-2 text-table hover:bg-elevated"
           >
             <Info className="size-4 text-secondary" aria-hidden />
             소개 · 데이터 출처

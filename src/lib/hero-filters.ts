@@ -21,6 +21,8 @@ export interface HeroFilters {
   difficulties: number[];
   q: string;
   sort: SortKey;
+  /** 즐겨찾기만 보기 (?fav=1) */
+  favOnly: boolean;
 }
 
 export const DEFAULT_FILTERS: HeroFilters = {
@@ -30,6 +32,7 @@ export const DEFAULT_FILTERS: HeroFilters = {
   difficulties: [],
   q: "",
   sort: "winrate",
+  favOnly: false,
 };
 
 function parseList<T>(value: string | null, allowed: readonly T[], map: (s: string) => T = (s) => s as T): T[] {
@@ -48,6 +51,7 @@ export function parseFilters(params: URLSearchParams): HeroFilters {
     difficulties: parseList(params.get("diff"), DIFFICULTIES, Number),
     q: params.get("q")?.slice(0, 40) ?? "",
     sort: sort && sort in SORT_LABEL ? sort : "winrate",
+    favOnly: params.get("fav") === "1",
   };
 }
 
@@ -60,8 +64,9 @@ export function filtersToSearch(f: HeroFilters, keep?: URLSearchParams): string 
   if (f.difficulties.length) p.set("diff", f.difficulties.join(","));
   if (f.q.trim()) p.set("q", f.q.trim());
   if (f.sort !== "winrate") p.set("sort", f.sort);
+  if (f.favOnly) p.set("fav", "1");
   keep?.forEach((v, k) => {
-    if (!["role", "tier", "style", "diff", "q", "sort", "focus"].includes(k)) p.set(k, v);
+    if (!["role", "tier", "style", "diff", "q", "sort", "fav", "focus"].includes(k)) p.set(k, v);
   });
   const s = p.toString();
   return s ? `?${s}` : "";
@@ -72,7 +77,7 @@ export function countActiveFilters(f: HeroFilters): number {
 }
 
 export function hasAnyFilter(f: HeroFilters): boolean {
-  return Boolean(f.role || f.q.trim() || countActiveFilters(f));
+  return Boolean(f.role || f.q.trim() || f.favOnly || countActiveFilters(f));
 }
 
 export function toggle<T>(list: T[], value: T, order: readonly T[]): T[] {
@@ -105,8 +110,9 @@ export interface HeroRow {
   stat: HeroListStat;
 }
 
-export function applyFilters(list: HeroListItem[], f: HeroFilters): HeroRow[] {
+export function applyFilters(list: HeroListItem[], f: HeroFilters, favorites: string[] = []): HeroRow[] {
   const rows = list
+    .filter((h) => !f.favOnly || favorites.includes(h.slug))
     .filter((h) => !f.role || h.roles.includes(f.role))
     .filter((h) => matchesSearch(h, f.q))
     .filter((h) => !f.difficulties.length || (h.difficulty !== null && f.difficulties.includes(h.difficulty)))

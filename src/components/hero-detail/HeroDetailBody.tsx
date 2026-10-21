@@ -160,7 +160,7 @@ export function HeroDetailBody({ detail }: { detail: HeroDetail }) {
                   aria-pressed={form === f}
                   onClick={() => setForm(f)}
                   className={`inline-flex h-9 shrink-0 items-center rounded-full border px-3 text-caption transition-colors ${
-                    form === f ? "border-accent bg-accent/10 font-bold text-accent" : "border-line bg-surface text-secondary"
+                    form === f ? "border-accent bg-accent/10 font-bold text-accent-text" : "border-line bg-surface text-secondary"
                   }`}
                 >
                   {f ?? "모든 폼"}
