@@ -1,4 +1,5 @@
 import { queryOptions } from "@tanstack/react-query";
+import type { TeamData } from "./team-types";
 import type { HeroListItem } from "./types";
 
 async function getJson<T>(url: string): Promise<T> {
@@ -12,5 +13,11 @@ async function getJson<T>(url: string): Promise<T> {
 export const heroListQuery = queryOptions({
   queryKey: ["heroes", "list"],
   queryFn: () => getJson<HeroListItem[]>("/api/heroes"),
+  staleTime: "static",
+});
+
+export const teamDataQuery = queryOptions({
+  queryKey: ["team-data"],
+  queryFn: () => getJson<TeamData>("/api/team-data"),
   staleTime: "static",
 });

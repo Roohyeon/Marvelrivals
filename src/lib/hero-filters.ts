@@ -94,7 +94,7 @@ export function primaryStat(hero: HeroListItem, role: Role | null): HeroListStat
 
 const normalize = (s: string) => s.toLowerCase().replace(/[\s\-_.·]/g, "");
 
-export function matchesSearch(hero: HeroListItem, q: string): boolean {
+export function matchesSearch(hero: Pick<HeroListItem, "nameKo" | "nameEn" | "slug">, q: string): boolean {
   const query = normalize(q);
   if (!query) return true;
   return [hero.nameKo, hero.nameEn, hero.slug].some((name) => normalize(name).includes(query));

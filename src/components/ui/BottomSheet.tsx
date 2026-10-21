@@ -59,7 +59,8 @@ export function BottomSheet({ open, onClose, label, children, footer }: BottomSh
       }}
       // 어두운 배경(시트 바깥)을 누르면 닫기
       onClick={(e) => e.target === ref.current && onClose()}
-      className={`sheet fixed inset-x-0 bottom-0 top-auto m-0 mx-auto flex w-full max-w-xl flex-col rounded-t-sheet bg-surface p-0 text-primary ${
+      // 닫힌 <dialog>는 브라우저 기본값(display:none)으로 숨겨야 함 — 그냥 flex 를 주면 닫혀도 화면·키보드 탐색에 남음
+      className={`sheet fixed inset-x-0 bottom-0 top-auto m-0 mx-auto w-full max-w-xl flex-col open:flex rounded-t-sheet bg-surface p-0 text-primary ${
         expanded ? "h-[92dvh]" : "h-[60dvh]"
       }`}
       style={dragY > 0 ? { translate: `0 ${dragY}px`, transition: "none" } : undefined}

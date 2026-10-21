@@ -20,6 +20,7 @@ import type {
   Skill,
   TeamUp,
 } from "./types";
+import type { TeamData } from "./team-types";
 
 export const heroes = heroesJson as Hero[];
 export const stats = statsJson as HeroStat[];
@@ -69,4 +70,28 @@ export function getHeroList(): HeroListItem[] {
       pdr,
     })),
   }));
+}
+
+/** 팀 빌더용 데이터 (/api/team-data 와 서버 미리 채움이 같은 함수를 씀) */
+export function getTeamData(): TeamData {
+  return {
+    entries: [...stats]
+      .sort((a, b) => a.rank - b.rank)
+      .map((s) => {
+        const h = heroBySlug.get(s.heroSlug)!;
+        return {
+          statId: s.id,
+          slug: h.slug,
+          label: s.label,
+          nameEn: h.nameEn,
+          role: s.variantRole ?? h.roles[0],
+          tier: s.tier,
+          winRate: s.winRate,
+          playstyles: s.playstyles,
+          pdr: s.pdr,
+        };
+      }),
+    teamups: teamups.map(({ id, heroSlug, partnerSlug, name, key }) => ({ id, heroSlug, partnerSlug, name, key })),
+    counters: Object.fromEntries(stats.map((s) => [s.id, s.counters.map(({ statId, score }) => ({ statId, score }))])),
+  };
 }
