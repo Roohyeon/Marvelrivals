@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* 테마 토큰은 3단계에서 Design_공통_반응형_테마.md 기준으로 채웁니다. */
+
+@theme inline {
+  --font-sans: var(--font-pretendard), system-ui, sans-serif;
+}
