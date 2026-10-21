@@ -5,9 +5,10 @@
  *
  * 검증에 실패하면 종료 코드 1로 끝나므로, prebuild 에 걸어 두면 잘못된 데이터가 배포되지 않습니다.
  */
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 import ExcelJS from "exceljs";
+import sharp from "sharp";
 import type {
   CounterEntry,
   DataMeta,
@@ -30,6 +31,8 @@ const XLSX_PATH = path.join(ROOT, "마블라이벌즈_영웅_데이터_한글101
 const WIKI_JSON_PATH = path.join(ROOT, "marvel_rivals_wiki_data.json");
 const IMAGE_DIR = path.join(ROOT, "public/images/heroes");
 const OUT_DIR = path.join(ROOT, "src/data");
+const MAP_IMAGE_SRC = path.join(ROOT, "image/Maps");
+const MAP_IMAGE_OUT = path.join(ROOT, "public/images/maps");
 
 const EXPECTED = { heroes: 54, stats: 56, skills: 601, maps: 18 };
 
@@ -474,8 +477,28 @@ async function main() {
       releaseDate: str(r[7]),
       releaseLabel: str(r[8]),
       top5,
+      image: null,
     });
   }
+
+  // ── 맵 이미지: image/Maps/{id}.(png|jpg|webp) → public/images/maps/{id}.webp (1280px) ──
+  mkdirSync(MAP_IMAGE_OUT, { recursive: true });
+  const mapFiles = existsSync(MAP_IMAGE_SRC) ? readdirSync(MAP_IMAGE_SRC) : [];
+  for (const m of maps) {
+    const file = mapFiles.find((f) => new RegExp(`^${m.id}\\.(png|jpe?g|webp)$`, "i").test(f));
+    if (!file) continue;
+    const src = path.join(MAP_IMAGE_SRC, file);
+    const out = path.join(MAP_IMAGE_OUT, `${m.id}.webp`);
+    // 원본이 바뀌었을 때만 다시 변환
+    if (!existsSync(out) || statSync(out).mtimeMs < statSync(src).mtimeMs) {
+      await sharp(src).resize({ width: 1280, withoutEnlargement: true }).webp({ quality: 80 }).toFile(out);
+    }
+    const { width = 0, height = 0 } = await sharp(out).metadata();
+    m.image = { src: `/images/maps/${m.id}.webp`, width, height };
+  }
+  const mapImageCount = maps.filter((m) => m.image).length;
+  if (mapImageCount < maps.length)
+    warn(`맵 이미지 ${mapImageCount}/${maps.length}장 — 없는 맵은 디자인 카드로 표시 (image/Maps/다운로드_목록.md 참고)`);
 
   const modeStart = mapRows.findIndex((r) => str(r[0]) === "모드 설명");
   const mapModes: MapModeInfo[] = [];

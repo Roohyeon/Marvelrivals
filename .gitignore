@@ -42,3 +42,9 @@ next-env.d.ts
 
 # 원본 영웅 이미지는 public/images/heroes 로 복사해 사용 (중복 저장 방지)
 /image/Char/
+
+# 원본 맵 이미지는 npm run data 가 public/images/maps 로 줄여서 복사 (다운로드 목록만 커밋)
+/image/Maps/*.png
+/image/Maps/*.jpg
+/image/Maps/*.jpeg
+/image/Maps/*.webp

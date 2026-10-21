@@ -30,7 +30,8 @@
         "statId": "magik",
         "winRate": 53.7
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "hell-s-heaven",
@@ -63,7 +64,8 @@
         "statId": "ultron",
         "winRate": 55.6
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "royal-palace",
@@ -96,7 +98,8 @@
         "statId": "gorr",
         "winRate": 54.3
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "krakoa",
@@ -129,7 +132,8 @@
         "statId": "storm",
         "winRate": 55
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "celestial-husk",
@@ -162,7 +166,8 @@
         "statId": "magik",
         "winRate": 55.2
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "god-quarry",
@@ -195,7 +200,8 @@
         "statId": "magik",
         "winRate": 55
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "yggdrasill-path",
@@ -228,7 +234,8 @@
         "statId": "magik",
         "winRate": 54.7
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "spider-islands",
@@ -261,7 +268,8 @@
         "statId": "gorr",
         "winRate": 54.3
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "midtown",
@@ -294,7 +302,8 @@
         "statId": "gorr",
         "winRate": 53.9
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "arakko",
@@ -327,7 +336,8 @@
         "statId": "magik",
         "winRate": 54.6
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "museum-of-contemplation",
@@ -360,7 +370,8 @@
         "statId": "magik",
         "winRate": 54.1
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "thebes",
@@ -393,7 +404,8 @@
         "statId": "mantis",
         "winRate": 55.5
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "shin-shibuya",
@@ -426,7 +438,8 @@
         "statId": "ultron",
         "winRate": 54.9
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "hall-of-djalia",
@@ -459,7 +472,8 @@
         "statId": "storm",
         "winRate": 54.5
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "symbiotic-surface",
@@ -492,7 +506,8 @@
         "statId": "rocket-raccoon",
         "winRate": 54
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "central-park",
@@ -525,7 +540,8 @@
         "statId": "mister-fantastic",
         "winRate": 54.2
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "heart-of-heaven",
@@ -558,7 +574,8 @@
         "statId": "mantis",
         "winRate": 55.5
       }
-    ]
+    ],
+    "image": null
   },
   {
     "id": "lower-manhattan",
@@ -591,6 +608,7 @@
         "statId": "storm",
         "winRate": 54.2
       }
-    ]
+    ],
+    "image": null
   }
 ]

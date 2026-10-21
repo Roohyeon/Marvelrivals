@@ -119,6 +119,8 @@ export interface GameMap {
   releaseDate: string;
   releaseLabel: string;
   top5: MapWinRate[];
+  /** image/Maps 에 원본이 있으면 변환된 WebP, 없으면 null (디자인 카드로 대체) */
+  image: { src: string; width: number; height: number } | null;
 }
 
 export interface MapModeInfo {
