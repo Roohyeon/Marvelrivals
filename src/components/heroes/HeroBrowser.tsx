@@ -222,7 +222,7 @@ function HeroBrowserView({ filters, onChange, autoFocusSearch }: ViewProps) {
 
       {/* ── 모바일·태블릿: 미리보기 하단 시트 ── */}
       <BottomSheet open={previewOpen && !isDesktop} onClose={() => setPreviewOpen(false)} label="영웅 미리보기">
-        {selected && <HeroPreview hero={selected} headingId={previewHeadingId} />}
+        {selected && <HeroPreview hero={selected} headingId={previewHeadingId} onNavigate={() => setPreviewOpen(false)} />}
       </BottomSheet>
 
       {/* ── 모바일·태블릿: 추가 필터 하단 시트 ── */}

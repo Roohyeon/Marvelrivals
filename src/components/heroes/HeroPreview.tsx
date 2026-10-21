@@ -15,7 +15,16 @@ function ultimateLabel(text: string) {
 }
 
 /** 미리보기 — 데스크톱 오른쪽 패널과 모바일 하단 시트가 같은 내용을 씀 */
-export function HeroPreview({ hero, headingId }: { hero: HeroListItem; headingId?: string }) {
+export function HeroPreview({
+  hero,
+  headingId,
+  onNavigate,
+}: {
+  hero: HeroListItem;
+  headingId?: string;
+  /** 상세로 이동할 때 (하단 시트를 닫아 뒤로 가기 시 다시 열리지 않게) */
+  onNavigate?: () => void;
+}) {
   const multi = hero.stats.length > 1;
 
   return (
@@ -88,6 +97,7 @@ export function HeroPreview({ hero, headingId }: { hero: HeroListItem; headingId
 
       <Link
         href={`/heroes/${hero.slug}`}
+        onClick={onNavigate}
         className="mt-3 inline-flex h-12 w-full items-center justify-center gap-2 rounded-full border border-line bg-surface text-table font-bold transition-colors hover:bg-elevated"
       >
         상세 보기

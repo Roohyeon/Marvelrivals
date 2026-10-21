@@ -29,6 +29,16 @@ export function BottomSheet({ open, onClose, label, children, footer }: BottomSh
     if (!open && dialog.open) dialog.close();
   }, [open]);
 
+  // 다른 페이지로 이동하면 닫기: Next.js 16(Cache Components)은 이전 페이지를 <Activity>로 숨겨 DOM에 남겨 두므로,
+  // 열린 <dialog>가 그대로 남아 스크롤 잠금(html:has(dialog[open]))과 뒤쪽 inert 가 다음 페이지에도 걸림.
+  // 숨겨질 때 effect 정리 함수가 실행되므로 여기서 닫음.
+  useEffect(() => {
+    const dialog = ref.current;
+    return () => {
+      if (dialog?.open) dialog.close();
+    };
+  }, []);
+
   const onPointerDown = (e: React.PointerEvent) => {
     drag.current = { startY: e.clientY, pointerId: e.pointerId };
     (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
