@@ -1,0 +1,2767 @@
+[
+  {
+    "id": "teamup-001",
+    "heroSlug": "adam-warlock",
+    "name": "우주 회오리",
+    "partnerSlug": "storm",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "이동 속도 증가",
+        "value": "20%"
+      },
+      {
+        "label": "영혼의 결속 연결 범위",
+        "value": "20m 구형 반경"
+      }
+    ],
+    "effect": "기본 효과 - 영혼의 결속으로 연결된 팀원이 이동 속도 증가 효과를 얻습니다."
+  },
+  {
+    "id": "teamup-002",
+    "heroSlug": "adam-warlock",
+    "name": "완벽한 설계",
+    "partnerSlug": "ultron",
+    "key": "우클릭",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "치유",
+        "value": "발당 18"
+      },
+      {
+        "label": "양자 마법 탄약",
+        "value": "25"
+      }
+    ],
+    "effect": "기본 효과 - 우주 성단이 아군을 치유합니다."
+  },
+  {
+    "id": "teamup-003",
+    "heroSlug": "angela",
+    "name": "오딘이 인정하지 않은 자들",
+    "partnerSlug": "loki",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "환영 체력",
+        "value": "150"
+      }
+    ],
+    "effect": "기본 효과 - 전방에 환영을 투사합니다. 환영은 암살자의 돌격을 사용해 적을 찌릅니다. 정면으로 부딪힌 적은 잠시 동안 공중으로 끌려갑니다."
+  },
+  {
+    "id": "teamup-004",
+    "heroSlug": "angela",
+    "name": "애즈가디언즈 오브 갤럭시",
+    "partnerSlug": "star-lord",
+    "key": "C",
+    "cooldown": "25s",
+    "details": [
+      {
+        "label": "위치 노출 범위",
+        "value": "50m 구형 반경"
+      },
+      {
+        "label": "내려찍기 효과 범위",
+        "value": "10m 구형 반경"
+      },
+      {
+        "label": "내려찍기 피해",
+        "value": "65"
+      },
+      {
+        "label": "내려찍기 비행 불가 지속 시간",
+        "value": "2s"
+      }
+    ],
+    "effect": "기본 효과 - 사용 시 지정한 영역의 적 위치를 노출합니다. 다시 사용하면 내려찍기 공격을 하며, 내려찍기에 맞은 적은 비행 불가 상태가 됩니다."
+  },
+  {
+    "id": "teamup-005",
+    "heroSlug": "black-cat",
+    "name": "고양이 동맹",
+    "partnerSlug": "black-panther",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "받은 피해 임계치",
+        "value": "50"
+      },
+      {
+        "label": "효과 범위",
+        "value": "8m 구형 반경"
+      },
+      {
+        "label": "효과 범위 피해",
+        "value": "45"
+      },
+      {
+        "label": "이동 속도 증가",
+        "value": "3m/s (즉시 감소하기 시작해 3s에 걸쳐 0m/s가 됨)"
+      },
+      {
+        "label": "획득 보너스 체력",
+        "value": "25 (발동 시)"
+      },
+      {
+        "label": "적중 시 획득 행운",
+        "value": "50 (최대 100)"
+      }
+    ],
+    "effect": "기본 효과 - 피해를 받으면 비브라늄 에너지가 축적됩니다. 일정 수치에 도달하면 블랙 캣이 강력한 폭발을 일으켜 주변 적에게 피해를 주고 밀쳐내며, 잠시 이동 속도 증가와 보너스 체력을 얻습니다. 적중한 적 하나당 행운을 50 얻으며, 최대 100까지 얻습니다."
+  },
+  {
+    "id": "teamup-006",
+    "heroSlug": "black-cat",
+    "name": "결속의 끈",
+    "partnerSlug": "spider-man",
+    "key": "E",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "충전 횟수",
+        "value": "2"
+      },
+      {
+        "label": "충전 시간",
+        "value": "충전당 5s"
+      },
+      {
+        "label": "스파이더 트레이서 추가 피해",
+        "value": "45"
+      }
+    ],
+    "effect": "기본 효과 - 운명의 전환이 충전 횟수 2회의 스파이더 웹 갈고리로 대체됩니다. 갈고리를 적에게 적중시키면 행운을 훔치고 스파이더 트레이서를 부착합니다. 블랙 캣이 스파이더 트레이서가 부착된 적을 다른 능력으로 적중시키면 표식이 발동해 추가 피해를 줍니다."
+  },
+  {
+    "id": "teamup-007",
+    "heroSlug": "black-panther",
+    "name": "다미사-야오",
+    "partnerSlug": "storm",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "효과 범위",
+        "value": "반경 8m 구형"
+      },
+      {
+        "label": "피해",
+        "value": "30"
+      },
+      {
+        "label": "둔화율",
+        "value": "35%"
+      },
+      {
+        "label": "둔화 지속 시간",
+        "value": "2s"
+      }
+    ],
+    "effect": "기본 효과 - 갑옷 안의 원소의 힘을 발동해 주변 적에게 피해와 둔화를 부여하고 비브라늄 표식을 부여합니다."
+  },
+  {
+    "id": "teamup-008",
+    "heroSlug": "black-panther",
+    "name": "차원 지름길",
+    "partnerSlug": "magik",
+    "key": "C",
+    "cooldown": "35s",
+    "details": [
+      {
+        "label": "획득 보너스 체력",
+        "value": "50"
+      },
+      {
+        "label": "붕괴 효과 범위",
+        "value": "반경 8m 구형"
+      },
+      {
+        "label": "붕괴 피해",
+        "value": "40"
+      }
+    ],
+    "effect": "기본 효과 - 림보 디딤 원반을 발동해 몇 초 전의 위치로 즉시 되돌아가며 보너스 체력을 얻습니다. 순간이동이 끝나면 원반이 붕괴하며 폭발해 주변 적에게 피해를 입히고 비브라늄 표식을 부여합니다."
+  },
+  {
+    "id": "teamup-009",
+    "heroSlug": "black-widow",
+    "name": "연합 요원",
+    "partnerSlug": "hawkeye",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "적중 시 집중 획득",
+        "value": "1"
+      },
+      {
+        "label": "치명타 시 집중 획득",
+        "value": "2"
+      },
+      {
+        "label": "집중 사격 피해",
+        "value": "발당 55"
+      }
+    ],
+    "effect": "기본 효과 - 레드 룸 소총으로 적중시키면 집중이 쌓입니다. 세 번 중첩되면 집중 상태에 돌입해 다음 탄환이 사냥꾼의 시야 효과를 얻어 피해 증가 및 관통 효과를 갖습니다."
+  },
+  {
+    "id": "teamup-010",
+    "heroSlug": "black-widow",
+    "name": "불타는 탄환",
+    "partnerSlug": "phoenix",
+    "key": "패시브(자동)",
+    "cooldown": "10s",
+    "details": [
+      {
+        "label": "레드 룸 소총 공격 속도 증가",
+        "value": "15%"
+      },
+      {
+        "label": "피해",
+        "value": "70"
+      },
+      {
+        "label": "폭발 범위",
+        "value": "5m 구형 반경"
+      },
+      {
+        "label": "둔화율",
+        "value": "40%"
+      },
+      {
+        "label": "둔화 지속 시간",
+        "value": "3s"
+      }
+    ],
+    "effect": "기본 효과 - 사용 시 레드 룸 소총의 발사 속도가 증가합니다. 또한 플라스마 캐논 투사체가 충전이 필요 없는 즉발(히트스캔) 레이저로 바뀝니다."
+  },
+  {
+    "id": "teamup-011",
+    "heroSlug": "blade",
+    "name": "콘슈의 칼날",
+    "partnerSlug": "moon-knight",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "돌진 지속 시간",
+        "value": "0.15s"
+      },
+      {
+        "label": "돌진 속도",
+        "value": "60m/s"
+      },
+      {
+        "label": "달 칼날 피해",
+        "value": "40"
+      },
+      {
+        "label": "달 칼날 투사체 속도",
+        "value": "150m/s"
+      },
+      {
+        "label": "발사되는 달 칼날 수",
+        "value": "4"
+      },
+      {
+        "label": "달 칼날 피해 감소",
+        "value": "튕길 때마다 35%"
+      }
+    ],
+    "effect": "기본 효과 - 짧게 돌진하며 선조의 검으로 전방을 강하게 내려벱니다. 돌진이 끝나면 재빠르게 네 번 베어 매 타격마다 어둠달 칼날을 전방으로 날립니다. 어둠달 칼날이 적에게 적중하면 근처 대상에게 튕겨 나갑니다."
+  },
+  {
+    "id": "teamup-012",
+    "heroSlug": "blade",
+    "name": "전투를 위한 피",
+    "partnerSlug": "captain-america",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "받은 피해로 얻는 중첩",
+        "value": "피해를 40 받을 때마다 중첩 1 획득"
+      },
+      {
+        "label": "최대 혈통 각성 중첩",
+        "value": "12"
+      }
+    ],
+    "effect": "기본 효과 - 블레이드가 일정량의 피해를 받을 때마다 혈통 각성 중첩을 하나 쌓습니다."
+  },
+  {
+    "id": "teamup-013",
+    "heroSlug": "captain-america",
+    "name": "전압 결합",
+    "partnerSlug": "thor",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "10s"
+      },
+      {
+        "label": "번개 방패 던지기 피해",
+        "value": "45"
+      }
+    ],
+    "effect": "기본 효과 - 센티넬 일격이 번개 방패 투사체로 바뀝니다. 두 번 적중시키면 캡틴 아메리카가 관통하는 번개 방패를 네 번 던집니다."
+  },
+  {
+    "id": "teamup-014",
+    "heroSlug": "captain-america",
+    "name": "별의 정렬",
+    "partnerSlug": "winter-soldier",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "획득 보너스 체력",
+        "value": "150 (자신 및 아군)"
+      },
+      {
+        "label": "피해 흡수 지속 시간",
+        "value": "2s"
+      }
+    ],
+    "effect": "기본 효과 - 캡틴 아메리카가 아군에게 곧바로 도약해 자신과 아군에게 보너스 체력을 부여하고, 아군이 받는 피해의 일부를 자신에게 돌립니다."
+  },
+  {
+    "id": "teamup-015",
+    "heroSlug": "cloak-and-dagger",
+    "name": "망각의 장막",
+    "partnerSlug": "the-hood",
+    "key": "E",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "장막 유지 시간",
+        "value": "4s"
+      },
+      {
+        "label": "장막 크기",
+        "value": "너비: 6m, 높이: 4.5m"
+      },
+      {
+        "label": "빛의 장막 피해 감소량",
+        "value": "20%"
+      },
+      {
+        "label": "어둠의 장막 치유 감소량",
+        "value": "20%"
+      }
+    ],
+    "effect": "기본 효과 - 라이트포스 장막과 공포의 망토가 지옥불 에너지로 뒤틀려 기존 효과를 유지한 채 황혼의 장막과 공허의 장막으로 바뀝니다. 장막은 일정 거리를 이동한 뒤 그 자리에 멈춥니다. 황혼의 장막을 통과하는 적의 피해는 약화되며, 공허의 장막을 통과하는 적의 치유에는 치유 감소가 적용됩니다."
+  },
+  {
+    "id": "teamup-016",
+    "heroSlug": "cloak-and-dagger",
+    "name": "얼어붙은 안식처",
+    "partnerSlug": "luna-snow",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "2s"
+      },
+      {
+        "label": "치유",
+        "value": "50/s"
+      },
+      {
+        "label": "치유 오라 범위",
+        "value": "구형 반경 8m"
+      }
+    ],
+    "effect": "기본 효과 - 냉기 에너지를 바깥으로 방출해 자신을 단단한 얼음 덩어리에 가둡니다. 강력한 보호를 받지만 그 자리에 빙결됩니다. 빙결 중에도 치유를 받을 수 있으며, 주변 아군에게 약한 치유 오라를 방출합니다."
+  },
+  {
+    "id": "teamup-017",
+    "heroSlug": "cyclops",
+    "name": "날씬하고 빨간",
+    "partnerSlug": "phoenix",
+    "key": "E",
+    "cooldown": "2s",
+    "details": [
+      {
+        "label": "충전 횟수",
+        "value": "2"
+      },
+      {
+        "label": "충전 시간",
+        "value": "충전당 15s"
+      },
+      {
+        "label": "화상 피해",
+        "value": "0.5s마다 7 피해"
+      },
+      {
+        "label": "화상 지속 시간",
+        "value": "3s"
+      },
+      {
+        "label": "폭발 피해",
+        "value": "남은 화상 피해의 50%"
+      }
+    ],
+    "effect": "기본 효과 - 도탄의 힘으로 적을 적중하면 피닉스 포스를 소환해 적에게 불을 붙여 일정 시간 동안 지속 화상 피해를 줍니다. 불붙은 대상을 광학 블래스트 또는 충격 광선으로 적중하면 남은 화상 피해의 일정 비율을 한 번에 즉시 터뜨립니다."
+  },
+  {
+    "id": "teamup-018",
+    "heroSlug": "cyclops",
+    "name": "키네틱 혈족",
+    "partnerSlug": "gambit",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "이동 속도 증가",
+        "value": "40%"
+      },
+      {
+        "label": "강화 점프 속도",
+        "value": "5m/s"
+      }
+    ],
+    "effect": "기본 효과 - 저장된 운동 에너지를 방출해 일정 시간 동안 강화 상태에 돌입합니다. 강화 상태 동안 사이클롭스의 이동 속도와 점프 높이가 크게 증가합니다."
+  },
+  {
+    "id": "teamup-019",
+    "heroSlug": "daredevil",
+    "name": "종합 방어",
+    "partnerSlug": "iron-fist",
+    "key": "우클릭",
+    "cooldown": null,
+    "details": [],
+    "effect": "기본 효과 - 이의 있음!이 강화됩니다. 회전하는 곤봉이 이제 범위 내 모든 적에게 피해를 주며 모든 방향의 투사체를 반사합니다. 공격을 반사하는 데 성공하면 분노를 회복합니다."
+  },
+  {
+    "id": "teamup-020",
+    "heroSlug": "daredevil",
+    "name": "악마 같은 거래",
+    "partnerSlug": "black-widow",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "55"
+      },
+      {
+        "label": "공격 범위",
+        "value": "반경 8.5m, 높이 5m, 120° 원뿔형 효과 범위"
+      },
+      {
+        "label": "둔화율",
+        "value": "40%"
+      },
+      {
+        "label": "둔화 지속 시간",
+        "value": "1.5s"
+      }
+    ],
+    "effect": "기본 효과 - 악마의 사슬을 X자로 휘둘러 전방의 적에게 피해를 주고 둔화를 부여합니다."
+  },
+  {
+    "id": "teamup-021",
+    "heroSlug": "deadpool",
+    "name": "\"헬-예, 허니\" [뱅가드]",
+    "partnerSlug": "hela",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "끝내주는 카타나 폭발 피해",
+        "value": "5 + 최대 체력의 1.5%"
+      }
+    ],
+    "effect": "기본 효과 - 헬로부터 업그레이드를 받아 데저트 이글 또는 카타나를 한 번 더 업그레이드할 수 있습니다. 헬-예 데저트 이글: 듀얼리스트와 뱅가드는 관통 효과를 얻고, 생각 말풍선이 유도 기능이 있는 죽음의 말풍선으로 변합니다. 전략가의 죽음의 말풍선은 아군에게도 유도되어 폭발하며 치유를 제공합니다. 헬-예 카타나: 공격할 때마다 적에게 언데드 에너지를 주입합니다. 카타나로 적을 세 번 적중시키면 에너지가 폭발해 대상의 최대 체력에 비례한 비율 고정 피해를 입힙니다."
+  },
+  {
+    "id": "teamup-022",
+    "heroSlug": "deadpool",
+    "name": "검보 치미창가 [뱅가드]",
+    "partnerSlug": "gambit",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "착지 피해",
+        "value": "60"
+      },
+      {
+        "label": "착지 효과 범위",
+        "value": "반경 5m 구형"
+      }
+    ],
+    "effect": "기본 효과 - 운동 에너지를 발동해 데드풀이 앞으로 도약합니다. 착지하면 운동 에너지가 충전된 치미창가를 고리 모양으로 흩뿌려 적에게 피해를 입힙니다."
+  },
+  {
+    "id": "teamup-023",
+    "heroSlug": "deadpool",
+    "name": "\"헬-예, 허니\" [듀얼리스트]",
+    "partnerSlug": "hela",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "끝내주는 카타나 폭발 피해",
+        "value": "5 + 최대 체력의 2%"
+      }
+    ],
+    "effect": "기본 효과 - 헬로부터 업그레이드를 받아 데저트 이글 또는 카타나를 한 번 더 업그레이드할 수 있습니다. 헬-예 데저트 이글: 듀얼리스트와 뱅가드는 관통 효과를 얻고, 생각 말풍선이 유도 기능이 있는 죽음의 말풍선으로 변합니다. 전략가의 죽음의 말풍선은 아군에게도 유도되어 폭발하며 치유를 제공합니다. 헬-예 카타나: 공격할 때마다 적에게 언데드 에너지를 주입합니다. 카타나로 적을 세 번 적중시키면 에너지가 폭발해 대상의 최대 체력에 비례한 비율 고정 피해를 입힙니다."
+  },
+  {
+    "id": "teamup-024",
+    "heroSlug": "deadpool",
+    "name": "검보 치미창가 [듀얼리스트]",
+    "partnerSlug": "gambit",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "착지 피해",
+        "value": "90"
+      },
+      {
+        "label": "착지 효과 범위",
+        "value": "반경 5m 구형"
+      }
+    ],
+    "effect": "기본 효과 - 운동 에너지를 발동해 데드풀이 앞으로 도약합니다. 착지하면 운동 에너지가 충전된 치미창가를 고리 모양으로 흩뿌려 적에게 피해를 입힙니다."
+  },
+  {
+    "id": "teamup-025",
+    "heroSlug": "deadpool",
+    "name": "\"헬-예, 허니\" [전략가]",
+    "partnerSlug": "hela",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "끝내주는 카타나 폭발 피해",
+        "value": "5 + 최대 체력의 0.5%"
+      },
+      {
+        "label": "폭발 시 자가 치유",
+        "value": "5"
+      }
+    ],
+    "effect": "기본 효과 - 헬로부터 업그레이드를 받아 데저트 이글 또는 카타나를 한 번 더 업그레이드할 수 있습니다. 헬-예 데저트 이글: 듀얼리스트와 뱅가드는 관통 효과를 얻고, 생각 말풍선이 유도 기능이 있는 죽음의 말풍선으로 변합니다. 전략가의 죽음의 말풍선은 아군에게도 유도되어 폭발하며 치유를 제공합니다. 헬-예 카타나: 공격할 때마다 적에게 언데드 에너지를 주입합니다. 카타나로 적을 세 번 적중시키면 에너지가 폭발해 대상의 최대 체력에 비례한 비율 고정 피해를 입힙니다."
+  },
+  {
+    "id": "teamup-026",
+    "heroSlug": "deadpool",
+    "name": "검보 치미창가 [전략가]",
+    "partnerSlug": "gambit",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "착지 피해",
+        "value": "35"
+      },
+      {
+        "label": "착지 치유",
+        "value": "65"
+      },
+      {
+        "label": "착지 효과 범위",
+        "value": "반경 5m 구형"
+      }
+    ],
+    "effect": "기본 효과 - 운동 에너지를 발동해 데드풀이 앞으로 도약합니다. 착지하면 운동 에너지가 충전된 치미창가를 고리 모양으로 흩뿌려 적에게 피해를 입히고 아군을 추가로 치유합니다."
+  },
+  {
+    "id": "teamup-027",
+    "heroSlug": "devil-dinosaur",
+    "name": "원시의 응징",
+    "partnerSlug": "the-punisher",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "피해",
+        "value": "투사체: 5, 효과 범위: 20"
+      },
+      {
+        "label": "효과 범위",
+        "value": "3m 구형 반경"
+      },
+      {
+        "label": "발사 간격",
+        "value": "0.25s"
+      },
+      {
+        "label": "투사체 속도",
+        "value": "150m/s"
+      }
+    ],
+    "effect": "기본 효과 - 새로운 능력이 추가됩니다. 발동 시 원시의 물어뜯기가 대체됩니다. 데빌 다이노서가 전방으로 발사할 수 있는 자기 대포 두 문을 얻으며, 포탄은 적이나 지형에 닿으면 폭발하여 출혈을 부여합니다."
+  },
+  {
+    "id": "teamup-028",
+    "heroSlug": "devil-dinosaur",
+    "name": "바다와 육지",
+    "partnerSlug": "jeff-the-land-shark",
+    "key": "우클릭",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "광선 사거리",
+        "value": "20m"
+      },
+      {
+        "label": "최대 광선 지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "치유",
+        "value": "60/s"
+      }
+    ],
+    "effect": "기본 효과 - 충격 빔이 전방 물줄기 분사로 대체됩니다. 이 물줄기는 적에게 피해를 주고 아군을 치유합니다."
+  },
+  {
+    "id": "teamup-029",
+    "heroSlug": "doctor-strange",
+    "name": "감마 소용돌이",
+    "partnerSlug": "hulk",
+    "key": "E",
+    "cooldown": "6s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "암흑 마법 포인트당 1.3 피해"
+      },
+      {
+        "label": "효과 범위",
+        "value": "10m 구형 반경"
+      }
+    ],
+    "effect": "기본 효과 - 광기의 소용돌이를 감마 소용돌이로 강화합니다. 에너지 충전 속도가 크게 증가하고 치유 불가 저주가 제거됩니다."
+  },
+  {
+    "id": "teamup-030",
+    "heroSlug": "doctor-strange",
+    "name": "사이오닉 소용돌이",
+    "partnerSlug": "invisible-woman",
+    "key": "E",
+    "cooldown": "6s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "암흑 마법 포인트당 1.3 피해"
+      },
+      {
+        "label": "효과 범위",
+        "value": "8m 구형 반경"
+      },
+      {
+        "label": "세라핌의 방패 체력",
+        "value": "1000"
+      }
+    ],
+    "effect": "기본 효과 - 광기의 소용돌이를 사이오닉 소용돌이로 강화합니다. 범위에 휘말린 적은 자신 쪽으로 끌려옵니다. 세라핌의 방패의 보호막 수치도 증가합니다."
+  },
+  {
+    "id": "teamup-031",
+    "heroSlug": "elsa-bloodstone",
+    "name": "선사 시대 덫",
+    "partnerSlug": "devil-dinosaur",
+    "key": "F",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "덫 발동 범위",
+        "value": "구형 반경 5m"
+      },
+      {
+        "label": "덫 체력",
+        "value": "50"
+      },
+      {
+        "label": "속박 지속 시간",
+        "value": "1.2s"
+      },
+      {
+        "label": "발동 피해",
+        "value": "30"
+      },
+      {
+        "label": "가스 범위",
+        "value": "구형 반경 3m"
+      },
+      {
+        "label": "가스 피해",
+        "value": "35/s"
+      },
+      {
+        "label": "가스 지속 시간",
+        "value": "2s"
+      },
+      {
+        "label": "더블 배럴 블래스터 피해",
+        "value": "펠릿당 5"
+      }
+    ],
+    "effect": "기본 효과 - 연기 덫을 설치하면 디아블로가 주변을 감시합니다. 적이 접근하면 디아블로가 적을 속박하고 피해를 줍니다. 또한 치명적인 가스를 방출해 지속적인 범위 피해를 줍니다."
+  },
+  {
+    "id": "teamup-032",
+    "heroSlug": "elsa-bloodstone",
+    "name": "수다쟁이 용병들",
+    "partnerSlug": "deadpool",
+    "key": "우클릭",
+    "cooldown": "8s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "첫 발: 60, 파편: 40"
+      },
+      {
+        "label": "지속 피해",
+        "value": "20/s"
+      },
+      {
+        "label": "둔화율",
+        "value": "25%"
+      },
+      {
+        "label": "효과 지속 시간",
+        "value": "2s"
+      },
+      {
+        "label": "피해량-치유 전환율",
+        "value": "30%"
+      }
+    ],
+    "effect": "기본 효과 - 살아있는 탄환이 특수탄으로 바뀌어 데드풀의 수다로 대상을 도발하고, 주변 적에게 둔화를 걸며 지속 피해를 줍니다. 일정 시간이 지나면 탄환이 자동으로 회수되어, 가한 피해에 비례해 엘사를 치유하고 물려받은 본능 패시브의 최대치에 게이지 칸 하나를 추가합니다."
+  },
+  {
+    "id": "teamup-033",
+    "heroSlug": "emma-frost",
+    "name": "영혼 파괴자",
+    "partnerSlug": "mantis",
+    "key": "E",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "피해-보너스 체력 전환율",
+        "value": "150%"
+      }
+    ],
+    "effect": "기본 효과 - 적의 정신체에 가한 피해가 그대로 보너스 체력으로 전환됩니다."
+  },
+  {
+    "id": "teamup-034",
+    "heroSlug": "emma-frost",
+    "name": "아이스드 아웃 다이아몬드",
+    "partnerSlug": "luna-snow",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "방벽 체력",
+        "value": "350"
+      },
+      {
+        "label": "방벽 크기",
+        "value": "반경 8m, 높이 3m, 60° 원뿔형 효과 범위"
+      },
+      {
+        "label": "피해",
+        "value": "50"
+      },
+      {
+        "label": "둔화율",
+        "value": "25%"
+      },
+      {
+        "label": "둔화 지속 시간",
+        "value": "2s"
+      }
+    ],
+    "effect": "기본 효과 - 전방으로 얼음 에너지를 방출해 적에게 피해를 주고 둔화시킵니다. 다이아몬드 형태에서는 냉기를 응축해 적의 공격과 이동을 막는 절대 영도 다이아몬드 방벽을 생성합니다."
+  },
+  {
+    "id": "teamup-035",
+    "heroSlug": "gambit",
+    "name": "유리한 확률",
+    "partnerSlug": "magneto",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "효과 범위",
+        "value": "5m 구형 반경"
+      },
+      {
+        "label": "피해",
+        "value": "50/s"
+      },
+      {
+        "label": "치유",
+        "value": "55/s"
+      }
+    ],
+    "effect": "기본 효과 - 자성을 띤 카드 두 장을 전방으로 던집니다. 지형이나 캐릭터에 적중하면 두 카드가 자력으로 밀어내며 펼쳐져 일정 시간 동안 제자리에서 회전합니다. 닿은 아군은 치유하고, 적에게는 피해를 주며 띄웁니다."
+  },
+  {
+    "id": "teamup-036",
+    "heroSlug": "gambit",
+    "name": "반짝이는 지팡이",
+    "partnerSlug": "jubilee",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "2s"
+      },
+      {
+        "label": "피해",
+        "value": "45/s"
+      },
+      {
+        "label": "피해 범위",
+        "value": "5m 구형 반경"
+      },
+      {
+        "label": "치유",
+        "value": "70/s"
+      },
+      {
+        "label": "치유 범위",
+        "value": "8m 구형 반경"
+      }
+    ],
+    "effect": "기본 효과 - 불꽃 에너지로 강화된 봉을 회전시킵니다. 사방으로 퍼지는 불꽃이 주변 아군을 치유합니다. 동시에 봉이 근거리의 적에게 피해를 주며, 빠른 회전으로 대부분의 투사체 피해를 막아냅니다."
+  },
+  {
+    "id": "teamup-037",
+    "heroSlug": "gorr",
+    "name": "라그나로크",
+    "partnerSlug": "hela",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "45"
+      },
+      {
+        "label": "공격 범위",
+        "value": "5m 구형 반경"
+      },
+      {
+        "label": "비행 불가 지속 시간",
+        "value": "1s"
+      }
+    ],
+    "effect": "기본 효과 - 올 블랙을 낫으로 변형해 휩쓸기 공격을 가하는 새 스킬을 얻어, 근처 적에게 피해를 주고 잠시 비행 불가 상태로 만듭니다. 무기는 짧은 시간 동안 낫 형태를 유지합니다."
+  },
+  {
+    "id": "teamup-038",
+    "heroSlug": "gorr",
+    "name": "군체 의식",
+    "partnerSlug": "venom",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "발사: 40, 회수: 20"
+      },
+      {
+        "label": "사거리",
+        "value": "25m"
+      }
+    ],
+    "effect": "기본 효과 - 전방으로 심비오트 발톱을 발사하는 새 스킬을 얻어, 경로상의 적에게 관통 피해를 줍니다. 최대 거리에 도달하면 되돌아오며, 붙잡힌 적을 고르 쪽으로 띄워 끌어옵니다."
+  },
+  {
+    "id": "teamup-039",
+    "heroSlug": "groot",
+    "name": "야생의 벽",
+    "partnerSlug": "mantis",
+    "key": "C",
+    "cooldown": "10s",
+    "details": [
+      {
+        "label": "보너스 체력 획득량",
+        "value": "10 (1s마다; 버프 활성 중에만)"
+      },
+      {
+        "label": "치유",
+        "value": "20/s"
+      },
+      {
+        "label": "강화 범위",
+        "value": "15m 구형 반경"
+      },
+      {
+        "label": "장벽 체력",
+        "value": "200"
+      },
+      {
+        "label": "버프 지속 시간",
+        "value": "6s (각성 반경을 벗어나도 유지)"
+      }
+    ],
+    "effect": "기본 효과 - 범위 내 아군에게 지속 치유와 보너스 체력을 제공하는 야생의 벽을 소환합니다."
+  },
+  {
+    "id": "teamup-040",
+    "heroSlug": "groot",
+    "name": "버블 친구들",
+    "partnerSlug": "jeff-the-land-shark",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "버블 체력",
+        "value": "400"
+      },
+      {
+        "label": "버블 지속 시간",
+        "value": "4s"
+      },
+      {
+        "label": "치유",
+        "value": "40/s (사용 중)"
+      }
+    ],
+    "effect": "기본 효과 - 버블 보호막 안으로 몸을 숨겨 무적 상태가 되며, 자신에게 지속 치유를 부여합니다."
+  },
+  {
+    "id": "teamup-041",
+    "heroSlug": "hawkeye",
+    "name": "센본자쿠라 일격",
+    "partnerSlug": "psylocke",
+    "key": "좌클릭",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "화살 축적 간격",
+        "value": "0.09s"
+      },
+      {
+        "label": "확산 유형",
+        "value": "고정"
+      },
+      {
+        "label": "최대 축적 화살 수",
+        "value": "5"
+      },
+      {
+        "label": "피해",
+        "value": "화살당 33"
+      }
+    ],
+    "effect": "기본 효과 - 폭발 화살이 사이오닉 화살로 강화됩니다. 활을 당기는 동안 호크아이는 사이오닉 화살을 계속 추가로 모을 수 있습니다. 시위를 놓으면 모아 둔 화살을 모두 전방으로 빠르게 연속 발사합니다."
+  },
+  {
+    "id": "teamup-042",
+    "heroSlug": "hawkeye",
+    "name": "달빛 베기",
+    "partnerSlug": "cloak-and-dagger",
+    "key": "Shift",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "충격파 피해/치유",
+        "value": "65"
+      },
+      {
+        "label": "치유 증폭",
+        "value": "15%"
+      },
+      {
+        "label": "취약 효과",
+        "value": "15%"
+      },
+      {
+        "label": "상태 효과 지속 시간",
+        "value": "4s"
+      }
+    ],
+    "effect": "기본 효과 - 초승달 베기가 달빛 베기로 강화되어 빛나는 참격을 바깥으로 날립니다. 아군을 치유하고 치유를 증폭하며, 적에게는 피해를 주고 취약을 적용합니다."
+  },
+  {
+    "id": "teamup-043",
+    "heroSlug": "hela",
+    "name": "헬의 촉수",
+    "partnerSlug": "venom",
+    "key": "E",
+    "cooldown": "10s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "직격: 1, 효과 범위: 40"
+      },
+      {
+        "label": "효과 범위",
+        "value": "3m 구형 반경"
+      },
+      {
+        "label": "투사체 속도",
+        "value": "40m/s"
+      },
+      {
+        "label": "기절 지속 시간",
+        "value": "0.3s"
+      },
+      {
+        "label": "둔화율",
+        "value": "20%, 효과 범위 중심에서 2.5m 거리에서 40%로 증가"
+      },
+      {
+        "label": "최대 연결 거리",
+        "value": "5m"
+      },
+      {
+        "label": "최대 연결 지속 시간",
+        "value": "2s"
+      }
+    ],
+    "effect": "기본 효과 - 영혼 흡수자가 헬의 촉수로 바뀝니다. 적중 시 촉수가 주변 적을 충돌 지점으로 끌어당겨 연결하며, 벗어나려는 적을 둔화시킵니다."
+  },
+  {
+    "id": "teamup-044",
+    "heroSlug": "hela",
+    "name": "심해의 분노",
+    "partnerSlug": "namor",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [],
+    "effect": "기본 효과 - 헬라가 처치에 관여할 때마다 쓰러진 적의 위치에 언데드 몬스트로가 생성됩니다. 언데드 몬스트로가 있는 동안 꿰뚫는 밤을 사용하면 몬스트로가 가장 가까운 적에게 밤칼 가시를 뱉습니다."
+  },
+  {
+    "id": "teamup-045",
+    "heroSlug": "hulk",
+    "name": "야만의 강타",
+    "partnerSlug": "captain-america",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "도약 속도",
+        "value": "60m/s"
+      },
+      {
+        "label": "착지 피해",
+        "value": "40"
+      },
+      {
+        "label": "착지 피해 범위",
+        "value": "8m 구형 반경"
+      },
+      {
+        "label": "쿨타임 감소",
+        "value": "• 감마 폭발: 1s (400 HP에서 최대 3s) / • 파괴 불가 방어: 2s (400 HP에서 최대 5s) / • 방사능 봉쇄: 1s (400 HP에서 최대 3s)"
+      }
+    ],
+    "effect": "기본 효과 - 높이 도약해 땅을 내리찍어 적에게 피해를 주고, 남은 체력에 따라 다른 스킬의 쿨타임을 감소시킵니다."
+  },
+  {
+    "id": "teamup-046",
+    "heroSlug": "hulk",
+    "name": "감마 강속구",
+    "partnerSlug": "wolverine",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "6s"
+      },
+      {
+        "label": "이동 속도 증가",
+        "value": "25%"
+      },
+      {
+        "label": "공격 속도 증가",
+        "value": "25%"
+      }
+    ],
+    "effect": "기본 효과 - 발동 시 격노 상태에 돌입해 일정 시간 동안 이동 속도 증가와 공격 속도 증가를 얻습니다. 또한 분노의 상처 스킬이 해금되어, 체력이 일정 수치 이하로 떨어지면 일정 시간 동안 저지 불가 상태가 됩니다."
+  },
+  {
+    "id": "teamup-047",
+    "heroSlug": "human-torch",
+    "name": "불꽃 스파크",
+    "partnerSlug": "jubilee",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "피해",
+        "value": "투사체당 9"
+      },
+      {
+        "label": "투사체 생성 간격",
+        "value": "0.1s"
+      },
+      {
+        "label": "감지 범위",
+        "value": "구형 반경 10m"
+      }
+    ],
+    "effect": "기본 효과 - 바로 근처의 적을 자동으로 감지하고 추적형 불꽃 스파크를 발사해 체력을 깎아냅니다."
+  },
+  {
+    "id": "teamup-048",
+    "heroSlug": "human-torch",
+    "name": "폭풍의 점화",
+    "partnerSlug": "storm",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "충격 피해",
+        "value": "30"
+      },
+      {
+        "label": "지속 피해",
+        "value": "0.2s마다 5 피해"
+      },
+      {
+        "label": "소용돌이 지속 시간",
+        "value": "4s"
+      },
+      {
+        "label": "소용돌이 범위",
+        "value": "구형 반경 5m"
+      }
+    ],
+    "effect": "기본 효과 - 폭풍처럼 휘몰아치는 화염을 전방으로 방출해, 착탄 시 적에게 지속 피해를 입히고 끌어당기는 화염 소용돌이를 생성합니다."
+  },
+  {
+    "id": "teamup-049",
+    "heroSlug": "invisible-woman",
+    "name": "단결한 남매",
+    "partnerSlug": "human-torch",
+    "key": "우클릭",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "투사체 피해 증가",
+        "value": "20%"
+      },
+      {
+        "label": "보호막 체력",
+        "value": "300"
+      }
+    ],
+    "effect": "기본 효과 - 지정한 아군에게 화염 방패를 생성해 들어오는 피해를 막고 주변 모두에게 지속 치유 오라를 제공합니다. 아군이 화염 방패를 통과시켜 쏜 투사체는 피해 증가 효과를 받습니다. 방패를 통과하는 적은 둔화됩니다."
+  },
+  {
+    "id": "teamup-050",
+    "heroSlug": "invisible-woman",
+    "name": "퍼스트 패밀리",
+    "partnerSlug": "mister-fantastic",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "치유",
+        "value": "25/s"
+      },
+      {
+        "label": "이동 속도 증가",
+        "value": "1.2m/s"
+      },
+      {
+        "label": "지속 시간",
+        "value": "4s"
+      }
+    ],
+    "effect": "기본 효과 - 인비저블 우먼과 주변 아군이 투명 상태가 되어 치유와 이동 속도 증가를 얻습니다. 피해를 받거나 지속 시간이 끝나면 효과가 종료됩니다. 일정 시간 전투에서 벗어나면 다시 투명 상태가 됩니다."
+  },
+  {
+    "id": "teamup-051",
+    "heroSlug": "iron-fist",
+    "name": "강철과 바위",
+    "partnerSlug": "the-thing",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "어퍼컷 피해",
+        "value": "45"
+      },
+      {
+        "label": "어퍼컷 범위",
+        "value": "5m"
+      },
+      {
+        "label": "돌려차기 피해",
+        "value": "45"
+      },
+      {
+        "label": "돌려차기 범위",
+        "value": "5m"
+      }
+    ],
+    "effect": "기본 효과 - 강력한 어퍼컷으로 적을 띄웁니다. 버튼을 떼면 이어서 휩쓸기 발차기를 할 수 있습니다."
+  },
+  {
+    "id": "teamup-052",
+    "heroSlug": "iron-fist",
+    "name": "구미호 장",
+    "partnerSlug": "white-fox",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "치유",
+        "value": "타격당 6"
+      },
+      {
+        "label": "치유 효과 범위",
+        "value": "6m 구형 반경"
+      }
+    ],
+    "effect": "기본 효과 - 일지충권으로 적을 타격하면 근처 아군에게 순간 치유를 제공합니다."
+  },
+  {
+    "id": "teamup-053",
+    "heroSlug": "iron-man",
+    "name": "감마 돌진",
+    "partnerSlug": "hulk",
+    "key": "E",
+    "cooldown": null,
+    "details": [],
+    "effect": "기본 효과 - 장갑 오버드라이브가 감마 오버드라이브로 업그레이드됩니다. 이 상태에서 아이언맨은 감마 보호막을 얻고 훨씬 강력한 리펄서 블래스트와 유니빔을 발사할 수 있습니다."
+  },
+  {
+    "id": "teamup-054",
+    "heroSlug": "iron-man",
+    "name": "천둥 오버드라이브",
+    "partnerSlug": "thor",
+    "key": "우클릭",
+    "cooldown": null,
+    "details": [],
+    "effect": "기본 효과 - 장갑 오버드라이브 상태 여부와 관계없이 유니빔이 강화됩니다. 발사 시 불안정한 번개 에너지 고리가 형성되어 광선 가장자리 근처의 적에게 추가 피해를 입힙니다."
+  },
+  {
+    "id": "teamup-055",
+    "heroSlug": "jeff-the-land-shark",
+    "name": "심해의 수호자",
+    "partnerSlug": "venom",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "지속 치유",
+        "value": "45/s"
+      },
+      {
+        "label": "연결 범위",
+        "value": "구형 반경 15m"
+      },
+      {
+        "label": "연결 지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "즉시 치유",
+        "value": "45"
+      },
+      {
+        "label": "초과 치유-보너스 체력 비율",
+        "value": "0.5"
+      }
+    ],
+    "effect": "기본 효과 - 치유 촉수를 발사합니다. 연결된 아군은 지속 치유를 받으며, 초과 치유량은 보너스 체력으로 전환됩니다."
+  },
+  {
+    "id": "teamup-056",
+    "heroSlug": "jeff-the-land-shark",
+    "name": "미스터 풀의 차원 간 장난감 상자",
+    "partnerSlug": "deadpool",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "치유",
+        "value": "30/s"
+      },
+      {
+        "label": "효과 범위",
+        "value": "구형 반경 6m"
+      },
+      {
+        "label": "인형 지속 시간",
+        "value": "5s"
+      }
+    ],
+    "effect": "기본 효과 - 데드풀 인형을 뱉어내는 새로운 능력을 얻습니다. 인형은 주변 적을 지속적으로 도발하며 주변 아군에게 치유 안개를 뿌립니다."
+  },
+  {
+    "id": "teamup-057",
+    "heroSlug": "jubilee",
+    "name": "지옥불 스파크",
+    "partnerSlug": "the-hood",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "피해",
+        "value": "발당 5"
+      },
+      {
+        "label": "거리별 피해 감소",
+        "value": "10m부터 감소 시작, 30m에서 70%"
+      },
+      {
+        "label": "치유",
+        "value": "발당 6.5"
+      },
+      {
+        "label": "체력 회복",
+        "value": "적중당 2"
+      }
+    ],
+    "effect": "기본 효과 - 공격 속도가 강화되면 에너지 플라즈모이드가 즉발(히트스캔) 공격으로 바뀌며, 적중 시 자신을 치유하고 치명타를 입힐 수 있습니다."
+  },
+  {
+    "id": "teamup-058",
+    "heroSlug": "jubilee",
+    "name": "흡혈귀 혈족",
+    "partnerSlug": "blade",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "6s"
+      },
+      {
+        "label": "흡혈 비율",
+        "value": "30%"
+      },
+      {
+        "label": "지속 치유",
+        "value": "15/s"
+      },
+      {
+        "label": "흡혈 영역 범위",
+        "value": "구형 반경 12m"
+      }
+    ],
+    "effect": "기본 효과 - 주변 아군에게 지속 치유 효과를 부여하는 흡혈 영역을 설치합니다. 영역 안에 있는 아군은 적을 공격할 때 흡혈 효과를 얻습니다."
+  },
+  {
+    "id": "teamup-059",
+    "heroSlug": "loki",
+    "name": "악당의 환영",
+    "partnerSlug": "hela",
+    "key": "C",
+    "cooldown": "30s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "6s"
+      }
+    ],
+    "effect": "기본 효과 - 쓰러진 영웅(아군 또는 적)을 대상으로 하는 새로운 능력을 얻어, 로키가 일정 시간 동안 그 모습으로 변신할 수 있습니다(궁극기는 사용 불가)."
+  },
+  {
+    "id": "teamup-060",
+    "heroSlug": "loki",
+    "name": "활기찬 생명력",
+    "partnerSlug": "mantis",
+    "key": "Shift",
+    "cooldown": "30s",
+    "details": [
+      {
+        "label": "피해 증가",
+        "value": "15%"
+      },
+      {
+        "label": "지속 치유",
+        "value": "100/s"
+      },
+      {
+        "label": "효과 범위",
+        "value": "반경 6.5m, 높이 2m의 원통형 효과 범위"
+      },
+      {
+        "label": "룬 지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "룬 체력",
+        "value": "100"
+      },
+      {
+        "label": "받은 피해-치유 전환율",
+        "value": "30%"
+      }
+    ],
+    "effect": "기본 효과 - 재생의 영역이 범위 안의 아군에게 피해 증가 효과를 부여하며, 룬석이 정신 촉매 작용을 일으켜 영역의 반경이 확장됩니다."
+  },
+  {
+    "id": "teamup-061",
+    "heroSlug": "luna-snow",
+    "name": "아틀라스 결속",
+    "partnerSlug": "white-fox",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "35"
+      },
+      {
+        "label": "치유",
+        "value": "70"
+      },
+      {
+        "label": "이동 속도",
+        "value": "60m/s"
+      },
+      {
+        "label": "최대 이동 거리",
+        "value": "40m"
+      },
+      {
+        "label": "피해 범위 반경",
+        "value": "3m"
+      },
+      {
+        "label": "매혹 범위 반경",
+        "value": "0.8m"
+      },
+      {
+        "label": "매혹 지속 시간",
+        "value": "0.35s"
+      }
+    ],
+    "effect": "기본 효과 - 전방으로 영혼 여우를 방출해 경로상의 적을 매혹하고 아군을 치유합니다."
+  },
+  {
+    "id": "teamup-062",
+    "heroSlug": "luna-snow",
+    "name": "이중성의 춤",
+    "partnerSlug": "adam-warlock",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "최대 연결 거리",
+        "value": "25m"
+      },
+      {
+        "label": "연결 감지 범위",
+        "value": "20m 구형 반경"
+      },
+      {
+        "label": "연결 지속 시간",
+        "value": "6s"
+      },
+      {
+        "label": "피해-자가 치유 전환율",
+        "value": "50%"
+      },
+      {
+        "label": "치유-자가 치유 전환율",
+        "value": "25%"
+      }
+    ],
+    "effect": "기본 효과 - 영혼의 결속을 시전해 범위 내 모든 캐릭터를 연결합니다. 연결된 적을 공격하거나 연결된 아군을 치유하면 자신의 체력이 회복됩니다."
+  },
+  {
+    "id": "teamup-063",
+    "heroSlug": "magik",
+    "name": "사이토락의 사슬",
+    "partnerSlug": "doctor-strange",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "지속 피해",
+        "value": "10/s"
+      },
+      {
+        "label": "둔화율",
+        "value": "0%에서 시작해 대상 간 거리 5m에서 40%까지 증가"
+      },
+      {
+        "label": "사슬 지속 시간",
+        "value": "4s"
+      }
+    ],
+    "effect": "기본 효과 - 사이토락의 사슬로 두 적을 동시에 묶어 두 대상을 같은 위치로 끌어당길 수 있습니다."
+  },
+  {
+    "id": "teamup-064",
+    "heroSlug": "magik",
+    "name": "공허의 오망성",
+    "partnerSlug": "the-hood",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "공허 마법진 범위",
+        "value": "구형 반경 8m"
+      },
+      {
+        "label": "공허 마법진 지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "디딤 원반 충전 회복",
+        "value": "3s"
+      }
+    ],
+    "effect": "기본 효과 - 공허 마법진 안에서 디딤 원반을 사용하면 에너지가 반환되며, 디딤 원반을 사용할 때마다 림보 악마를 소환합니다."
+  },
+  {
+    "id": "teamup-065",
+    "heroSlug": "magneto",
+    "name": "금속의 혼돈",
+    "partnerSlug": "scarlet-witch",
+    "key": "C",
+    "cooldown": "18s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "피해",
+        "value": "투사체: 45, 효과 범위: 35"
+      },
+      {
+        "label": "투사체 거리별 피해 감소",
+        "value": "20m부터 감소 시작, 30m에서 70%"
+      },
+      {
+        "label": "효과 범위 거리별 피해 감소",
+        "value": "효과 범위 중심에서 3m 지점에서 70%로 감소"
+      },
+      {
+        "label": "투사체 속도",
+        "value": "120m/s"
+      }
+    ],
+    "effect": "기본 효과 - 거대한 혼돈의 대검을 앞으로 휘둘러 피해를 입힙니다."
+  },
+  {
+    "id": "teamup-066",
+    "heroSlug": "magneto",
+    "name": "자기 공명",
+    "partnerSlug": "emma-frost",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "분신 체력",
+        "value": "300"
+      },
+      {
+        "label": "분신 피해 비율",
+        "value": "50%"
+      },
+      {
+        "label": "분신 지속 시간",
+        "value": "6s"
+      }
+    ],
+    "effect": "기본 효과 - 적의 시점에서 매그니토의 움직임과 능력 사용을 완벽하게 따라 하는 자기 투영체를 만들어 냅니다."
+  },
+  {
+    "id": "teamup-067",
+    "heroSlug": "mantis",
+    "name": "별꽃",
+    "partnerSlug": "star-lord",
+    "key": "우클릭",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "재시전 치유",
+        "value": "10/s + 최대 체력의 3.5%/s"
+      },
+      {
+        "label": "범위 즉시 치유",
+        "value": "10 (발동 시)"
+      },
+      {
+        "label": "재시전 시 범위 즉시 치유",
+        "value": "15 (발동 시)"
+      },
+      {
+        "label": "범위 지속 치유",
+        "value": "7.5/s + 최대 체력의 1.75%/s"
+      },
+      {
+        "label": "치유 범위",
+        "value": "8m 구형 반경"
+      },
+      {
+        "label": "치유의 꽃 기본 지속 치유",
+        "value": "10/s + 최대 체력의 3%/s"
+      }
+    ],
+    "effect": "기본 효과 - 효과가 적용된 아군에게 치유의 꽃을 다시 시전하면 치유 오라가 강화되어 주변으로 퍼집니다."
+  },
+  {
+    "id": "teamup-068",
+    "heroSlug": "mantis",
+    "name": "생명의 계약",
+    "partnerSlug": "adam-warlock",
+    "key": "패시브(자동)",
+    "cooldown": "90s",
+    "details": [
+      {
+        "label": "치유",
+        "value": "30/s"
+      },
+      {
+        "label": "치유 범위",
+        "value": "8m 구형 반경"
+      },
+      {
+        "label": "치유의 꽃 지속 치유",
+        "value": "12/s + 최대 체력의 3%/s"
+      },
+      {
+        "label": "자연의 은총 치유",
+        "value": "17.5/s (자연의 분노 활성화 중에만)"
+      }
+    ],
+    "effect": "기본 효과 - 쓰러지면 맨티스는 영혼 상태로 자유롭게 이동하며 근처 아군을 치유하고, 원하는 위치에서 육체를 재구성할 수 있습니다. 자연의 분노를 사용한 후에는 자연의 은총 효과가 강화되어 치유량이 증가합니다."
+  },
+  {
+    "id": "teamup-069",
+    "heroSlug": "mister-fantastic",
+    "name": "판타스틱 증폭기",
+    "partnerSlug": "rocket-raccoon",
+    "key": "F",
+    "cooldown": "8s",
+    "details": [
+      {
+        "label": "최대 탄성",
+        "value": "200"
+      },
+      {
+        "label": "탄성 감소",
+        "value": "12.5/s (팽창 상태 중)"
+      }
+    ],
+    "effect": "기본 효과 - 판타스틱 증폭기를 장착합니다. 미스터 판타스틱의 최대 탄성이 증가하며, 직접 팽창 상태에 돌입할 수 있습니다."
+  },
+  {
+    "id": "teamup-070",
+    "heroSlug": "mister-fantastic",
+    "name": "박살 연구부",
+    "partnerSlug": "the-thing",
+    "key": "C",
+    "cooldown": null,
+    "details": [],
+    "effect": "기본 효과 - 전환형 능력입니다. 난투 자세에서는 늘어나는 펀치가 충전형 능력이 되어 전방으로 난투 펀치를 날립니다. 적을 적중하면 가한 피해에 비례해 보너스 체력을 얻습니다."
+  },
+  {
+    "id": "teamup-071",
+    "heroSlug": "moon-knight",
+    "name": "빛나는 달",
+    "partnerSlug": "cloak-and-dagger",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "돌진 지속 시간",
+        "value": "0.35s"
+      },
+      {
+        "label": "돌진 거리",
+        "value": "15m"
+      },
+      {
+        "label": "돌진 속도",
+        "value": "50m/s"
+      },
+      {
+        "label": "은폐 지속 시간",
+        "value": "0.25s"
+      },
+      {
+        "label": "파동 치유",
+        "value": "55"
+      },
+      {
+        "label": "치유 파동 범위",
+        "value": "구형 반경 5m"
+      }
+    ],
+    "effect": "기본 효과 - 위상 변화 상태가 되어 전방으로 돌진합니다. 돌진이 끝나면 빛 에너지 치유 파동을 방출해 문나이트와 주변 아군을 치유합니다."
+  },
+  {
+    "id": "teamup-072",
+    "heroSlug": "moon-knight",
+    "name": "블러드 문",
+    "partnerSlug": "elsa-bloodstone",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "덫 체력",
+        "value": "100"
+      },
+      {
+        "label": "앙크 체력",
+        "value": "125"
+      },
+      {
+        "label": "발톱 피해",
+        "value": "70"
+      },
+      {
+        "label": "발톱 폭발 범위",
+        "value": "구형 반경 5m"
+      }
+    ],
+    "effect": "기본 효과 - 앙크 덫을 설치합니다. 덫이 발동되면 그 위치에 앙크가 생성되며, 콘슈의 발톱 하나를 소환해 적을 덫의 중심으로 띄워 보냅니다."
+  },
+  {
+    "id": "teamup-073",
+    "heroSlug": "namor",
+    "name": "감마 몬스트로",
+    "partnerSlug": "hulk",
+    "key": "C",
+    "cooldown": "25s",
+    "details": [],
+    "effect": "기본 효과 - 가장 가까운 적에게 지속 피해를 입히는 감마 몬스트로를 추가로 소환합니다. 치명타를 적중시키면 감마 몬스트로의 공격 속도가 증가합니다. 일곱 바다의 분노로 적을 맞히면 감마 몬스트로가 강력한 광선을 발사합니다."
+  },
+  {
+    "id": "teamup-074",
+    "heroSlug": "namor",
+    "name": "서늘한 매력",
+    "partnerSlug": "luna-snow",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "75"
+      },
+      {
+        "label": "둔화율",
+        "value": "25%"
+      },
+      {
+        "label": "둔화 지속 시간",
+        "value": "2s"
+      },
+      {
+        "label": "파도 크기",
+        "value": "너비: 6m, 높이: 3m"
+      },
+      {
+        "label": "파도 이동 속도",
+        "value": "17.5m/s"
+      },
+      {
+        "label": "파도 최대 이동 시간",
+        "value": "1s"
+      }
+    ],
+    "effect": "기본 효과 - 전방으로 서리 파도를 소환하는 새로운 스킬을 얻습니다. 파도는 적중한 모든 적에게 피해를 입히고 밀쳐내며 둔화를 부여합니다. 또한 몬스트로 스폰이 얼어붙은 스폰으로 대체되며, 얼어붙은 스폰은 적중한 적에게 둔화를 부여합니다."
+  },
+  {
+    "id": "teamup-075",
+    "heroSlug": "peni-parker",
+    "name": "비브라늄 메카",
+    "partnerSlug": "black-panther",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "방벽 체력",
+        "value": "300"
+      },
+      {
+        "label": "사이버 거미줄 뭉치 발사 간격",
+        "value": "0.18s"
+      }
+    ],
+    "effect": "기본 효과 - 활성화 시 전방에 비브라늄 방패를 펼치며, 일정 시간 동안 사이버 거미줄 뭉치의 공격 속도가 증가합니다."
+  },
+  {
+    "id": "teamup-076",
+    "heroSlug": "peni-parker",
+    "name": "로켓 네트워크",
+    "partnerSlug": "rocket-raccoon",
+    "key": "C",
+    "cooldown": "25s",
+    "details": [
+      {
+        "label": "보조 둥지 체력",
+        "value": "250"
+      },
+      {
+        "label": "장갑 팩 생성 간격",
+        "value": "3s"
+      },
+      {
+        "label": "장갑 팩 보너스 체력",
+        "value": "50 (획득 시)"
+      }
+    ],
+    "effect": "기본 효과 - 주기적으로 거미 드론과 보너스 체력을 부여하는 장갑 팩을 떨어뜨리는 장갑 거미 둥지를 설치합니다."
+  },
+  {
+    "id": "teamup-077",
+    "heroSlug": "phoenix",
+    "name": "생명의 순환",
+    "partnerSlug": "hela",
+    "key": "우클릭",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "피해",
+        "value": "첫 번째 폭발: 15, 후속 폭발: 20"
+      },
+      {
+        "label": "기절 지속 시간",
+        "value": "0.3s"
+      },
+      {
+        "label": "치유 감소",
+        "value": "40%"
+      },
+      {
+        "label": "치유 감소 지속 시간",
+        "value": "3s"
+      },
+      {
+        "label": "적중 시 부여 스파크",
+        "value": "1"
+      }
+    ],
+    "effect": "기본 효과 - 사이오닉 폭발이 피닉스 저승불로 대체되어 지정한 위치에 염동력 표식을 남깁니다. 적중 시 먼저 작은 폭발이 일어나 적을 잠시 기절시키고, 이어서 두 번의 큰 폭발이 치유 감소 효과를 부여합니다. 모든 폭발은 적에게 스파크를 부여합니다."
+  },
+  {
+    "id": "teamup-078",
+    "heroSlug": "phoenix",
+    "name": "염동력 난타",
+    "partnerSlug": "rogue",
+    "key": "C",
+    "cooldown": "10s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "55"
+      },
+      {
+        "label": "연쇄 공격 탐지 범위",
+        "value": "8m 구형 반경"
+      },
+      {
+        "label": "체력 회복량",
+        "value": "적중당 50"
+      },
+      {
+        "label": "최대 연쇄 공격 횟수",
+        "value": "3"
+      },
+      {
+        "label": "적중 시 부여 스파크",
+        "value": "1"
+      }
+    ],
+    "effect": "기본 효과 - 전방으로 염동력 충격파를 발사합니다. 적중하면 피닉스 포스가 적에게 돌진해 강력한 주먹을 날립니다. 주변에 다른 대상이 있으면 피닉스 포스가 그들 사이를 빠르게 순간이동하며 공격해 각 대상에게 스파크를 부여하고 피닉스를 치유합니다."
+  },
+  {
+    "id": "teamup-079",
+    "heroSlug": "psylocke",
+    "name": "정신 투사",
+    "partnerSlug": "emma-frost",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "분신 피해 비율",
+        "value": "15%"
+      },
+      {
+        "label": "분신 지속 시간",
+        "value": "3s"
+      },
+      {
+        "label": "날개 수리검 보너스 체력 획득",
+        "value": "적중당 12 (투척 시)"
+      }
+    ],
+    "effect": "기본 효과 - 자동으로 전방으로 돌진하며 사이 블레이드 돌진을 사용하는 환영 분신을 만들고, 사일록은 은신 상태에 돌입합니다. 사일록이 공격하면 환영이 그 공격을 따라 합니다."
+  },
+  {
+    "id": "teamup-080",
+    "heroSlug": "psylocke",
+    "name": "빛과 어둠의 다트",
+    "partnerSlug": "cloak-and-dagger",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "빛의 단검 피해",
+        "value": "30"
+      },
+      {
+        "label": "체력 회복",
+        "value": "적중당 20"
+      },
+      {
+        "label": "그림자 영역 범위",
+        "value": "6m 구형 반경"
+      },
+      {
+        "label": "그림자 영역 지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "사이오닉 석궁 피해",
+        "value": "탄환당 13"
+      }
+    ],
+    "effect": "기본 효과 - 사방으로 빛의 다트를 고리 형태로 발사해 적에게 피해를 주고 적중 시 사일록의 체력을 회복하며, 그림자 영역을 남깁니다. 영역 안에 잠시 머무르면 다시 은신 상태에 돌입합니다."
+  },
+  {
+    "id": "teamup-081",
+    "heroSlug": "rocket-raccoon",
+    "name": "포유류의 결속",
+    "partnerSlug": "squirrel-girl",
+    "key": "C",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "충전 횟수",
+        "value": "2"
+      },
+      {
+        "label": "충전 시간",
+        "value": "충전당 20s"
+      },
+      {
+        "label": "도토리 개수",
+        "value": "5"
+      },
+      {
+        "label": "도토리 치유량",
+        "value": "30"
+      },
+      {
+        "label": "전체 쿨타임 감소",
+        "value": "0.5s"
+      }
+    ],
+    "effect": "기본 효과 - 강화된 생명력 도토리 한 무더기를 흩뿌립니다. 바닥에 떨어진 도토리는 주울 수 있습니다. 직접 맞거나 주우면 아군은 순간 치유와 전체 쿨타임 감소 효과를 받습니다."
+  },
+  {
+    "id": "teamup-082",
+    "heroSlug": "rocket-raccoon",
+    "name": "행성 X 친구들",
+    "partnerSlug": "groot",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "즉시 피해",
+        "value": "발당 18"
+      },
+      {
+        "label": "지속 피해",
+        "value": "5/s"
+      },
+      {
+        "label": "치유",
+        "value": "발당 20"
+      },
+      {
+        "label": "보너스 체력 획득",
+        "value": "발당 20"
+      },
+      {
+        "label": "발사 간격",
+        "value": "0.2s"
+      },
+      {
+        "label": "포자 폭발 범위",
+        "value": "5m 구형 반경"
+      }
+    ],
+    "effect": "기본 효과 - 포격 모드를 가시 포자 발사로 전환합니다. 포자가 착탄하면 범위 내 적에게 지속 피해를 주고, 아군을 치유하며 보너스 체력을 부여합니다."
+  },
+  {
+    "id": "teamup-083",
+    "heroSlug": "rogue",
+    "name": "미스터 앤 미세스 X",
+    "partnerSlug": "gambit",
+    "key": "C",
+    "cooldown": "30s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "충격파 피해",
+        "value": "5 + 최대 체력의 1%"
+      },
+      {
+        "label": "충격파 치유",
+        "value": "15"
+      },
+      {
+        "label": "충격파 범위",
+        "value": "구형 반경 8m"
+      }
+    ],
+    "effect": "기본 효과 - 활성화 후 모든 공격이 운동 에너지 폭발을 일으켜 주변 적에게 광역 피해를 입히는 동시에 주변 아군을 치유합니다."
+  },
+  {
+    "id": "teamup-084",
+    "heroSlug": "rogue",
+    "name": "폭발성 얽힘",
+    "partnerSlug": "magneto",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "방어 태세 전방 피해 감소",
+        "value": "75%"
+      }
+    ],
+    "effect": "기본 효과 - 방어 태세가 강화됩니다. 능력을 사용하면 자기장이 펼쳐져 방어 태세의 피해 감소율이 크게 증가합니다. 또한 자기장이 흡수한 모든 피해는 곧바로 남부식 난투의 피해로 전환됩니다."
+  },
+  {
+    "id": "teamup-085",
+    "heroSlug": "scarlet-witch",
+    "name": "소서러 슈프림즈",
+    "partnerSlug": "doctor-strange",
+    "key": "C",
+    "cooldown": "8s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "발사 간격",
+        "value": "0.12s"
+      }
+    ],
+    "effect": "기본 효과 - 쿨타임 기반 스킬. 지하 세계의 폭발이 신비한 폭발로 대체됩니다. 공격 버튼을 누르고 있으면 대상 방향으로 마법 미사일을 쉴 새 없이 빠르게 연사합니다."
+  },
+  {
+    "id": "teamup-086",
+    "heroSlug": "scarlet-witch",
+    "name": "마법 불꽃놀이",
+    "partnerSlug": "jubilee",
+    "key": "E",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "폭발 피해",
+        "value": "52"
+      },
+      {
+        "label": "폭발 범위",
+        "value": "6m 구형 반경"
+      },
+      {
+        "label": "취약 효과",
+        "value": "15%"
+      },
+      {
+        "label": "취약 지속 시간",
+        "value": "2s"
+      }
+    ],
+    "effect": "기본 효과 - 어둠의 봉인 역장에 불꽃놀이 에너지를 주입해 플라즈모이드 봉인으로 바꾸어 추가 폭발을 일으킬 수 있습니다. 플라즈모이드 봉인이 펼쳐진 후 유지되는 동안 E 키를 다시 누르면 불꽃놀이가 폭발해 피해를 주고 취약을 부여합니다."
+  },
+  {
+    "id": "teamup-087",
+    "heroSlug": "spider-man",
+    "name": "심비오트 결속",
+    "partnerSlug": "venom",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "즉시 피해",
+        "value": "30"
+      },
+      {
+        "label": "추가 피해",
+        "value": "적중당 10"
+      },
+      {
+        "label": "추가 피해 간격",
+        "value": "1s"
+      },
+      {
+        "label": "피해 감소",
+        "value": "90% (사용 중)"
+      },
+      {
+        "label": "피해 범위",
+        "value": "5m 구형 반경"
+      }
+    ],
+    "effect": "기본 효과 - 베놈이 심비오트의 일부를 스파이더맨과 공유해 심비오트 능력을 활성화합니다. 스파이더맨은 심비오트를 폭발하는 가시로 변환해 주변 적에게 피해를 주고 끊임없이 밀쳐냅니다."
+  },
+  {
+    "id": "teamup-088",
+    "heroSlug": "spider-man",
+    "name": "파커 파워업",
+    "partnerSlug": "peni-parker",
+    "key": "C",
+    "cooldown": "10s",
+    "details": [
+      {
+        "label": "거미줄 폭탄 피해",
+        "value": "50"
+      },
+      {
+        "label": "보너스 체력 획득량",
+        "value": "50 (사용 시)"
+      },
+      {
+        "label": "카운트다운 시간",
+        "value": "2s"
+      }
+    ],
+    "effect": "기본 효과 - 페니 파커가 스파이더맨을 위해 끈끈한 스파이더 폭탄을 만들어 줍니다! 폭탄을 점화한 뒤 시간이 다 되기 전에 던지면 폭발해 주변 적에게 피해를 주고 스파이더 트레이서를 부착합니다. 제때 던지지 못하면 스파이더맨에게서 폭발하며, 거미줄 뭉치 탄이 모두 재충전됩니다."
+  },
+  {
+    "id": "teamup-089",
+    "heroSlug": "squirrel-girl",
+    "name": "다람쥐 미사일",
+    "partnerSlug": "iron-man",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "70"
+      },
+      {
+        "label": "폭발 범위",
+        "value": "구형 반경 8m"
+      },
+      {
+        "label": "투사체 속도",
+        "value": "40m/s"
+      }
+    ],
+    "effect": "기본 효과 - 스쿼럴 걸이 다람쥐 미사일 능력을 얻습니다. 다람쥐 한 마리가 아이언맨의 나노테크 장갑을 타고 유도 미사일처럼 날아가게 합니다. 명중하면 다람쥐는 불꽃 폭발 직전에 도망칩니다."
+  },
+  {
+    "id": "teamup-090",
+    "heroSlug": "squirrel-girl",
+    "name": "ESU 동문",
+    "partnerSlug": "spider-man",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "효과 범위 피해",
+        "value": "65"
+      },
+      {
+        "label": "효과 범위",
+        "value": "구형 반경 4m"
+      },
+      {
+        "label": "둔화율",
+        "value": "35%"
+      },
+      {
+        "label": "둔화 지속 시간",
+        "value": "3s"
+      }
+    ],
+    "effect": "기본 효과 - 스파이더맨이 스쿼럴 걸에게 거미줄 폭탄을 줍니다. 이를 던지면 지형이나 적에 닿을 때 폭발해, 폭발에 휘말린 적에게 피해를 주고 잠시 둔화를 겁니다."
+  },
+  {
+    "id": "teamup-091",
+    "heroSlug": "star-lord",
+    "name": "식물 탄약",
+    "partnerSlug": "groot",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "덫 피해",
+        "value": "30"
+      },
+      {
+        "label": "속박 지속 시간",
+        "value": "0.8s"
+      },
+      {
+        "label": "생성되는 덫 수",
+        "value": "5"
+      },
+      {
+        "label": "덫 생성 지연",
+        "value": "1s"
+      },
+      {
+        "label": "덫 활성 지속 시간",
+        "value": "4s"
+      }
+    ],
+    "effect": "기본 효과 - 뒤틀린 가시 씨앗을 전방으로 던지는 새로운 능력을 얻습니다. 씨앗은 착지하면 빠르게 싹을 틔우고 뿌리를 내려 주변에 가시 덫을 생성합니다. 덫을 밟은 적은 피해를 받고 속박됩니다."
+  },
+  {
+    "id": "teamup-092",
+    "heroSlug": "star-lord",
+    "name": "별의 영혼",
+    "partnerSlug": "adam-warlock",
+    "key": "C",
+    "cooldown": "순간이동: 30s / 부활: 120s / 수동 취소: 5s",
+    "details": [],
+    "effect": "기본 효과 - 염동력 비콘을 설치하는 새로운 능력을 얻습니다. 맵 어디서든 비콘을 설치한 위치로 순간이동해 돌아올 수 있습니다. 처치당하면 스타 로드는 고치에 감싸여 염동력 비콘 위치에서 부활합니다."
+  },
+  {
+    "id": "teamup-093",
+    "heroSlug": "storm",
+    "name": "천둥의 신들",
+    "partnerSlug": "thor",
+    "key": "좌클릭",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "피해",
+        "value": "발당 45"
+      },
+      {
+        "label": "거리별 피해 감소",
+        "value": "20m부터 감소 시작, 40m에서 75%"
+      },
+      {
+        "label": "효과 범위 피해",
+        "value": "15"
+      },
+      {
+        "label": "효과 범위",
+        "value": "3m 구형 반경"
+      },
+      {
+        "label": "치명타",
+        "value": "있음"
+      }
+    ],
+    "effect": "기본 효과 - 바람의 칼날이 대상에 적중하면 폭발하는 즉발(히트스캔) 광선으로 강화됩니다."
+  },
+  {
+    "id": "teamup-094",
+    "heroSlug": "storm",
+    "name": "운명의 아가리",
+    "partnerSlug": "jeff-the-land-shark",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "치유",
+        "value": "자신: 35/s, 아군: 25/s"
+      },
+      {
+        "label": "치유 범위",
+        "value": "15m 구형 반경"
+      },
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      }
+    ],
+    "effect": "기본 효과 - 폭우를 쏟아부어 자신과 팀원을 지속적으로 치유합니다."
+  },
+  {
+    "id": "teamup-095",
+    "heroSlug": "the-hood",
+    "name": "혼돈의 충돌",
+    "partnerSlug": "scarlet-witch",
+    "key": "C",
+    "cooldown": "16s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "0.5s마다 20 피해"
+      },
+      {
+        "label": "최대 구역 생성 거리",
+        "value": "20m"
+      },
+      {
+        "label": "최대 순간이동 거리",
+        "value": "30m"
+      },
+      {
+        "label": "구역 지속 시간",
+        "value": "4s"
+      },
+      {
+        "label": "구역 범위",
+        "value": "5m 구형 반경"
+      },
+      {
+        "label": "적 피해/치유 감소",
+        "value": "적중당 5%"
+      },
+      {
+        "label": "최대 피해/치유 감소",
+        "value": "40%"
+      }
+    ],
+    "effect": "기본 효과 - 새로운 능력을 얻습니다. 적에게 지속적으로 피해를 주고 중첩되는 피해 감소 및 치유 감소 효과를 부여하는 비전 구역을 생성합니다. 다시 사용하면 구역 중심으로 순간이동합니다."
+  },
+  {
+    "id": "teamup-096",
+    "heroSlug": "the-hood",
+    "name": "삭월의 그림자",
+    "partnerSlug": "moon-knight",
+    "key": "E",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "방벽 체력",
+        "value": "200"
+      },
+      {
+        "label": "폭발 피해",
+        "value": "30"
+      },
+      {
+        "label": "폭발 범위",
+        "value": "8m 구형 반경"
+      },
+      {
+        "label": "적 피해/치유 감소",
+        "value": "35%"
+      }
+    ],
+    "effect": "기본 효과 - 심연의 장막이 투사체를 막는 달의 방벽으로 강화됩니다. 방벽이 파괴되면 폭발하여 적에게 피해를 주고 피해 감소 및 치유 감소 효과를 부여합니다. 통과하는 적은 피해를 입고 잠시 실명 상태가 됩니다."
+  },
+  {
+    "id": "teamup-097",
+    "heroSlug": "the-punisher",
+    "name": "야수의 사냥",
+    "partnerSlug": "daredevil",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "심판 피해",
+        "value": "발당 20"
+      },
+      {
+        "label": "구원 피해",
+        "value": "펠릿당 10"
+      }
+    ],
+    "effect": "기본 효과 - 피해 증가 효과가 있는 관통탄을 발사합니다."
+  },
+  {
+    "id": "teamup-098",
+    "heroSlug": "the-punisher",
+    "name": "탄약 과부하",
+    "partnerSlug": "rocket-raccoon",
+    "key": "C",
+    "cooldown": "25s",
+    "details": [
+      {
+        "label": "탄약 장치 증폭 범위",
+        "value": "5m 구형 반경"
+      },
+      {
+        "label": "심판 공격 속도 증가",
+        "value": "35%"
+      },
+      {
+        "label": "구원 공격 속도 증가",
+        "value": "40%"
+      }
+    ],
+    "effect": "기본 효과 - 대상 방향으로 탄약 과부하 장치를 던집니다. 장치 범위에 들어가면 발사 속도가 빨라집니다."
+  },
+  {
+    "id": "teamup-099",
+    "heroSlug": "the-thing",
+    "name": "투인원",
+    "partnerSlug": "human-torch",
+    "key": "C",
+    "cooldown": "18s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "바위 잽 사거리",
+        "value": "6m"
+      },
+      {
+        "label": "바위 훅 사거리",
+        "value": "9.5m"
+      }
+    ],
+    "effect": "기본 효과 - 발동 시 강화 상태가 됩니다. 지속 시간 동안 씽의 주먹이 맹렬한 불길에 휩싸입니다. 바위 잽은 매번 범위 피해를 주고, 바위 훅은 매번 폭발을 일으켜 전방 원뿔형 범위에 피해를 줍니다."
+  },
+  {
+    "id": "teamup-100",
+    "heroSlug": "the-thing",
+    "name": "꺾이지 않는 힘",
+    "partnerSlug": "invisible-woman",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "획득 보너스 체력",
+        "value": "주기마다 15"
+      },
+      {
+        "label": "보너스 체력 생성 주기",
+        "value": "0.2s"
+      }
+    ],
+    "effect": "기본 효과 - 발동 시 사이오닉 갑옷을 생성해 현재 잃은 체력에 비례하는 보너스 체력을 얻습니다."
+  },
+  {
+    "id": "teamup-101",
+    "heroSlug": "thor",
+    "name": "라그나로크 재탄생",
+    "partnerSlug": "hela",
+    "key": "패시브(자동)",
+    "cooldown": "부활 성공: 50s, 실패: 30s",
+    "details": [
+      {
+        "label": "부활 시 최소 체력",
+        "value": "300"
+      },
+      {
+        "label": "획득 보너스 체력",
+        "value": "600"
+      },
+      {
+        "label": "피해 감소",
+        "value": "40% (사용 중)"
+      }
+    ],
+    "effect": "기본 효과 - 치명적인 피해를 받아도 즉시 쓰러지지 않습니다. 토르는 점차 감소하는 보너스 체력을 얻으며, 이 시간 동안 처치에 관여하면 부활하고 체력을 소량 회복합니다."
+  },
+  {
+    "id": "teamup-102",
+    "heroSlug": "thor",
+    "name": "신성한 무기고",
+    "partnerSlug": "angela",
+    "key": "C",
+    "cooldown": "15s",
+    "details": [
+      {
+        "label": "창 충격 피해",
+        "value": "30"
+      },
+      {
+        "label": "창 충격 효과 범위",
+        "value": "5m 구형 반경"
+      },
+      {
+        "label": "도약 피해",
+        "value": "45"
+      },
+      {
+        "label": "도약 효과 범위",
+        "value": "5m 구형 반경"
+      }
+    ],
+    "effect": "기본 효과 - 천둥의 창을 던져 적중한 적마다 토르포스를 회복합니다. 이후 토르는 창의 폭발 지점으로 도약해 범위 내 모든 적에게 두 번째 피해를 줄 수 있습니다."
+  },
+  {
+    "id": "teamup-103",
+    "heroSlug": "ultron",
+    "name": "스타크 프로토콜",
+    "partnerSlug": "iron-man",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "피해",
+        "value": "70/s"
+      },
+      {
+        "label": "거리별 피해 감소",
+        "value": "20m부터 감소 시작, 30m에서 75%"
+      },
+      {
+        "label": "치유",
+        "value": "70/s"
+      },
+      {
+        "label": "탄약",
+        "value": "∞"
+      }
+    ],
+    "effect": "기본 효과 - 뇌파 광선이 나노 광선으로 강화되어 피해를 주는 나노 투사체 여러 발을 전방으로 발사합니다."
+  },
+  {
+    "id": "teamup-104",
+    "heroSlug": "ultron",
+    "name": "SP//dr 동기화",
+    "partnerSlug": "peni-parker",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "드론 지속 시간",
+        "value": "3s"
+      },
+      {
+        "label": "치유",
+        "value": "주 대상: 40/s, 반경 내: 15/s"
+      }
+    ],
+    "effect": "기본 효과 - 모든 아군에게 명령: 패치를 적용합니다."
+  },
+  {
+    "id": "teamup-105",
+    "heroSlug": "venom",
+    "name": "피의 흡혈",
+    "partnerSlug": "blade",
+    "key": "우클릭",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "지속 피해",
+        "value": "20/s"
+      },
+      {
+        "label": "지속 피해-치유 전환율",
+        "value": "100%"
+      },
+      {
+        "label": "촉수 폭발 피해-치유 전환율",
+        "value": "50%"
+      }
+    ],
+    "effect": "기본 효과 - 세포 부식 신규 효과: 적과 연결된 동안 연결된 모든 대상에게서 지속적으로 체력을 흡수해 베놈의 체력을 회복합니다."
+  },
+  {
+    "id": "teamup-106",
+    "heroSlug": "venom",
+    "name": "심연의 화염",
+    "partnerSlug": "phoenix",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "피해",
+        "value": "55"
+      },
+      {
+        "label": "범위",
+        "value": "10m"
+      },
+      {
+        "label": "공격 간격",
+        "value": "0.8s"
+      }
+    ],
+    "effect": "기본 효과 - 일정 시간 동안 심비오트에 피닉스의 불꽃을 점화하여, 어둠의 포식을 휩쓰는 전방 베기인 불새의 발톱으로 대체합니다."
+  },
+  {
+    "id": "teamup-107",
+    "heroSlug": "white-fox",
+    "name": "행운의 대출",
+    "partnerSlug": "black-cat",
+    "key": "C",
+    "cooldown": "25s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "타격당 10"
+      },
+      {
+        "label": "치유",
+        "value": "타격당 15"
+      },
+      {
+        "label": "지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "투사체 발사 간격",
+        "value": "1s"
+      },
+      {
+        "label": "아군 이동 속도 증가",
+        "value": "20%"
+      },
+      {
+        "label": "적 둔화율",
+        "value": "20%"
+      },
+      {
+        "label": "이동 속도 증가/둔화 지속 시간",
+        "value": "2s"
+      }
+    ],
+    "effect": "기본 효과 - 화이트 폭스가 블랙 캣에게서 생명의 구슬을 받습니다. 사용 시 영혼 꼬리 에너지를 회복하고 생명 에너지를 사방으로 발사되는 구미호 기운으로 바꿉니다. 이 기운은 근처 아군과 적을 자동으로 추적하여 아군에게는 이동 속도 증가와 치유를, 적에게는 피해와 둔화를 줍니다."
+  },
+  {
+    "id": "teamup-108",
+    "heroSlug": "white-fox",
+    "name": "사이오닉 여우",
+    "partnerSlug": "psylocke",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "여우 형태 각성 지속 시간",
+        "value": "10s"
+      }
+    ],
+    "effect": "기본 효과 - 여우 형태 각성 발동 시 더 이상 영혼 꼬리 에너지를 소모하지 않으며, 사용 즉시 최대 지속 시간이 부여됩니다."
+  },
+  {
+    "id": "teamup-109",
+    "heroSlug": "winter-soldier",
+    "name": "시대를 초월한 베테랑",
+    "partnerSlug": "the-punisher",
+    "key": "C",
+    "cooldown": "12s",
+    "details": [
+      {
+        "label": "피해",
+        "value": "85"
+      },
+      {
+        "label": "사거리",
+        "value": "15.25m"
+      }
+    ],
+    "effect": "기본 효과 - 버스트 스파이크 능력이 해제됩니다. 생체공학 팔을 사용하면 전방으로 전기를 방출해 적에게 피해를 주고 밀쳐냅니다."
+  },
+  {
+    "id": "teamup-110",
+    "heroSlug": "winter-soldier",
+    "name": "전문가의 본능",
+    "partnerSlug": "elsa-bloodstone",
+    "key": "패시브(자동)",
+    "cooldown": null,
+    "details": [
+      {
+        "label": "능력 쿨타임 감소",
+        "value": "중첩당 1.5s"
+      },
+      {
+        "label": "최대 본능 중첩",
+        "value": "2"
+      },
+      {
+        "label": "중첩당 필요 피해량",
+        "value": "500"
+      },
+      {
+        "label": "사망 시 잃는 본능 중첩",
+        "value": "1"
+      }
+    ],
+    "effect": "기본 효과 - 처치하거나 처치에 관여하면 섬멸 본능 중첩을 하나 얻습니다. 각 중첩은 윈터 솔져의 다른 능력 쿨타임을 감소시킵니다. 쓰러지면 모든 중첩을 잃습니다."
+  },
+  {
+    "id": "teamup-111",
+    "heroSlug": "wolverine",
+    "name": "폭발 베기",
+    "partnerSlug": "cyclops",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "8s"
+      },
+      {
+        "label": "공격 사거리 증가",
+        "value": "1m"
+      }
+    ],
+    "effect": "기본 효과 - 활성화 시 야만의 발톱과 광폭 발톱 일격의 공격 사거리가 늘어납니다. 포악한 난동이 키네틱 발톱으로 대체되어, 짧게 앞으로 덤벼들며 주위에 연속 베기를 가합니다."
+  },
+  {
+    "id": "teamup-112",
+    "heroSlug": "wolverine",
+    "name": "트리플 쓰리",
+    "partnerSlug": "gambit",
+    "key": "C",
+    "cooldown": "20s",
+    "details": [
+      {
+        "label": "지속 시간",
+        "value": "5s"
+      },
+      {
+        "label": "점프 높이 증가",
+        "value": "3.5m"
+      },
+      {
+        "label": "대상 폭발 피해 비율",
+        "value": "15%"
+      },
+      {
+        "label": "대상 폭발 간격",
+        "value": "0.5s"
+      }
+    ],
+    "effect": "기본 효과 - 활성화 시 울버린이 키네틱 강화를 받아 이동 속도와 점프력이 증가합니다. 적을 공격하면 키네틱 입자가 부착되어 잠시 후 폭발하며 추가 피해를 입힙니다. 효과는 지속 시간 동안 유지됩니다."
+  }
+]

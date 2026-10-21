@@ -1,0 +1,657 @@
+{
+  "collectedAt": "2026-10-15",
+  "statsUpdatedAt": "2026-10-15",
+  "season": "시즌 10",
+  "notes": {
+    "heroes": [
+      "※ 이동 속도: 위키 '영웅' 문서의 일반 설명(대부분 6m/s, 블랙 팬서·울버린 7m/s) 기준이며, 개별 수치는 확인되지 않았습니다.",
+      "※ 체력·역할·난이도: 각 영웅 위키 문서 / 궁극기 비용: 위키 스킬 표의 에너지 비용. 수집일 2026년 10월 15일.",
+      "※ 티어·카운터·성향(PDR) 열: counterwatch.gg 커뮤니티 통계 (2026-10-15 갱신). 공식 데이터가 아니며 매일 바뀝니다."
+    ],
+    "tier": [
+      "출처: counterwatch.gg (커뮤니티 경기 통계, 전 랭크·스탠다드 모드, 시즌 10, 2026-10-15 갱신)",
+      "※ 승률은 '축소 승률'(표본이 적은 영웅이 우연히 상위에 오르지 않도록 보정한 승률) 기준입니다.",
+      "※ 티어 구간: S 53% 이상 … F 47% 미만 (사이트 설명 기준). 랭크·모드에 따라 순위가 달라질 수 있습니다.",
+      "※ 데드풀은 역할별, 헐크는 사이트 표기상 '브루스 배너'로 집계됩니다."
+    ],
+    "counters": [
+      "출처: counterwatch.gg (커뮤니티 경기 통계, 전 랭크·스탠다드 모드, 시즌 10, 2026-10-15 갱신)",
+      "※ 괄호 안 숫자 = 카운터 지수. 0이 비등한 상성이고, 클수록 '왼쪽 영웅을 더 확실히 잡아내는' 영웅입니다 (승률 %가 아닌 지수).",
+      "※ 지수는 매치 승률이 아니라 킬 로그(1:1 결투 승패, 한타에서 어느 쪽이 더 많이 죽었는지)로 계산됩니다. 그래서 보호막·치유처럼 '막아 주는' 카운터는 낮게 잡힐 수 있습니다.",
+      "※ 1:1 대결 우세 = 직접 맞붙어 이김 / 팀 단위 압박 = 팀 싸움에서 상대 팀 전체를 흔듦 / 복합 위협 = 두 가지가 섞임 (사이트 분류 번역)",
+      "※ 역카운터 = 사이트의 'Flip side' 항목: 이 영웅이 가장 강하게 잡아내는 상대 3명"
+    ],
+    "pdr": [
+      "출처: counterwatch.gg 팀 빌더 (점수는 커뮤니티 조합 연구 기반, 사이트 앱에서 조정된 값 / 0~100%)",
+      "P(포킹, Poke): 먼 거리에서 꾸준히 피해를 줘 상대가 들어오기 전에 깎아 냄. 시야(사선) 확보가 중요",
+      "D(다이브, Dive): 높은 기동력으로 적 진영에 뛰어들어 핵심 대상(주로 힐러·딜러)을 고립시켜 빠르게 처치. 팀 합이 중요",
+      "R(러쉬, Rush): 근거리에서 지속 피해와 치유로 밀어붙임. 버티는 힘과 압박으로 상대를 압도",
+      "상성 순환(가위바위보): 포킹 > 러쉬 > 다이브 > 포킹 (사이트 설명)",
+      "주 성향 = 세 점수 중 가장 높은 것 (동점이면 함께 표기, 예: D/R)"
+    ],
+    "maps": [
+      "※ 대상: 빠른 대전·경쟁전에 나오는 일반 모드 맵 18개 (위키 기준, 시즌 10). 아케이드·이벤트·연습장 맵과 종료된 모드(리소스 럼블)의 맵은 제외했습니다.",
+      "※ 모드 구분 이름(경쟁/호송/경쟁+호송)은 요청하신 표기를 따랐습니다. 게임 안의 공식 한글 모드명·맵 이름은 확인하지 못해, 한글 맵 이름은 원문을 번역·음역한 비공식 표기입니다.",
+      "※ 맵·출시일·모드 규칙: 마블 라이벌즈 팬덤 위키 (Maps / Domination / Convoy / Convergence 문서).",
+      "※ 승률 TOP5: counterwatch.gg 맵 통계 (시즌 10, 전 랭크, 2026-10-15 갱신). 맵에서 80판 미만인 영웅은 제외된 '축소 승률'이며 공식 데이터가 아닙니다."
+    ],
+    "skills": []
+  },
+  "sources": [
+    {
+      "category": "공식",
+      "url": "https://www.marvelrivals.com/kr/index.html",
+      "usage": "공식 홈페이지 (사용자가 알려준 주소)"
+    },
+    {
+      "category": "공식",
+      "url": "https://www.marvelrivals.com/kr/heroes/index.html",
+      "usage": "한글 영웅명 33명 (공식 페이지에는 체력·스킬 수치 없음)"
+    },
+    {
+      "category": "위키",
+      "url": "https://marvelrivals.fandom.com/wiki/Heroes",
+      "usage": "영웅 수(54명), 역할 분포, 이동 속도 일반 설명"
+    },
+    {
+      "category": "위키",
+      "url": "https://marvelrivals.fandom.com/wiki/Category:Vanguards",
+      "usage": "뱅가드 목록"
+    },
+    {
+      "category": "위키",
+      "url": "https://marvelrivals.fandom.com/wiki/Category:Duelists",
+      "usage": "듀얼리스트 목록"
+    },
+    {
+      "category": "위키",
+      "url": "https://marvelrivals.fandom.com/wiki/Category:Strategists",
+      "usage": "전략가 목록"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Adam_Warlock",
+      "usage": "아담 워록: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Adam_Warlock",
+      "usage": "아담 워록: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Angela",
+      "usage": "앤젤라: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Angela",
+      "usage": "앤젤라: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Black_Cat",
+      "usage": "블랙 캣: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Black_Cat",
+      "usage": "블랙 캣: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Black_Panther",
+      "usage": "블랙 팬서: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Black_Panther",
+      "usage": "블랙 팬서: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Black_Widow",
+      "usage": "블랙 위도우: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Black_Widow",
+      "usage": "블랙 위도우: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Blade",
+      "usage": "블레이드: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Blade",
+      "usage": "블레이드: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Captain_America",
+      "usage": "캡틴 아메리카: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Captain_America",
+      "usage": "캡틴 아메리카: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Cloak_&_Dagger",
+      "usage": "클록 앤 대거: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Cloak_&_Dagger",
+      "usage": "클록 앤 대거: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Cyclops",
+      "usage": "사이클롭스: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Cyclops",
+      "usage": "사이클롭스: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Daredevil",
+      "usage": "데어데블: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Daredevil",
+      "usage": "데어데블: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Deadpool",
+      "usage": "데드풀: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Deadpool",
+      "usage": "데드풀: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Devil_Dinosaur",
+      "usage": "데빌 다이노서: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Devil_Dinosaur",
+      "usage": "데빌 다이노서: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Doctor_Strange",
+      "usage": "닥터 스트레인지: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Doctor_Strange",
+      "usage": "닥터 스트레인지: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Elsa_Bloodstone",
+      "usage": "엘사 블러드스톤: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Elsa_Bloodstone",
+      "usage": "엘사 블러드스톤: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Emma_Frost",
+      "usage": "엠마 프로스트: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Emma_Frost",
+      "usage": "엠마 프로스트: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Gambit",
+      "usage": "갬빗: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Gambit",
+      "usage": "갬빗: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Gorr",
+      "usage": "고르: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Gorr",
+      "usage": "고르: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Groot",
+      "usage": "그루트: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Groot",
+      "usage": "그루트: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Hawkeye",
+      "usage": "호크아이: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Hawkeye",
+      "usage": "호크아이: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Hela",
+      "usage": "헬라: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Hela",
+      "usage": "헬라: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Hulk",
+      "usage": "헐크: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Hulk",
+      "usage": "헐크: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Human_Torch",
+      "usage": "휴먼 토치: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Human_Torch",
+      "usage": "휴먼 토치: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Invisible_Woman",
+      "usage": "인비저블 우먼: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Invisible_Woman",
+      "usage": "인비저블 우먼: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Iron_Fist",
+      "usage": "아이언피스트: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Iron_Fist",
+      "usage": "아이언피스트: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Iron_Man",
+      "usage": "아이언맨: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Iron_Man",
+      "usage": "아이언맨: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Jeff_the_Land_Shark",
+      "usage": "땅상어 제프: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Jeff_the_Land_Shark",
+      "usage": "땅상어 제프: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Jubilee",
+      "usage": "주빌리: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Jubilee",
+      "usage": "주빌리: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Loki",
+      "usage": "로키: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Loki",
+      "usage": "로키: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Luna_Snow",
+      "usage": "루나 스노우: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Luna_Snow",
+      "usage": "루나 스노우: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Magik",
+      "usage": "매직: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Magik",
+      "usage": "매직: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Magneto",
+      "usage": "매그니토: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Magneto",
+      "usage": "매그니토: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Mantis",
+      "usage": "맨티스: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Mantis",
+      "usage": "맨티스: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Mister_Fantastic",
+      "usage": "미스터 판타스틱: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Mister_Fantastic",
+      "usage": "미스터 판타스틱: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Moon_Knight",
+      "usage": "문나이트: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Moon_Knight",
+      "usage": "문나이트: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Namor",
+      "usage": "네이머: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Namor",
+      "usage": "네이머: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Peni_Parker",
+      "usage": "페니 파커: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Peni_Parker",
+      "usage": "페니 파커: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Phoenix",
+      "usage": "피닉스: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Phoenix",
+      "usage": "피닉스: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Psylocke",
+      "usage": "사일록: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Psylocke",
+      "usage": "사일록: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Rocket_Raccoon",
+      "usage": "로켓 라쿤: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Rocket_Raccoon",
+      "usage": "로켓 라쿤: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Rogue",
+      "usage": "로그: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Rogue",
+      "usage": "로그: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Scarlet_Witch",
+      "usage": "스칼렛 위치: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Scarlet_Witch",
+      "usage": "스칼렛 위치: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Spider-Man",
+      "usage": "스파이더맨: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Spider-Man",
+      "usage": "스파이더맨: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Squirrel_Girl",
+      "usage": "스쿼럴 걸: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Squirrel_Girl",
+      "usage": "스쿼럴 걸: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Star-Lord",
+      "usage": "스타 로드: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Star-Lord",
+      "usage": "스타 로드: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Storm",
+      "usage": "스톰: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Storm",
+      "usage": "스톰: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/The_Hood",
+      "usage": "후드: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/The_Hood",
+      "usage": "후드: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/The_Punisher",
+      "usage": "퍼니셔: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/The_Punisher",
+      "usage": "퍼니셔: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/The_Thing",
+      "usage": "씽: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/The_Thing",
+      "usage": "씽: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Thor",
+      "usage": "토르: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Thor",
+      "usage": "토르: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Ultron",
+      "usage": "울트론: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Ultron",
+      "usage": "울트론: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Venom",
+      "usage": "베놈: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Venom",
+      "usage": "베놈: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/White_Fox",
+      "usage": "화이트 폭스: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/White_Fox",
+      "usage": "화이트 폭스: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Winter_Soldier",
+      "usage": "윈터 솔져: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Winter_Soldier",
+      "usage": "윈터 솔져: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "위키(영웅)",
+      "url": "https://marvelrivals.fandom.com/wiki/Wolverine",
+      "usage": "울버린: 역할·체력·난이도"
+    },
+    {
+      "category": "위키(스킬)",
+      "url": "https://marvelrivals.fandom.com/wiki/Template:Abilities/Wolverine",
+      "usage": "울버린: 스킬·쿨타임·궁극기 비용·세부 수치"
+    },
+    {
+      "category": "커뮤니티 통계",
+      "url": "https://www.counterwatch.gg/stats/marvel-rivals/counters",
+      "usage": "카운터 요약 (사용자가 알려준 주소)"
+    },
+    {
+      "category": "커뮤니티 통계",
+      "url": "https://www.counterwatch.gg/stats/marvel-rivals/counters/<영웅>",
+      "usage": "영웅별 카운터 순위·역카운터 (56개 페이지)"
+    },
+    {
+      "category": "커뮤니티 통계",
+      "url": "https://www.counterwatch.gg/stats/marvel-rivals/tier-list",
+      "usage": "티어 목록·승률"
+    },
+    {
+      "category": "커뮤니티 통계",
+      "url": "https://www.counterwatch.gg/stats/marvel-rivals/team-builder",
+      "usage": "P/D/R 조합 성향 점수와 정의"
+    },
+    {
+      "category": "위키",
+      "url": "https://marvelrivals.fandom.com/wiki/Maps",
+      "usage": "맵 목록·모드 분류·출시일"
+    },
+    {
+      "category": "위키",
+      "url": "https://marvelrivals.fandom.com/wiki/Domination",
+      "usage": "경쟁(도미네이션) 규칙"
+    },
+    {
+      "category": "위키",
+      "url": "https://marvelrivals.fandom.com/wiki/Convoy",
+      "usage": "호송(콘보이) 규칙"
+    },
+    {
+      "category": "위키",
+      "url": "https://marvelrivals.fandom.com/wiki/Convergence",
+      "usage": "경쟁+호송(컨버전스) 규칙"
+    },
+    {
+      "category": "커뮤니티 통계",
+      "url": "https://www.counterwatch.gg/stats/marvel-rivals/maps",
+      "usage": "맵별 승률 상위 영웅 (커뮤니티 통계)"
+    }
+  ]
+}

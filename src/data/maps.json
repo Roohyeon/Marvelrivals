@@ -1,0 +1,596 @@
+[
+  {
+    "id": "birnin-t-challa",
+    "mode": "domination",
+    "order": 1,
+    "nameKo": "비르닌 티찰라",
+    "nameEn": "Birnin T'Challa",
+    "regionKo": "은하 제국 와칸다",
+    "regionEn": "Intergalactic Empire of Wakanda",
+    "releaseDate": "2024-12-06",
+    "releaseLabel": "정식 출시(시즌 0)",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 57.4
+      },
+      {
+        "statId": "mantis",
+        "winRate": 56.6
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.2
+      },
+      {
+        "statId": "storm",
+        "winRate": 53.8
+      },
+      {
+        "statId": "magik",
+        "winRate": 53.7
+      }
+    ]
+  },
+  {
+    "id": "hell-s-heaven",
+    "mode": "domination",
+    "order": 2,
+    "nameKo": "헬스 헤븐",
+    "nameEn": "Hell's Heaven",
+    "regionKo": "하이드라 차테리스 기지",
+    "regionEn": "Hydra Charteris Base",
+    "releaseDate": "2024-12-06",
+    "releaseLabel": "정식 출시(시즌 0)",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 57.2
+      },
+      {
+        "statId": "storm",
+        "winRate": 56.4
+      },
+      {
+        "statId": "magik",
+        "winRate": 56.2
+      },
+      {
+        "statId": "mantis",
+        "winRate": 56.2
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.6
+      }
+    ]
+  },
+  {
+    "id": "royal-palace",
+    "mode": "domination",
+    "order": 3,
+    "nameKo": "왕궁",
+    "nameEn": "Royal Palace",
+    "regionKo": "이그스가르드",
+    "regionEn": "Yggsgard",
+    "releaseDate": "2024-05-12",
+    "releaseLabel": "클로즈드 알파 테스트",
+    "top5": [
+      {
+        "statId": "mantis",
+        "winRate": 56.9
+      },
+      {
+        "statId": "peni-parker",
+        "winRate": 56
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.7
+      },
+      {
+        "statId": "mister-fantastic",
+        "winRate": 54.4
+      },
+      {
+        "statId": "gorr",
+        "winRate": 54.3
+      }
+    ]
+  },
+  {
+    "id": "krakoa",
+    "mode": "domination",
+    "order": 4,
+    "nameKo": "크라코아",
+    "nameEn": "Krakoa",
+    "regionKo": "헬파이어 갈라",
+    "regionEn": "Hellfire Gala",
+    "releaseDate": "2025-04-11",
+    "releaseLabel": "시즌 2.0",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 57.5
+      },
+      {
+        "statId": "mantis",
+        "winRate": 56.2
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.4
+      },
+      {
+        "statId": "gorr",
+        "winRate": 55.1
+      },
+      {
+        "statId": "storm",
+        "winRate": 55
+      }
+    ]
+  },
+  {
+    "id": "celestial-husk",
+    "mode": "domination",
+    "order": 5,
+    "nameKo": "셀레스티얼의 잔해",
+    "nameEn": "Celestial Husk",
+    "regionKo": "클린타르",
+    "regionEn": "Klyntar",
+    "releaseDate": "2025-07-11",
+    "releaseLabel": "시즌 3.0",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 57.6
+      },
+      {
+        "statId": "mantis",
+        "winRate": 56.8
+      },
+      {
+        "statId": "gorr",
+        "winRate": 55.8
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.7
+      },
+      {
+        "statId": "magik",
+        "winRate": 55.2
+      }
+    ]
+  },
+  {
+    "id": "god-quarry",
+    "mode": "domination",
+    "order": 6,
+    "nameKo": "신의 채석장",
+    "nameEn": "God Quarry",
+    "regionKo": null,
+    "regionEn": null,
+    "releaseDate": "2026-09-24",
+    "releaseLabel": "시즌 10.0",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 57.5
+      },
+      {
+        "statId": "ultron",
+        "winRate": 56.6
+      },
+      {
+        "statId": "gorr",
+        "winRate": 55.8
+      },
+      {
+        "statId": "rocket-raccoon",
+        "winRate": 55
+      },
+      {
+        "statId": "magik",
+        "winRate": 55
+      }
+    ]
+  },
+  {
+    "id": "yggdrasill-path",
+    "mode": "convoy",
+    "order": 7,
+    "nameKo": "이그드라실 길",
+    "nameEn": "Yggdrasill Path",
+    "regionKo": "이그스가르드",
+    "regionEn": "Yggsgard",
+    "releaseDate": "2024-05-12",
+    "releaseLabel": "클로즈드 알파 테스트",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 56.4
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.7
+      },
+      {
+        "statId": "storm",
+        "winRate": 55
+      },
+      {
+        "statId": "mantis",
+        "winRate": 54.9
+      },
+      {
+        "statId": "magik",
+        "winRate": 54.7
+      }
+    ]
+  },
+  {
+    "id": "spider-islands",
+    "mode": "convoy",
+    "order": 8,
+    "nameKo": "스파이더 아일랜드",
+    "nameEn": "Spider-Islands",
+    "regionKo": "도쿄 2099",
+    "regionEn": "Tokyo 2099",
+    "releaseDate": "2024-07-23",
+    "releaseLabel": "클로즈드 베타 테스트",
+    "top5": [
+      {
+        "statId": "storm",
+        "winRate": 55.4
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.3
+      },
+      {
+        "statId": "magik",
+        "winRate": 55.1
+      },
+      {
+        "statId": "peni-parker",
+        "winRate": 54.5
+      },
+      {
+        "statId": "gorr",
+        "winRate": 54.3
+      }
+    ]
+  },
+  {
+    "id": "midtown",
+    "mode": "convoy",
+    "order": 9,
+    "nameKo": "미드타운",
+    "nameEn": "Midtown",
+    "regionKo": "영원한 밤의 제국",
+    "regionEn": "Empire of Eternal Night",
+    "releaseDate": "2025-01-10",
+    "releaseLabel": "시즌 1.0",
+    "top5": [
+      {
+        "statId": "ultron",
+        "winRate": 57
+      },
+      {
+        "statId": "mantis",
+        "winRate": 56.6
+      },
+      {
+        "statId": "magik",
+        "winRate": 54.8
+      },
+      {
+        "statId": "storm",
+        "winRate": 54.7
+      },
+      {
+        "statId": "gorr",
+        "winRate": 53.9
+      }
+    ]
+  },
+  {
+    "id": "arakko",
+    "mode": "convoy",
+    "order": 10,
+    "nameKo": "아라코",
+    "nameEn": "Arakko",
+    "regionKo": "헬파이어 갈라",
+    "regionEn": "Hellfire Gala",
+    "releaseDate": "2025-05-30",
+    "releaseLabel": "시즌 2.5",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 57.2
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.6
+      },
+      {
+        "statId": "storm",
+        "winRate": 55.4
+      },
+      {
+        "statId": "gorr",
+        "winRate": 55.1
+      },
+      {
+        "statId": "magik",
+        "winRate": 54.6
+      }
+    ]
+  },
+  {
+    "id": "museum-of-contemplation",
+    "mode": "convoy",
+    "order": 11,
+    "nameKo": "명상의 박물관",
+    "nameEn": "Museum of Contemplation",
+    "regionKo": null,
+    "regionEn": null,
+    "releaseDate": "2026-01-29",
+    "releaseLabel": "시즌 6.0",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 57.5
+      },
+      {
+        "statId": "storm",
+        "winRate": 56.1
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.4
+      },
+      {
+        "statId": "gorr",
+        "winRate": 54.6
+      },
+      {
+        "statId": "magik",
+        "winRate": 54.1
+      }
+    ]
+  },
+  {
+    "id": "thebes",
+    "mode": "convoy",
+    "order": 12,
+    "nameKo": "테베",
+    "nameEn": "Thebes",
+    "regionKo": null,
+    "regionEn": null,
+    "releaseDate": "2026-07-23",
+    "releaseLabel": "시즌 9.0",
+    "top5": [
+      {
+        "statId": "ultron",
+        "winRate": 57.8
+      },
+      {
+        "statId": "storm",
+        "winRate": 56.7
+      },
+      {
+        "statId": "magik",
+        "winRate": 56.1
+      },
+      {
+        "statId": "peni-parker",
+        "winRate": 56
+      },
+      {
+        "statId": "mantis",
+        "winRate": 55.5
+      }
+    ]
+  },
+  {
+    "id": "shin-shibuya",
+    "mode": "convergence",
+    "order": 13,
+    "nameKo": "신시부야",
+    "nameEn": "Shin-Shibuya",
+    "regionKo": "도쿄 2099",
+    "regionEn": "Tokyo 2099",
+    "releaseDate": "2024-05-12",
+    "releaseLabel": "클로즈드 알파 테스트",
+    "top5": [
+      {
+        "statId": "mantis",
+        "winRate": 56.8
+      },
+      {
+        "statId": "peni-parker",
+        "winRate": 56
+      },
+      {
+        "statId": "storm",
+        "winRate": 55.6
+      },
+      {
+        "statId": "magik",
+        "winRate": 55
+      },
+      {
+        "statId": "ultron",
+        "winRate": 54.9
+      }
+    ]
+  },
+  {
+    "id": "hall-of-djalia",
+    "mode": "convergence",
+    "order": 14,
+    "nameKo": "잘리아의 전당",
+    "nameEn": "Hall of Djalia",
+    "regionKo": "은하 제국 와칸다",
+    "regionEn": "Intergalactic Empire of Wakanda",
+    "releaseDate": "2024-12-06",
+    "releaseLabel": "정식 출시(시즌 0)",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 57.2
+      },
+      {
+        "statId": "ultron",
+        "winRate": 56.4
+      },
+      {
+        "statId": "mantis",
+        "winRate": 55.3
+      },
+      {
+        "statId": "magik",
+        "winRate": 54.5
+      },
+      {
+        "statId": "storm",
+        "winRate": 54.5
+      }
+    ]
+  },
+  {
+    "id": "symbiotic-surface",
+    "mode": "convergence",
+    "order": 15,
+    "nameKo": "심비오트 지표",
+    "nameEn": "Symbiotic Surface",
+    "regionKo": "클린타르",
+    "regionEn": "Klyntar",
+    "releaseDate": "2024-12-06",
+    "releaseLabel": "정식 출시(시즌 0)",
+    "top5": [
+      {
+        "statId": "ultron",
+        "winRate": 57.7
+      },
+      {
+        "statId": "peni-parker",
+        "winRate": 57.1
+      },
+      {
+        "statId": "mantis",
+        "winRate": 55.1
+      },
+      {
+        "statId": "storm",
+        "winRate": 54.1
+      },
+      {
+        "statId": "rocket-raccoon",
+        "winRate": 54
+      }
+    ]
+  },
+  {
+    "id": "central-park",
+    "mode": "convergence",
+    "order": 16,
+    "nameKo": "센트럴 파크",
+    "nameEn": "Central Park",
+    "regionKo": "영원한 밤의 제국",
+    "regionEn": "Empire of Eternal Night",
+    "releaseDate": "2025-02-21",
+    "releaseLabel": "시즌 1.5",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 55.9
+      },
+      {
+        "statId": "ultron",
+        "winRate": 55.7
+      },
+      {
+        "statId": "magik",
+        "winRate": 55.5
+      },
+      {
+        "statId": "mantis",
+        "winRate": 55.3
+      },
+      {
+        "statId": "mister-fantastic",
+        "winRate": 54.2
+      }
+    ]
+  },
+  {
+    "id": "heart-of-heaven",
+    "mode": "convergence",
+    "order": 17,
+    "nameKo": "천상의 심장",
+    "nameEn": "Heart of Heaven",
+    "regionKo": "쿤룬",
+    "regionEn": "K'un-Lun",
+    "releaseDate": "2025-09-25",
+    "releaseLabel": "시즌 4.0",
+    "top5": [
+      {
+        "statId": "ultron",
+        "winRate": 56.7
+      },
+      {
+        "statId": "peni-parker",
+        "winRate": 56.2
+      },
+      {
+        "statId": "storm",
+        "winRate": 55.8
+      },
+      {
+        "statId": "magik",
+        "winRate": 55.5
+      },
+      {
+        "statId": "mantis",
+        "winRate": 55.5
+      }
+    ]
+  },
+  {
+    "id": "lower-manhattan",
+    "mode": "convergence",
+    "order": 18,
+    "nameKo": "로어 맨해튼",
+    "nameEn": "Lower Manhattan",
+    "regionKo": null,
+    "regionEn": null,
+    "releaseDate": "2026-04-02",
+    "releaseLabel": "시즌 7.0",
+    "top5": [
+      {
+        "statId": "peni-parker",
+        "winRate": 59.7
+      },
+      {
+        "statId": "ultron",
+        "winRate": 56.2
+      },
+      {
+        "statId": "mantis",
+        "winRate": 55.6
+      },
+      {
+        "statId": "rocket-raccoon",
+        "winRate": 54.4
+      },
+      {
+        "statId": "storm",
+        "winRate": 54.2
+      }
+    ]
+  }
+]

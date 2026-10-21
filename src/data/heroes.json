@@ -1,0 +1,1398 @@
+[
+  {
+    "slug": "adam-warlock",
+    "nameKo": "아담 워록",
+    "nameEn": "Adam Warlock",
+    "nameKoSource": "official",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "업보의 부활",
+    "ultimateCostText": "4500",
+    "ultimateCost": 4500,
+    "passives": [
+      "재생의 고치"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Adam_Warlock",
+    "skillCount": 9,
+    "statIds": [
+      "adam-warlock"
+    ]
+  },
+  {
+    "slug": "angela",
+    "nameKo": "앤젤라",
+    "nameEn": "Angela",
+    "nameKoSource": "common",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "350+200 재생 보호막",
+    "healthTotal": 550,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "헤븐의 응징",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [
+      "세라핌의 비상"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Angela",
+    "skillCount": 10,
+    "statIds": [
+      "angela"
+    ]
+  },
+  {
+    "slug": "black-cat",
+    "nameKo": "블랙 캣",
+    "nameEn": "Black Cat",
+    "nameKoSource": "common",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "150+125 재생 보호막",
+    "healthTotal": 275,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "명함",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [
+      "은밀한 캣워크",
+      "말킨의 불운",
+      "끈적한 발바닥"
+    ],
+    "forms": [
+      "기본",
+      "길디드 딜(특수 상점)"
+    ],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Black_Cat",
+    "skillCount": 21,
+    "statIds": [
+      "black-cat"
+    ]
+  },
+  {
+    "slug": "black-panther",
+    "nameKo": "블랙 팬서",
+    "nameEn": "Black Panther",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "150+125 재생 보호막",
+    "healthTotal": 275,
+    "difficulty": 4,
+    "moveSpeed": 7,
+    "moveSpeedVerified": true,
+    "ultimateName": "바스트의 강림",
+    "ultimateCostText": "3300",
+    "ultimateCost": 3300,
+    "passives": [
+      "팬서의 교활함"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Black_Panther",
+    "skillCount": 9,
+    "statIds": [
+      "black-panther"
+    ]
+  },
+  {
+    "slug": "black-widow",
+    "nameKo": "블랙 위도우",
+    "nameEn": "Black Widow",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "암살자의 집중",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Black_Widow",
+    "skillCount": 9,
+    "statIds": [
+      "black-widow"
+    ]
+  },
+  {
+    "slug": "blade",
+    "nameKo": "블레이드",
+    "nameEn": "Blade",
+    "nameKoSource": "common",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "350",
+    "healthTotal": 350,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "천 겹 베기",
+    "ultimateCostText": "2800",
+    "ultimateCost": 2800,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Blade",
+    "skillCount": 8,
+    "statIds": [
+      "blade"
+    ]
+  },
+  {
+    "slug": "captain-america",
+    "nameKo": "캡틴 아메리카",
+    "nameEn": "Captain America",
+    "nameKoSource": "official",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "350+300 재생 보호막",
+    "healthTotal": 650,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "자유의 돌격",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Captain_America",
+    "skillCount": 9,
+    "statIds": [
+      "captain-america"
+    ]
+  },
+  {
+    "slug": "cloak-and-dagger",
+    "nameKo": "클록 앤 대거",
+    "nameEn": "Cloak & Dagger",
+    "nameKoSource": "official",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "영원한 결속",
+    "ultimateCostText": "4500",
+    "ultimateCost": 4500,
+    "passives": [],
+    "forms": [
+      "대거",
+      "클록"
+    ],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Cloak_&_Dagger",
+    "skillCount": 14,
+    "statIds": [
+      "cloak-and-dagger"
+    ]
+  },
+  {
+    "slug": "cyclops",
+    "nameKo": "사이클롭스",
+    "nameEn": "Cyclops",
+    "nameKoSource": "common",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "루비 분노",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [
+      "키네틱 호버"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Cyclops",
+    "skillCount": 9,
+    "statIds": [
+      "cyclops"
+    ]
+  },
+  {
+    "slug": "daredevil",
+    "nameKo": "데어데블",
+    "nameEn": "Daredevil",
+    "nameKoSource": "common",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "150+150 재생 보호막",
+    "healthTotal": 300,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "악마 해방",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [
+      "레이더 감각",
+      "맹목적 상승"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Daredevil",
+    "skillCount": 11,
+    "statIds": [
+      "daredevil"
+    ]
+  },
+  {
+    "slug": "deadpool",
+    "nameKo": "데드풀",
+    "nameEn": "Deadpool",
+    "nameKoSource": "common",
+    "roles": [
+      "vanguard",
+      "duelist",
+      "strategist"
+    ],
+    "healthText": "500 / 275 / 275",
+    "healthTotal": 500,
+    "difficulty": null,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "밴 해머 / 대시험 / 밴 해머 - 강화 / 대시험 - 강화 / 실력 문제 / 깜짝 퀴즈! / 실력 문제 - 강화 / 깜짝 퀴즈! - 강화 / 완벽 압살 / 기말고사 / 완벽 압살 - 강화 / 기말고사 - 강화",
+    "ultimateCostText": "에너지 대신 스타일 S랭크 달성 시 사용 (쿨타임 60초)",
+    "ultimateCost": null,
+    "passives": [
+      "힐링 팩터",
+      "최고의 감각"
+    ],
+    "forms": [
+      "뱅가드 / 데저트 이글(총)",
+      "뱅가드 / 카타나(검)",
+      "뱅가드 / 스킬 강화",
+      "듀얼리스트 / 데저트 이글(총)",
+      "듀얼리스트 / 카타나(검)",
+      "듀얼리스트 / 스킬 강화",
+      "전략가 / 데저트 이글(총)",
+      "전략가 / 카타나(검)",
+      "전략가 / 스킬 강화"
+    ],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Deadpool",
+    "skillCount": 87,
+    "statIds": [
+      "deadpool-vanguard",
+      "deadpool-duelist",
+      "deadpool-strategist"
+    ]
+  },
+  {
+    "slug": "devil-dinosaur",
+    "nameKo": "데빌 다이노서",
+    "nameEn": "Devil Dinosaur",
+    "nameKoSource": "common",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "825",
+    "healthTotal": 825,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "악마 야수의 광란",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [
+      "선사 시대 장갑",
+      "최상위 우위"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Devil_Dinosaur",
+    "skillCount": 10,
+    "statIds": [
+      "devil-dinosaur"
+    ]
+  },
+  {
+    "slug": "doctor-strange",
+    "nameKo": "닥터 스트레인지",
+    "nameEn": "Doctor Strange",
+    "nameKoSource": "official",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "650",
+    "healthTotal": 650,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "아가모토의 눈",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [
+      "마법의 대가"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Doctor_Strange",
+    "skillCount": 9,
+    "statIds": [
+      "doctor-strange"
+    ]
+  },
+  {
+    "slug": "elsa-bloodstone",
+    "nameKo": "엘사 블러드스톤",
+    "nameEn": "Elsa Bloodstone",
+    "nameKoSource": "common",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "최상위 포식자",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [
+      "물려받은 본능"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Elsa_Bloodstone",
+    "skillCount": 10,
+    "statIds": [
+      "elsa-bloodstone"
+    ]
+  },
+  {
+    "slug": "emma-frost",
+    "nameKo": "엠마 프로스트",
+    "nameEn": "Emma Frost",
+    "nameKoSource": "common",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "675",
+    "healthTotal": 675,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "사이오닉 유혹",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [],
+    "forms": [
+      "사이오닉(기본)",
+      "다이아몬드 폼"
+    ],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Emma_Frost",
+    "skillCount": 12,
+    "statIds": [
+      "emma-frost"
+    ]
+  },
+  {
+    "slug": "gambit",
+    "nameKo": "갬빗",
+    "nameEn": "Gambit",
+    "nameKoSource": "common",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "분노의 로열 플러시",
+    "ultimateCostText": "4500",
+    "ultimateCost": 4500,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Gambit",
+    "skillCount": 12,
+    "statIds": [
+      "gambit"
+    ]
+  },
+  {
+    "slug": "gorr",
+    "nameKo": "고르",
+    "nameEn": "Gorr",
+    "nameKoSource": "common",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "175+175 재생 보호막",
+    "healthTotal": 350,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "신들의 황혼",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [
+      "심비오트 떼"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Gorr",
+    "skillCount": 9,
+    "statIds": [
+      "gorr"
+    ]
+  },
+  {
+    "slug": "groot",
+    "nameKo": "그루트",
+    "nameEn": "Groot",
+    "nameKoSource": "official",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "850",
+    "healthTotal": 850,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "교살의 감옥",
+    "ultimateCostText": "2800",
+    "ultimateCost": 2800,
+    "passives": [
+      "플로라 콜로서스"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Groot",
+    "skillCount": 9,
+    "statIds": [
+      "groot"
+    ]
+  },
+  {
+    "slug": "hawkeye",
+    "nameKo": "호크아이",
+    "nameEn": "Hawkeye",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "사냥꾼의 시야",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [
+      "궁수의 집중"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Hawkeye",
+    "skillCount": 10,
+    "statIds": [
+      "hawkeye"
+    ]
+  },
+  {
+    "slug": "hela",
+    "nameKo": "헬라",
+    "nameEn": "Hela",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "죽음의 여신",
+    "ultimateCostText": "4000",
+    "ultimateCost": 4000,
+    "passives": [
+      "나스트론드 까마귀 폭풍"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Hela",
+    "skillCount": 9,
+    "statIds": [
+      "hela"
+    ]
+  },
+  {
+    "slug": "hulk",
+    "nameKo": "헐크",
+    "nameEn": "Hulk",
+    "nameKoSource": "official",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "200 (브루스 배너) / 400+300 재생 보호막 (히어로 헐크) / 1500 (몬스터 헐크)",
+    "healthTotal": 1500,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "약골 배너 / 헐크 스매시! / 세계 파괴자",
+    "ultimateCostText": "약골 배너: 600 / 헐크 스매시!: 3,700",
+    "ultimateCost": null,
+    "passives": [],
+    "forms": [
+      "브루스 배너",
+      "히어로 헐크",
+      "몬스터 헐크"
+    ],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Hulk",
+    "skillCount": 16,
+    "statIds": [
+      "hulk"
+    ]
+  },
+  {
+    "slug": "human-torch",
+    "nameKo": "휴먼 토치",
+    "nameEn": "Human Torch",
+    "nameKoSource": "common",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "초신성",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Human_Torch",
+    "skillCount": 8,
+    "statIds": [
+      "human-torch"
+    ]
+  },
+  {
+    "slug": "invisible-woman",
+    "nameKo": "인비저블 우먼",
+    "nameEn": "Invisible Woman",
+    "nameKoSource": "common",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "투명 경계",
+    "ultimateCostText": "4300",
+    "ultimateCost": 4300,
+    "passives": [
+      "은밀한 전진"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Invisible_Woman",
+    "skillCount": 10,
+    "statIds": [
+      "invisible-woman"
+    ]
+  },
+  {
+    "slug": "iron-fist",
+    "nameKo": "아이언피스트",
+    "nameEn": "Iron Fist",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "300",
+    "healthTotal": 300,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "살아있는 기",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [
+      "기 흡수"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Iron_Fist",
+    "skillCount": 11,
+    "statIds": [
+      "iron-fist"
+    ]
+  },
+  {
+    "slug": "iron-man",
+    "nameKo": "아이언맨",
+    "nameEn": "Iron Man",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "무적 펄스 캐논",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Iron_Man",
+    "skillCount": 8,
+    "statIds": [
+      "iron-man"
+    ]
+  },
+  {
+    "slug": "jeff-the-land-shark",
+    "nameKo": "땅상어 제프",
+    "nameEn": "Jeff the Land Shark",
+    "nameKoSource": "official",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 1,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "제프다!",
+    "ultimateCostText": "4500",
+    "ultimateCost": 4500,
+    "passives": [
+      "천진난만한 귀여움"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Jeff_the_Land_Shark",
+    "skillCount": 8,
+    "statIds": [
+      "jeff-the-land-shark"
+    ]
+  },
+  {
+    "slug": "jubilee",
+    "nameKo": "주빌리",
+    "nameEn": "Jubilee",
+    "nameKoSource": "common",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "불꽃놀이 피날레",
+    "ultimateCostText": "4300",
+    "ultimateCost": 4300,
+    "passives": [
+      "반짝 표식"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Jubilee",
+    "skillCount": 8,
+    "statIds": [
+      "jubilee"
+    ]
+  },
+  {
+    "slug": "loki",
+    "nameKo": "로키",
+    "nameEn": "Loki",
+    "nameKoSource": "official",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "장난의 신",
+    "ultimateCostText": "4500",
+    "ultimateCost": 4500,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Loki",
+    "skillCount": 9,
+    "statIds": [
+      "loki"
+    ]
+  },
+  {
+    "slug": "luna-snow",
+    "nameKo": "루나 스노우",
+    "nameEn": "Luna Snow",
+    "nameKoSource": "official",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "두 세계의 운명",
+    "ultimateCostText": "4800",
+    "ultimateCost": 4800,
+    "passives": [
+      "극저온 심장",
+      "부드러운 스케이트"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Luna_Snow",
+    "skillCount": 10,
+    "statIds": [
+      "luna-snow"
+    ]
+  },
+  {
+    "slug": "magik",
+    "nameKo": "매직",
+    "nameEn": "Magik",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "150+125 재생 보호막",
+    "healthTotal": 275,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "다크차일드",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [
+      "림보의 힘"
+    ],
+    "forms": [
+      "매직(기본)",
+      "다크차일드"
+    ],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Magik",
+    "skillCount": 19,
+    "statIds": [
+      "magik"
+    ]
+  },
+  {
+    "slug": "magneto",
+    "nameKo": "매그니토",
+    "nameEn": "Magneto",
+    "nameKoSource": "official",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "600",
+    "healthTotal": 600,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "메테오 M",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Magneto",
+    "skillCount": 9,
+    "statIds": [
+      "magneto"
+    ]
+  },
+  {
+    "slug": "mantis",
+    "nameKo": "맨티스",
+    "nameEn": "Mantis",
+    "nameKoSource": "official",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 1,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "영혼 부활",
+    "ultimateCostText": "4300",
+    "ultimateCost": 4300,
+    "passives": [
+      "자연의 은총"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Mantis",
+    "skillCount": 9,
+    "statIds": [
+      "mantis"
+    ]
+  },
+  {
+    "slug": "mister-fantastic",
+    "nameKo": "미스터 판타스틱",
+    "nameEn": "Mister Fantastic",
+    "nameKoSource": "common",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "375",
+    "healthTotal": 375,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "천재의 반동",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [
+      "신축성 괴력"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Mister_Fantastic",
+    "skillCount": 8,
+    "statIds": [
+      "mister-fantastic"
+    ]
+  },
+  {
+    "slug": "moon-knight",
+    "nameKo": "문나이트",
+    "nameEn": "Moon Knight",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "콘슈의 손",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Moon_Knight",
+    "skillCount": 10,
+    "statIds": [
+      "moon-knight"
+    ]
+  },
+  {
+    "slug": "namor",
+    "nameKo": "네이머",
+    "nameEn": "Namor",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "프로테우스의 뿔",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Namor",
+    "skillCount": 8,
+    "statIds": [
+      "namor"
+    ]
+  },
+  {
+    "slug": "peni-parker",
+    "nameKo": "페니 파커",
+    "nameEn": "Peni Parker",
+    "nameKoSource": "official",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "650",
+    "healthTotal": 650,
+    "difficulty": 4,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "스파이더 스위퍼",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Peni_Parker",
+    "skillCount": 9,
+    "statIds": [
+      "peni-parker"
+    ]
+  },
+  {
+    "slug": "phoenix",
+    "nameKo": "피닉스",
+    "nameEn": "Phoenix",
+    "nameKoSource": "common",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "엔드송 인페르노",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Phoenix",
+    "skillCount": 7,
+    "statIds": [
+      "phoenix"
+    ]
+  },
+  {
+    "slug": "psylocke",
+    "nameKo": "사일록",
+    "nameEn": "Psylocke",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "100+150 재생 보호막",
+    "healthTotal": 250,
+    "difficulty": 5,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "나비의 춤",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Psylocke",
+    "skillCount": 7,
+    "statIds": [
+      "psylocke"
+    ]
+  },
+  {
+    "slug": "rocket-raccoon",
+    "nameKo": "로켓 라쿤",
+    "nameEn": "Rocket Raccoon",
+    "nameKoSource": "official",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 1,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "C.Y.A. (몸 사려)",
+    "ultimateCostText": "4300",
+    "ultimateCost": 4300,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Rocket_Raccoon",
+    "skillCount": 9,
+    "statIds": [
+      "rocket-raccoon"
+    ]
+  },
+  {
+    "slug": "rogue",
+    "nameKo": "로그",
+    "nameEn": "Rogue",
+    "nameKoSource": "common",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "350+275 재생 보호막",
+    "healthTotal": 625,
+    "difficulty": 5,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "하트브레이커",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Rogue",
+    "skillCount": 9,
+    "statIds": [
+      "rogue"
+    ]
+  },
+  {
+    "slug": "scarlet-witch",
+    "nameKo": "스칼렛 위치",
+    "nameEn": "Scarlet Witch",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 1,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "현실 소거",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [
+      "혼돈의 표식"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Scarlet_Witch",
+    "skillCount": 10,
+    "statIds": [
+      "scarlet-witch"
+    ]
+  },
+  {
+    "slug": "spider-man",
+    "nameKo": "스파이더맨",
+    "nameEn": "Spider-Man",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "150+100 재생 보호막",
+    "healthTotal": 250,
+    "difficulty": 5,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "화려한 회전",
+    "ultimateCostText": "2800",
+    "ultimateCost": 2800,
+    "passives": [
+      "스파이더 센스"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Spider-Man",
+    "skillCount": 11,
+    "statIds": [
+      "spider-man"
+    ]
+  },
+  {
+    "slug": "squirrel-girl",
+    "nameKo": "스쿼럴 걸",
+    "nameEn": "Squirrel Girl",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 1,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "무적의 다람쥐 쓰나미",
+    "ultimateCostText": "2800",
+    "ultimateCost": 2800,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Squirrel_Girl",
+    "skillCount": 7,
+    "statIds": [
+      "squirrel-girl"
+    ]
+  },
+  {
+    "slug": "star-lord",
+    "nameKo": "스타 로드",
+    "nameEn": "Star-Lord",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "150+125 재생 보호막",
+    "healthTotal": 275,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "은하의 전설",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Star-Lord",
+    "skillCount": 7,
+    "statIds": [
+      "star-lord"
+    ]
+  },
+  {
+    "slug": "storm",
+    "nameKo": "스톰",
+    "nameEn": "Storm",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "오메가 허리케인",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Storm",
+    "skillCount": 7,
+    "statIds": [
+      "storm"
+    ]
+  },
+  {
+    "slug": "the-hood",
+    "nameKo": "후드",
+    "nameEn": "The Hood",
+    "nameKoSource": "common",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "550",
+    "healthTotal": 550,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "종말의 악마",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [
+      "파멸의 계약"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/The_Hood",
+    "skillCount": 9,
+    "statIds": [
+      "the-hood"
+    ]
+  },
+  {
+    "slug": "the-punisher",
+    "nameKo": "퍼니셔",
+    "nameEn": "The Punisher",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "300",
+    "healthTotal": 300,
+    "difficulty": 1,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "최후의 심판",
+    "ultimateCostText": "3400",
+    "ultimateCost": 3400,
+    "passives": [
+      "전사의 시선"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/The_Punisher",
+    "skillCount": 9,
+    "statIds": [
+      "the-punisher"
+    ]
+  },
+  {
+    "slug": "the-thing",
+    "nameKo": "씽",
+    "nameEn": "The Thing",
+    "nameKoSource": "common",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "725",
+    "healthTotal": 725,
+    "difficulty": 1,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "박살 타임",
+    "ultimateCostText": "2800",
+    "ultimateCost": 2800,
+    "passives": [
+      "불굴의 의지"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/The_Thing",
+    "skillCount": 9,
+    "statIds": [
+      "the-thing"
+    ]
+  },
+  {
+    "slug": "thor",
+    "nameKo": "토르",
+    "nameEn": "Thor",
+    "nameKoSource": "official",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "325+300 재생 보호막",
+    "healthTotal": 625,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "천둥의 신",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [
+      "토르포스"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Thor",
+    "skillCount": 9,
+    "statIds": [
+      "thor"
+    ]
+  },
+  {
+    "slug": "ultron",
+    "nameKo": "울트론",
+    "nameEn": "Ultron",
+    "nameKoSource": "common",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "250",
+    "healthTotal": 250,
+    "difficulty": 2,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "울트론의 분노",
+    "ultimateCostText": "4300",
+    "ultimateCost": 4300,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Ultron",
+    "skillCount": 7,
+    "statIds": [
+      "ultron"
+    ]
+  },
+  {
+    "slug": "venom",
+    "nameKo": "베놈",
+    "nameEn": "Venom",
+    "nameKoSource": "official",
+    "roles": [
+      "vanguard"
+    ],
+    "healthText": "500+250 재생 보호막",
+    "healthTotal": 750,
+    "difficulty": 1,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "심연의 만찬",
+    "ultimateCostText": "2500",
+    "ultimateCost": 2500,
+    "passives": [],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Venom",
+    "skillCount": 9,
+    "statIds": [
+      "venom"
+    ]
+  },
+  {
+    "slug": "white-fox",
+    "nameKo": "화이트 폭스",
+    "nameEn": "White Fox",
+    "nameKoSource": "common",
+    "roles": [
+      "strategist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "구미호 해방",
+    "ultimateCostText": "4300",
+    "ultimateCost": 4300,
+    "passives": [],
+    "forms": [
+      "기본",
+      "구미호 폼"
+    ],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/White_Fox",
+    "skillCount": 12,
+    "statIds": [
+      "white-fox"
+    ]
+  },
+  {
+    "slug": "winter-soldier",
+    "nameKo": "윈터 솔져",
+    "nameEn": "Winter Soldier",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "275",
+    "healthTotal": 275,
+    "difficulty": 3,
+    "moveSpeed": 6,
+    "moveSpeedVerified": false,
+    "ultimateName": "크라켄 충격",
+    "ultimateCostText": "3100",
+    "ultimateCost": 3100,
+    "passives": [
+      "끝없는 돌격"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Winter_Soldier",
+    "skillCount": 8,
+    "statIds": [
+      "winter-soldier"
+    ]
+  },
+  {
+    "slug": "wolverine",
+    "nameKo": "울버린",
+    "nameEn": "Wolverine",
+    "nameKoSource": "official",
+    "roles": [
+      "duelist"
+    ],
+    "healthText": "350",
+    "healthTotal": 350,
+    "difficulty": 3,
+    "moveSpeed": 7,
+    "moveSpeedVerified": true,
+    "ultimateName": "최후의 저항",
+    "ultimateCostText": "2800",
+    "ultimateCost": 2800,
+    "passives": [
+      "재생 힐링 팩터",
+      "광전사의 분노"
+    ],
+    "forms": [],
+    "wikiUrl": "https://marvelrivals.fandom.com/wiki/Wolverine",
+    "skillCount": 9,
+    "statIds": [
+      "wolverine"
+    ]
+  }
+]

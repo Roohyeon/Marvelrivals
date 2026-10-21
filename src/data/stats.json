@@ -1,0 +1,2814 @@
+[
+  {
+    "id": "peni-parker",
+    "heroSlug": "peni-parker",
+    "variantRole": null,
+    "label": "페니 파커",
+    "tier": "S",
+    "rank": 1,
+    "winRate": 57.7,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.7,
+      "d": 0.4,
+      "r": 0.6
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "rocket-raccoon",
+        "score": 13.7,
+        "type": null
+      },
+      {
+        "statId": "the-punisher",
+        "score": 12.7,
+        "type": "duel"
+      },
+      {
+        "statId": "jubilee",
+        "score": 11.8,
+        "type": "team"
+      },
+      {
+        "statId": "mantis",
+        "score": 11.4,
+        "type": "team"
+      },
+      {
+        "statId": "invisible-woman",
+        "score": 10.5,
+        "type": null
+      }
+    ],
+    "strongAgainst": [
+      "black-panther",
+      "daredevil",
+      "gorr"
+    ]
+  },
+  {
+    "id": "ultron",
+    "heroSlug": "ultron",
+    "variantRole": null,
+    "label": "울트론",
+    "tier": "S",
+    "rank": 2,
+    "winRate": 57,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.9,
+      "d": 0.6,
+      "r": 0.5
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "spider-man",
+        "score": 15.1,
+        "type": "team"
+      },
+      {
+        "statId": "black-widow",
+        "score": 11.7,
+        "type": "team"
+      },
+      {
+        "statId": "psylocke",
+        "score": 11.3,
+        "type": "team"
+      },
+      {
+        "statId": "the-punisher",
+        "score": 8.4,
+        "type": "team"
+      },
+      {
+        "statId": "adam-warlock",
+        "score": 8.1,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "squirrel-girl",
+      "moon-knight",
+      "gorr"
+    ]
+  },
+  {
+    "id": "storm",
+    "heroSlug": "storm",
+    "variantRole": null,
+    "label": "스톰",
+    "tier": "S",
+    "rank": 3,
+    "winRate": 56.5,
+    "playstyles": [
+      "P",
+      "D"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.8,
+      "r": 0.3
+    },
+    "pdrNote": "포킹 / 다이브 중심",
+    "counters": [
+      {
+        "statId": "black-widow",
+        "score": 10.6,
+        "type": "duel"
+      },
+      {
+        "statId": "adam-warlock",
+        "score": 7.8,
+        "type": "team"
+      },
+      {
+        "statId": "spider-man",
+        "score": 6.3,
+        "type": "duel"
+      },
+      {
+        "statId": "the-hood",
+        "score": 5.7,
+        "type": "duel"
+      },
+      {
+        "statId": "psylocke",
+        "score": 5.2,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "wolverine",
+      "squirrel-girl",
+      "peni-parker"
+    ]
+  },
+  {
+    "id": "mantis",
+    "heroSlug": "mantis",
+    "variantRole": null,
+    "label": "맨티스",
+    "tier": "S",
+    "rank": 4,
+    "winRate": 56.1,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.7,
+      "d": 0.5,
+      "r": 0.8
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "black-panther",
+        "score": 13.2,
+        "type": "team"
+      },
+      {
+        "statId": "black-cat",
+        "score": 11.4,
+        "type": "team"
+      },
+      {
+        "statId": "magik",
+        "score": 9.5,
+        "type": "team"
+      },
+      {
+        "statId": "spider-man",
+        "score": 9.4,
+        "type": "team"
+      },
+      {
+        "statId": "gorr",
+        "score": 8.1,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "peni-parker",
+      "devil-dinosaur",
+      "hawkeye"
+    ]
+  },
+  {
+    "id": "magik",
+    "heroSlug": "magik",
+    "variantRole": null,
+    "label": "매직",
+    "tier": "S",
+    "rank": 5,
+    "winRate": 55.2,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0,
+      "d": 0.9,
+      "r": 0.7
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "peni-parker",
+        "score": 12.5,
+        "type": "duel"
+      },
+      {
+        "statId": "the-thing",
+        "score": 12,
+        "type": "duel"
+      },
+      {
+        "statId": "rogue",
+        "score": 7.9,
+        "type": "duel"
+      },
+      {
+        "statId": "thor",
+        "score": 7.8,
+        "type": "duel"
+      },
+      {
+        "statId": "mister-fantastic",
+        "score": 6.3,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "mantis",
+      "invisible-woman",
+      "rocket-raccoon"
+    ]
+  },
+  {
+    "id": "gorr",
+    "heroSlug": "gorr",
+    "variantRole": null,
+    "label": "고르",
+    "tier": "S",
+    "rank": 6,
+    "winRate": 54.8,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0.2,
+      "d": 0.9,
+      "r": 0.8
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "peni-parker",
+        "score": 12.8,
+        "type": "duel"
+      },
+      {
+        "statId": "devil-dinosaur",
+        "score": 11.4,
+        "type": "mixed"
+      },
+      {
+        "statId": "ultron",
+        "score": 10.4,
+        "type": "mixed"
+      },
+      {
+        "statId": "rogue",
+        "score": 5.9,
+        "type": "duel"
+      },
+      {
+        "statId": "deadpool-strategist",
+        "score": 5.8,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "black-cat",
+      "spider-man",
+      "mantis"
+    ]
+  },
+  {
+    "id": "rocket-raccoon",
+    "heroSlug": "rocket-raccoon",
+    "variantRole": null,
+    "label": "로켓 라쿤",
+    "tier": "S",
+    "rank": 7,
+    "winRate": 53.7,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.5,
+      "r": 0.4
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "black-panther",
+        "score": 19.6,
+        "type": null
+      },
+      {
+        "statId": "daredevil",
+        "score": 18.4,
+        "type": null
+      },
+      {
+        "statId": "black-cat",
+        "score": 17.4,
+        "type": null
+      },
+      {
+        "statId": "spider-man",
+        "score": 16.5,
+        "type": null
+      },
+      {
+        "statId": "angela",
+        "score": 12.7,
+        "type": null
+      }
+    ],
+    "strongAgainst": [
+      "peni-parker",
+      "squirrel-girl",
+      "namor"
+    ]
+  },
+  {
+    "id": "mister-fantastic",
+    "heroSlug": "mister-fantastic",
+    "variantRole": null,
+    "label": "미스터 판타스틱",
+    "tier": "S",
+    "rank": 8,
+    "winRate": 53.1,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.3,
+      "d": 0.5,
+      "r": 0.8
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "devil-dinosaur",
+        "score": 16.8,
+        "type": "duel"
+      },
+      {
+        "statId": "the-thing",
+        "score": 12.8,
+        "type": "duel"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 12.4,
+        "type": "duel"
+      },
+      {
+        "statId": "groot",
+        "score": 9.7,
+        "type": "duel"
+      },
+      {
+        "statId": "emma-frost",
+        "score": 6.3,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "black-panther",
+      "spider-man",
+      "black-cat"
+    ]
+  },
+  {
+    "id": "devil-dinosaur",
+    "heroSlug": "devil-dinosaur",
+    "variantRole": null,
+    "label": "데빌 다이노서",
+    "tier": "A",
+    "rank": 9,
+    "winRate": 52.7,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.3,
+      "d": 0.3,
+      "r": 1
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "squirrel-girl",
+        "score": 14.8,
+        "type": "duel"
+      },
+      {
+        "statId": "phoenix",
+        "score": 14.6,
+        "type": "duel"
+      },
+      {
+        "statId": "the-punisher",
+        "score": 14.3,
+        "type": "duel"
+      },
+      {
+        "statId": "moon-knight",
+        "score": 11.9,
+        "type": "duel"
+      },
+      {
+        "statId": "cyclops",
+        "score": 11.6,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "angela",
+      "captain-america",
+      "mister-fantastic"
+    ]
+  },
+  {
+    "id": "hulk",
+    "heroSlug": "hulk",
+    "variantRole": null,
+    "label": "헐크",
+    "tier": "A",
+    "rank": 10,
+    "winRate": 52.2,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.1,
+      "d": 0.8,
+      "r": 0.9
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "devil-dinosaur",
+        "score": 12,
+        "type": "team"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 10,
+        "type": "team"
+      },
+      {
+        "statId": "the-hood",
+        "score": 8.7,
+        "type": "team"
+      },
+      {
+        "statId": "deadpool-vanguard",
+        "score": 5.4,
+        "type": "team"
+      },
+      {
+        "statId": "rogue",
+        "score": 4.7,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "black-panther",
+      "cloak-and-dagger",
+      "loki"
+    ]
+  },
+  {
+    "id": "scarlet-witch",
+    "heroSlug": "scarlet-witch",
+    "variantRole": null,
+    "label": "스칼렛 위치",
+    "tier": "A",
+    "rank": 11,
+    "winRate": 52,
+    "playstyles": [
+      "D",
+      "R"
+    ],
+    "pdr": {
+      "p": 0.4,
+      "d": 0.8,
+      "r": 0.8
+    },
+    "pdrNote": "다이브 / 러쉬 중심",
+    "counters": [
+      {
+        "statId": "squirrel-girl",
+        "score": 8.3,
+        "type": "mixed"
+      },
+      {
+        "statId": "hela",
+        "score": 8.2,
+        "type": "mixed"
+      },
+      {
+        "statId": "hawkeye",
+        "score": 7.6,
+        "type": "mixed"
+      },
+      {
+        "statId": "namor",
+        "score": 7.3,
+        "type": "mixed"
+      },
+      {
+        "statId": "invisible-woman",
+        "score": 7,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "wolverine",
+      "the-thing",
+      "iron-fist"
+    ]
+  },
+  {
+    "id": "thor",
+    "heroSlug": "thor",
+    "variantRole": null,
+    "label": "토르",
+    "tier": "A",
+    "rank": 12,
+    "winRate": 52,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.4,
+      "d": 0.4,
+      "r": 0.9
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "devil-dinosaur",
+        "score": 12,
+        "type": "duel"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 8.8,
+        "type": "duel"
+      },
+      {
+        "statId": "wolverine",
+        "score": 7.1,
+        "type": "duel"
+      },
+      {
+        "statId": "the-hood",
+        "score": 6.8,
+        "type": "duel"
+      },
+      {
+        "statId": "the-thing",
+        "score": 6.1,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "black-panther",
+      "angela",
+      "spider-man"
+    ]
+  },
+  {
+    "id": "blade",
+    "heroSlug": "blade",
+    "variantRole": null,
+    "label": "블레이드",
+    "tier": "A",
+    "rank": 13,
+    "winRate": 52,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0.4,
+      "d": 1,
+      "r": 0.9
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "human-torch",
+        "score": 8.3,
+        "type": "duel"
+      },
+      {
+        "statId": "ultron",
+        "score": 7.3,
+        "type": "mixed"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 7.3,
+        "type": "duel"
+      },
+      {
+        "statId": "iron-man",
+        "score": 6,
+        "type": "duel"
+      },
+      {
+        "statId": "storm",
+        "score": 5.5,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "doctor-strange",
+      "cloak-and-dagger",
+      "rocket-raccoon"
+    ]
+  },
+  {
+    "id": "angela",
+    "heroSlug": "angela",
+    "variantRole": null,
+    "label": "앤젤라",
+    "tier": "A",
+    "rank": 14,
+    "winRate": 51.9,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0,
+      "d": 0.9,
+      "r": 1
+    },
+    "pdrNote": "다이브 / 러쉬 중심",
+    "counters": [
+      {
+        "statId": "devil-dinosaur",
+        "score": 21.9,
+        "type": "mixed"
+      },
+      {
+        "statId": "the-thing",
+        "score": 12.9,
+        "type": "mixed"
+      },
+      {
+        "statId": "thor",
+        "score": 9.2,
+        "type": "mixed"
+      },
+      {
+        "statId": "wolverine",
+        "score": 8.9,
+        "type": "duel"
+      },
+      {
+        "statId": "rogue",
+        "score": 8.6,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "black-panther",
+      "spider-man",
+      "rocket-raccoon"
+    ]
+  },
+  {
+    "id": "captain-america",
+    "heroSlug": "captain-america",
+    "variantRole": null,
+    "label": "캡틴 아메리카",
+    "tier": "A",
+    "rank": 15,
+    "winRate": 51.8,
+    "playstyles": [
+      "D",
+      "R"
+    ],
+    "pdr": {
+      "p": 0.2,
+      "d": 0.9,
+      "r": 0.9
+    },
+    "pdrNote": "다이브 / 러쉬 중심",
+    "counters": [
+      {
+        "statId": "devil-dinosaur",
+        "score": 17.8,
+        "type": "duel"
+      },
+      {
+        "statId": "wolverine",
+        "score": 10,
+        "type": "duel"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 9.8,
+        "type": "mixed"
+      },
+      {
+        "statId": "iron-man",
+        "score": 9.5,
+        "type": "duel"
+      },
+      {
+        "statId": "the-thing",
+        "score": 7.9,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "rocket-raccoon",
+      "invisible-woman",
+      "black-widow"
+    ]
+  },
+  {
+    "id": "hela",
+    "heroSlug": "hela",
+    "variantRole": null,
+    "label": "헬라",
+    "tier": "A",
+    "rank": 16,
+    "winRate": 51.6,
+    "playstyles": [
+      "P",
+      "D"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.8,
+      "r": 0.5
+    },
+    "pdrNote": "포킹 / 다이브 중심",
+    "counters": [
+      {
+        "statId": "invisible-woman",
+        "score": 12,
+        "type": "team"
+      },
+      {
+        "statId": "black-panther",
+        "score": 11.2,
+        "type": "duel"
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 8.6,
+        "type": "team"
+      },
+      {
+        "statId": "magneto",
+        "score": 7.8,
+        "type": "duel"
+      },
+      {
+        "statId": "mantis",
+        "score": 6.3,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "scarlet-witch",
+      "devil-dinosaur",
+      "ultron"
+    ]
+  },
+  {
+    "id": "iron-man",
+    "heroSlug": "iron-man",
+    "variantRole": null,
+    "label": "아이언맨",
+    "tier": "A",
+    "rank": 17,
+    "winRate": 51.6,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.9,
+      "d": 0.5,
+      "r": 0.2
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "spider-man",
+        "score": 16.2,
+        "type": "duel"
+      },
+      {
+        "statId": "black-widow",
+        "score": 11.5,
+        "type": "duel"
+      },
+      {
+        "statId": "rocket-raccoon",
+        "score": 8.5,
+        "type": null
+      },
+      {
+        "statId": "the-punisher",
+        "score": 8.1,
+        "type": "duel"
+      },
+      {
+        "statId": "deadpool-vanguard",
+        "score": 7.4,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "squirrel-girl",
+      "wolverine",
+      "peni-parker"
+    ]
+  },
+  {
+    "id": "the-hood",
+    "heroSlug": "the-hood",
+    "variantRole": null,
+    "label": "후드",
+    "tier": "B",
+    "rank": 18,
+    "winRate": 51.3,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.9,
+      "d": 0.4,
+      "r": 0.5
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "wolverine",
+        "score": 12.1,
+        "type": "duel"
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 7.9,
+        "type": null
+      },
+      {
+        "statId": "iron-fist",
+        "score": 7.7,
+        "type": "duel"
+      },
+      {
+        "statId": "scarlet-witch",
+        "score": 6.4,
+        "type": "mixed"
+      },
+      {
+        "statId": "invisible-woman",
+        "score": 6.3,
+        "type": null
+      }
+    ],
+    "strongAgainst": [
+      "hulk",
+      "venom",
+      "black-panther"
+    ]
+  },
+  {
+    "id": "daredevil",
+    "heroSlug": "daredevil",
+    "variantRole": null,
+    "label": "데어데블",
+    "tier": "B",
+    "rank": 19,
+    "winRate": 51.3,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0,
+      "d": 1,
+      "r": 0.9
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "devil-dinosaur",
+        "score": 15.3,
+        "type": "mixed"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 14.6,
+        "type": "duel"
+      },
+      {
+        "statId": "rogue",
+        "score": 10.4,
+        "type": "duel"
+      },
+      {
+        "statId": "the-thing",
+        "score": 9.7,
+        "type": "duel"
+      },
+      {
+        "statId": "venom",
+        "score": 8.9,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "rocket-raccoon",
+      "invisible-woman",
+      "psylocke"
+    ]
+  },
+  {
+    "id": "iron-fist",
+    "heroSlug": "iron-fist",
+    "variantRole": null,
+    "label": "아이언피스트",
+    "tier": "B",
+    "rank": 20,
+    "winRate": 51.1,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0,
+      "d": 0.8,
+      "r": 0.9
+    },
+    "pdrNote": "다이브 / 러쉬 중심",
+    "counters": [
+      {
+        "statId": "peni-parker",
+        "score": 7.2,
+        "type": "mixed"
+      },
+      {
+        "statId": "scarlet-witch",
+        "score": 7,
+        "type": "mixed"
+      },
+      {
+        "statId": "white-fox",
+        "score": 6.1,
+        "type": "mixed"
+      },
+      {
+        "statId": "namor",
+        "score": 4.3,
+        "type": "duel"
+      },
+      {
+        "statId": "magik",
+        "score": 4.2,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "rocket-raccoon",
+      "doctor-strange",
+      "the-hood"
+    ]
+  },
+  {
+    "id": "rogue",
+    "heroSlug": "rogue",
+    "variantRole": null,
+    "label": "로그",
+    "tier": "B",
+    "rank": 21,
+    "winRate": 50.9,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.1,
+      "d": 0.7,
+      "r": 1
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "devil-dinosaur",
+        "score": 13.8,
+        "type": "duel"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 10.8,
+        "type": "duel"
+      },
+      {
+        "statId": "the-thing",
+        "score": 7.7,
+        "type": "duel"
+      },
+      {
+        "statId": "jubilee",
+        "score": 7.3,
+        "type": "team"
+      },
+      {
+        "statId": "wolverine",
+        "score": 5.8,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "black-panther",
+      "daredevil",
+      "black-cat"
+    ]
+  },
+  {
+    "id": "loki",
+    "heroSlug": "loki",
+    "variantRole": null,
+    "label": "로키",
+    "tier": "B",
+    "rank": 22,
+    "winRate": 50.9,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.7,
+      "d": 0.6,
+      "r": 0.4
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "spider-man",
+        "score": 10.8,
+        "type": "team"
+      },
+      {
+        "statId": "black-panther",
+        "score": 8.7,
+        "type": "team"
+      },
+      {
+        "statId": "black-cat",
+        "score": 8.6,
+        "type": "team"
+      },
+      {
+        "statId": "venom",
+        "score": 7.4,
+        "type": "team"
+      },
+      {
+        "statId": "hulk",
+        "score": 6.5,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "namor",
+      "winter-soldier",
+      "the-punisher"
+    ]
+  },
+  {
+    "id": "psylocke",
+    "heroSlug": "psylocke",
+    "variantRole": null,
+    "label": "사일록",
+    "tier": "B",
+    "rank": 23,
+    "winRate": 50.6,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0.5,
+      "d": 0.9,
+      "r": 0.6
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "daredevil",
+        "score": 9.3,
+        "type": "duel"
+      },
+      {
+        "statId": "black-panther",
+        "score": 9,
+        "type": "duel"
+      },
+      {
+        "statId": "black-cat",
+        "score": 7,
+        "type": "duel"
+      },
+      {
+        "statId": "magik",
+        "score": 6,
+        "type": "duel"
+      },
+      {
+        "statId": "mister-fantastic",
+        "score": 6,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "ultron",
+      "wolverine",
+      "storm"
+    ]
+  },
+  {
+    "id": "adam-warlock",
+    "heroSlug": "adam-warlock",
+    "variantRole": null,
+    "label": "아담 워록",
+    "tier": "B",
+    "rank": 24,
+    "winRate": 50.6,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.2,
+      "r": 0.3
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "black-panther",
+        "score": 9.1,
+        "type": "team"
+      },
+      {
+        "statId": "spider-man",
+        "score": 6.8,
+        "type": "team"
+      },
+      {
+        "statId": "doctor-strange",
+        "score": 6.5,
+        "type": "team"
+      },
+      {
+        "statId": "daredevil",
+        "score": 5.8,
+        "type": "team"
+      },
+      {
+        "statId": "black-cat",
+        "score": 5.7,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "ultron",
+      "storm",
+      "peni-parker"
+    ]
+  },
+  {
+    "id": "black-panther",
+    "heroSlug": "black-panther",
+    "variantRole": null,
+    "label": "블랙 팬서",
+    "tier": "B",
+    "rank": 25,
+    "winRate": 50.6,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0,
+      "d": 0.9,
+      "r": 0.7
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "the-thing",
+        "score": 17.7,
+        "type": "mixed"
+      },
+      {
+        "statId": "angela",
+        "score": 15.5,
+        "type": "mixed"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 15.4,
+        "type": "duel"
+      },
+      {
+        "statId": "mister-fantastic",
+        "score": 12.9,
+        "type": "duel"
+      },
+      {
+        "statId": "thor",
+        "score": 12.5,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "jeff-the-land-shark",
+      "rocket-raccoon",
+      "invisible-woman"
+    ]
+  },
+  {
+    "id": "human-torch",
+    "heroSlug": "human-torch",
+    "variantRole": null,
+    "label": "휴먼 토치",
+    "tier": "B",
+    "rank": 26,
+    "winRate": 50.3,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0.2,
+      "d": 0.9,
+      "r": 0.5
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "spider-man",
+        "score": 11.8,
+        "type": "duel"
+      },
+      {
+        "statId": "angela",
+        "score": 8.2,
+        "type": "duel"
+      },
+      {
+        "statId": "deadpool-vanguard",
+        "score": 6.7,
+        "type": "mixed"
+      },
+      {
+        "statId": "star-lord",
+        "score": 6.5,
+        "type": "duel"
+      },
+      {
+        "statId": "the-hood",
+        "score": 6.5,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "squirrel-girl",
+      "wolverine",
+      "moon-knight"
+    ]
+  },
+  {
+    "id": "jubilee",
+    "heroSlug": "jubilee",
+    "variantRole": null,
+    "label": "주빌리",
+    "tier": "B",
+    "rank": 27,
+    "winRate": 50.3,
+    "playstyles": [
+      "P",
+      "D"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.8,
+      "r": 0.4
+    },
+    "pdrNote": "포킹 / 다이브 중심",
+    "counters": [
+      {
+        "statId": "black-panther",
+        "score": 10.3,
+        "type": "team"
+      },
+      {
+        "statId": "spider-man",
+        "score": 7.7,
+        "type": "team"
+      },
+      {
+        "statId": "moon-knight",
+        "score": 6.9,
+        "type": "team"
+      },
+      {
+        "statId": "magik",
+        "score": 5.8,
+        "type": "team"
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 5.7,
+        "type": null
+      }
+    ],
+    "strongAgainst": [
+      "peni-parker",
+      "phoenix",
+      "devil-dinosaur"
+    ]
+  },
+  {
+    "id": "doctor-strange",
+    "heroSlug": "doctor-strange",
+    "variantRole": null,
+    "label": "닥터 스트레인지",
+    "tier": "B",
+    "rank": 28,
+    "winRate": 50.3,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.7,
+      "r": 0.3
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "wolverine",
+        "score": 19.1,
+        "type": "mixed"
+      },
+      {
+        "statId": "devil-dinosaur",
+        "score": 13.5,
+        "type": "duel"
+      },
+      {
+        "statId": "the-thing",
+        "score": 12.1,
+        "type": "duel"
+      },
+      {
+        "statId": "iron-fist",
+        "score": 7.7,
+        "type": "mixed"
+      },
+      {
+        "statId": "blade",
+        "score": 7.1,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "spider-man",
+      "adam-warlock",
+      "black-widow"
+    ]
+  },
+  {
+    "id": "black-cat",
+    "heroSlug": "black-cat",
+    "variantRole": null,
+    "label": "블랙 캣",
+    "tier": "C",
+    "rank": 29,
+    "winRate": 50,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0.1,
+      "d": 1,
+      "r": 0.7
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "the-thing",
+        "score": 12.8,
+        "type": "mixed"
+      },
+      {
+        "statId": "devil-dinosaur",
+        "score": 12.3,
+        "type": "mixed"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 11.7,
+        "type": "mixed"
+      },
+      {
+        "statId": "gorr",
+        "score": 10.8,
+        "type": "mixed"
+      },
+      {
+        "statId": "mister-fantastic",
+        "score": 9.7,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "rocket-raccoon",
+      "mantis",
+      "invisible-woman"
+    ]
+  },
+  {
+    "id": "the-thing",
+    "heroSlug": "the-thing",
+    "variantRole": null,
+    "label": "씽",
+    "tier": "C",
+    "rank": 30,
+    "winRate": 49.8,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0,
+      "d": 0.1,
+      "r": 1
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "the-punisher",
+        "score": 10.6,
+        "type": "duel"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 10.1,
+        "type": "mixed"
+      },
+      {
+        "statId": "scarlet-witch",
+        "score": 8.3,
+        "type": "mixed"
+      },
+      {
+        "statId": "wolverine",
+        "score": 8.2,
+        "type": "duel"
+      },
+      {
+        "statId": "phoenix",
+        "score": 7.9,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "black-panther",
+      "spider-man",
+      "angela"
+    ]
+  },
+  {
+    "id": "venom",
+    "heroSlug": "venom",
+    "variantRole": null,
+    "label": "베놈",
+    "tier": "C",
+    "rank": 31,
+    "winRate": 49.6,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0,
+      "d": 0.9,
+      "r": 0.6
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "devil-dinosaur",
+        "score": 14.6,
+        "type": "mixed"
+      },
+      {
+        "statId": "wolverine",
+        "score": 14.2,
+        "type": "duel"
+      },
+      {
+        "statId": "the-thing",
+        "score": 8,
+        "type": "mixed"
+      },
+      {
+        "statId": "the-hood",
+        "score": 7.4,
+        "type": "team"
+      },
+      {
+        "statId": "peni-parker",
+        "score": 7.1,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "black-panther",
+      "rocket-raccoon",
+      "daredevil"
+    ]
+  },
+  {
+    "id": "spider-man",
+    "heroSlug": "spider-man",
+    "variantRole": null,
+    "label": "스파이더맨",
+    "tier": "C",
+    "rank": 32,
+    "winRate": 49.6,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0,
+      "d": 1,
+      "r": 0.6
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "the-thing",
+        "score": 15.2,
+        "type": null
+      },
+      {
+        "statId": "angela",
+        "score": 12.8,
+        "type": "mixed"
+      },
+      {
+        "statId": "doctor-strange",
+        "score": 12,
+        "type": "team"
+      },
+      {
+        "statId": "mister-fantastic",
+        "score": 11.3,
+        "type": "duel"
+      },
+      {
+        "statId": "devil-dinosaur",
+        "score": 10.8,
+        "type": null
+      }
+    ],
+    "strongAgainst": [
+      "rocket-raccoon",
+      "iron-man",
+      "ultron"
+    ]
+  },
+  {
+    "id": "magneto",
+    "heroSlug": "magneto",
+    "variantRole": null,
+    "label": "매그니토",
+    "tier": "C",
+    "rank": 33,
+    "winRate": 49.5,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.3,
+      "r": 0.6
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "wolverine",
+        "score": 18,
+        "type": "duel"
+      },
+      {
+        "statId": "emma-frost",
+        "score": 8.8,
+        "type": "duel"
+      },
+      {
+        "statId": "the-thing",
+        "score": 7.9,
+        "type": "duel"
+      },
+      {
+        "statId": "devil-dinosaur",
+        "score": 7.8,
+        "type": "duel"
+      },
+      {
+        "statId": "rocket-raccoon",
+        "score": 6.3,
+        "type": null
+      }
+    ],
+    "strongAgainst": [
+      "black-panther",
+      "hela",
+      "namor"
+    ]
+  },
+  {
+    "id": "white-fox",
+    "heroSlug": "white-fox",
+    "variantRole": null,
+    "label": "화이트 폭스",
+    "tier": "C",
+    "rank": 34,
+    "winRate": 49.4,
+    "playstyles": [
+      "D",
+      "R"
+    ],
+    "pdr": {
+      "p": 0.4,
+      "d": 0.9,
+      "r": 0.9
+    },
+    "pdrNote": "다이브 / 러쉬 중심",
+    "counters": [
+      {
+        "statId": "squirrel-girl",
+        "score": 6.5,
+        "type": "mixed"
+      },
+      {
+        "statId": "black-panther",
+        "score": 6,
+        "type": "team"
+      },
+      {
+        "statId": "human-torch",
+        "score": 5.2,
+        "type": "mixed"
+      },
+      {
+        "statId": "moon-knight",
+        "score": 5.2,
+        "type": "mixed"
+      },
+      {
+        "statId": "iron-man",
+        "score": 4.4,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "wolverine",
+      "iron-fist",
+      "black-widow"
+    ]
+  },
+  {
+    "id": "groot",
+    "heroSlug": "groot",
+    "variantRole": null,
+    "label": "그루트",
+    "tier": "C",
+    "rank": 35,
+    "winRate": 49.4,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.5,
+      "d": 0.2,
+      "r": 0.9
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "wolverine",
+        "score": 14.7,
+        "type": "duel"
+      },
+      {
+        "statId": "devil-dinosaur",
+        "score": 10.6,
+        "type": "mixed"
+      },
+      {
+        "statId": "jubilee",
+        "score": 6.6,
+        "type": "team"
+      },
+      {
+        "statId": "the-hood",
+        "score": 5.4,
+        "type": "mixed"
+      },
+      {
+        "statId": "iron-fist",
+        "score": 5.2,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "mister-fantastic",
+      "black-panther",
+      "daredevil"
+    ]
+  },
+  {
+    "id": "winter-soldier",
+    "heroSlug": "winter-soldier",
+    "variantRole": null,
+    "label": "윈터 솔져",
+    "tier": "C",
+    "rank": 36,
+    "winRate": 49.2,
+    "playstyles": [
+      "D",
+      "R"
+    ],
+    "pdr": {
+      "p": 0.4,
+      "d": 0.8,
+      "r": 0.8
+    },
+    "pdrNote": "다이브 / 러쉬 중심",
+    "counters": [
+      {
+        "statId": "invisible-woman",
+        "score": 10.3,
+        "type": "team"
+      },
+      {
+        "statId": "jeff-the-land-shark",
+        "score": 7.2,
+        "type": "team"
+      },
+      {
+        "statId": "rocket-raccoon",
+        "score": 7.2,
+        "type": null
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 6.2,
+        "type": "team"
+      },
+      {
+        "statId": "loki",
+        "score": 5.8,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "peni-parker",
+      "devil-dinosaur",
+      "gorr"
+    ]
+  },
+  {
+    "id": "gambit",
+    "heroSlug": "gambit",
+    "variantRole": null,
+    "label": "갬빗",
+    "tier": "C",
+    "rank": 37,
+    "winRate": 49,
+    "playstyles": [
+      "P",
+      "D"
+    ],
+    "pdr": {
+      "p": 0.5,
+      "d": 0.5,
+      "r": 0.5
+    },
+    "pdrNote": "포킹 / 다이브 중심",
+    "counters": [
+      {
+        "statId": "black-panther",
+        "score": 10.7,
+        "type": "team"
+      },
+      {
+        "statId": "spider-man",
+        "score": 7,
+        "type": "team"
+      },
+      {
+        "statId": "venom",
+        "score": 5.2,
+        "type": "team"
+      },
+      {
+        "statId": "squirrel-girl",
+        "score": 4.6,
+        "type": "mixed"
+      },
+      {
+        "statId": "black-cat",
+        "score": 4.2,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "the-punisher",
+      "devil-dinosaur",
+      "hela"
+    ]
+  },
+  {
+    "id": "wolverine",
+    "heroSlug": "wolverine",
+    "variantRole": null,
+    "label": "울버린",
+    "tier": "C",
+    "rank": 38,
+    "winRate": 48.9,
+    "playstyles": [
+      "D",
+      "R"
+    ],
+    "pdr": {
+      "p": 0,
+      "d": 0.9,
+      "r": 0.9
+    },
+    "pdrNote": "다이브 / 러쉬 중심",
+    "counters": [
+      {
+        "statId": "storm",
+        "score": 11.2,
+        "type": "duel"
+      },
+      {
+        "statId": "iron-man",
+        "score": 10.4,
+        "type": "duel"
+      },
+      {
+        "statId": "human-torch",
+        "score": 9.8,
+        "type": "mixed"
+      },
+      {
+        "statId": "scarlet-witch",
+        "score": 9.2,
+        "type": "mixed"
+      },
+      {
+        "statId": "star-lord",
+        "score": 9.1,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "doctor-strange",
+      "magneto",
+      "groot"
+    ]
+  },
+  {
+    "id": "emma-frost",
+    "heroSlug": "emma-frost",
+    "variantRole": null,
+    "label": "엠마 프로스트",
+    "tier": "C",
+    "rank": 39,
+    "winRate": 48.9,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.7,
+      "d": 0.5,
+      "r": 0.9
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "wolverine",
+        "score": 9.8,
+        "type": "duel"
+      },
+      {
+        "statId": "rocket-raccoon",
+        "score": 7.1,
+        "type": null
+      },
+      {
+        "statId": "invisible-woman",
+        "score": 5.2,
+        "type": null
+      },
+      {
+        "statId": "devil-dinosaur",
+        "score": 4.9,
+        "type": "duel"
+      },
+      {
+        "statId": "jeff-the-land-shark",
+        "score": 4.7,
+        "type": null
+      }
+    ],
+    "strongAgainst": [
+      "magneto",
+      "mister-fantastic",
+      "spider-man"
+    ]
+  },
+  {
+    "id": "star-lord",
+    "heroSlug": "star-lord",
+    "variantRole": null,
+    "label": "스타 로드",
+    "tier": "D",
+    "rank": 40,
+    "winRate": 48.4,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0.3,
+      "d": 0.9,
+      "r": 0.8
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "jubilee",
+        "score": 8.1,
+        "type": "team"
+      },
+      {
+        "statId": "mister-fantastic",
+        "score": 8.1,
+        "type": "duel"
+      },
+      {
+        "statId": "gorr",
+        "score": 5.6,
+        "type": "duel"
+      },
+      {
+        "statId": "magneto",
+        "score": 5.6,
+        "type": "mixed"
+      },
+      {
+        "statId": "black-widow",
+        "score": 5.5,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "wolverine",
+      "ultron",
+      "human-torch"
+    ]
+  },
+  {
+    "id": "invisible-woman",
+    "heroSlug": "invisible-woman",
+    "variantRole": null,
+    "label": "인비저블 우먼",
+    "tier": "D",
+    "rank": 41,
+    "winRate": 48.4,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.6,
+      "d": 0.3,
+      "r": 0.4
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "daredevil",
+        "score": 17.5,
+        "type": "team"
+      },
+      {
+        "statId": "black-panther",
+        "score": 14.3,
+        "type": "team"
+      },
+      {
+        "statId": "spider-man",
+        "score": 11.2,
+        "type": "team"
+      },
+      {
+        "statId": "black-cat",
+        "score": 10.8,
+        "type": "team"
+      },
+      {
+        "statId": "captain-america",
+        "score": 10,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "the-punisher",
+      "hela",
+      "black-widow"
+    ]
+  },
+  {
+    "id": "cloak-and-dagger",
+    "heroSlug": "cloak-and-dagger",
+    "variantRole": null,
+    "label": "클록 앤 대거",
+    "tier": "D",
+    "rank": 42,
+    "winRate": 48.3,
+    "playstyles": [
+      "D",
+      "R"
+    ],
+    "pdr": {
+      "p": 0.3,
+      "d": 0.8,
+      "r": 0.8
+    },
+    "pdrNote": "다이브 / 러쉬 중심",
+    "counters": [
+      {
+        "statId": "black-panther",
+        "score": 9.4,
+        "type": "team"
+      },
+      {
+        "statId": "magik",
+        "score": 7.6,
+        "type": "team"
+      },
+      {
+        "statId": "blade",
+        "score": 7,
+        "type": "team"
+      },
+      {
+        "statId": "hulk",
+        "score": 6.8,
+        "type": "team"
+      },
+      {
+        "statId": "daredevil",
+        "score": 6.7,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "phoenix",
+      "black-widow",
+      "the-punisher"
+    ]
+  },
+  {
+    "id": "hawkeye",
+    "heroSlug": "hawkeye",
+    "variantRole": null,
+    "label": "호크아이",
+    "tier": "D",
+    "rank": 43,
+    "winRate": 48,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.9,
+      "d": 0.1,
+      "r": 0.5
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "black-panther",
+        "score": 12.1,
+        "type": "duel"
+      },
+      {
+        "statId": "invisible-woman",
+        "score": 9.2,
+        "type": "team"
+      },
+      {
+        "statId": "black-cat",
+        "score": 8.9,
+        "type": "duel"
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 7.9,
+        "type": "team"
+      },
+      {
+        "statId": "black-widow",
+        "score": 7.3,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "peni-parker",
+      "devil-dinosaur",
+      "the-thing"
+    ]
+  },
+  {
+    "id": "deadpool-strategist",
+    "heroSlug": "deadpool",
+    "variantRole": "strategist",
+    "label": "데드풀(전략가)",
+    "tier": "D",
+    "rank": 44,
+    "winRate": 47.7,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.6,
+      "d": 0.5,
+      "r": 0.9
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "blade",
+        "score": 5.3,
+        "type": "team"
+      },
+      {
+        "statId": "moon-knight",
+        "score": 5.2,
+        "type": "team"
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 5,
+        "type": null
+      },
+      {
+        "statId": "squirrel-girl",
+        "score": 3.6,
+        "type": "team"
+      },
+      {
+        "statId": "magik",
+        "score": 3.6,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "wolverine",
+      "gorr",
+      "iron-fist"
+    ]
+  },
+  {
+    "id": "elsa-bloodstone",
+    "heroSlug": "elsa-bloodstone",
+    "variantRole": null,
+    "label": "엘사 블러드스톤",
+    "tier": "D",
+    "rank": 45,
+    "winRate": 47.7,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.4,
+      "r": 0.6
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "cloak-and-dagger",
+        "score": 9,
+        "type": null
+      },
+      {
+        "statId": "invisible-woman",
+        "score": 8.2,
+        "type": null
+      },
+      {
+        "statId": "jeff-the-land-shark",
+        "score": 8.1,
+        "type": "team"
+      },
+      {
+        "statId": "rocket-raccoon",
+        "score": 8,
+        "type": null
+      },
+      {
+        "statId": "squirrel-girl",
+        "score": 7.8,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "wolverine",
+      "devil-dinosaur",
+      "the-thing"
+    ]
+  },
+  {
+    "id": "moon-knight",
+    "heroSlug": "moon-knight",
+    "variantRole": null,
+    "label": "문나이트",
+    "tier": "D",
+    "rank": 46,
+    "winRate": 47.6,
+    "playstyles": [
+      "P",
+      "D"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.8,
+      "r": 0.5
+    },
+    "pdrNote": "포킹 / 다이브 중심",
+    "counters": [
+      {
+        "statId": "ultron",
+        "score": 13.3,
+        "type": "mixed"
+      },
+      {
+        "statId": "black-panther",
+        "score": 11.2,
+        "type": "duel"
+      },
+      {
+        "statId": "spider-man",
+        "score": 10.6,
+        "type": "duel"
+      },
+      {
+        "statId": "iron-man",
+        "score": 9.6,
+        "type": "mixed"
+      },
+      {
+        "statId": "human-torch",
+        "score": 8.9,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "devil-dinosaur",
+      "wolverine",
+      "the-thing"
+    ]
+  },
+  {
+    "id": "black-widow",
+    "heroSlug": "black-widow",
+    "variantRole": null,
+    "label": "블랙 위도우",
+    "tier": "D",
+    "rank": 47,
+    "winRate": 47.6,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.6,
+      "r": 0.3
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "invisible-woman",
+        "score": 11.2,
+        "type": "team"
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 10.5,
+        "type": "team"
+      },
+      {
+        "statId": "captain-america",
+        "score": 9.9,
+        "type": "duel"
+      },
+      {
+        "statId": "black-panther",
+        "score": 9.7,
+        "type": "duel"
+      },
+      {
+        "statId": "daredevil",
+        "score": 9.3,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "ultron",
+      "iron-man",
+      "storm"
+    ]
+  },
+  {
+    "id": "luna-snow",
+    "heroSlug": "luna-snow",
+    "variantRole": null,
+    "label": "루나 스노우",
+    "tier": "D",
+    "rank": 48,
+    "winRate": 47.5,
+    "playstyles": [
+      "P",
+      "D"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.8,
+      "r": 0.5
+    },
+    "pdrNote": "포킹 / 다이브 중심",
+    "counters": [
+      {
+        "statId": "black-panther",
+        "score": 11.6,
+        "type": "team"
+      },
+      {
+        "statId": "captain-america",
+        "score": 5.6,
+        "type": "team"
+      },
+      {
+        "statId": "daredevil",
+        "score": 5.5,
+        "type": "team"
+      },
+      {
+        "statId": "black-cat",
+        "score": 5.3,
+        "type": "team"
+      },
+      {
+        "statId": "rocket-raccoon",
+        "score": 4.9,
+        "type": null
+      }
+    ],
+    "strongAgainst": [
+      "peni-parker",
+      "the-punisher",
+      "devil-dinosaur"
+    ]
+  },
+  {
+    "id": "deadpool-duelist",
+    "heroSlug": "deadpool",
+    "variantRole": "duelist",
+    "label": "데드풀(듀얼리스트)",
+    "tier": "D",
+    "rank": 49,
+    "winRate": 47.4,
+    "playstyles": [
+      "D"
+    ],
+    "pdr": {
+      "p": 0.5,
+      "d": 1,
+      "r": 0.8
+    },
+    "pdrNote": "다이브 중심",
+    "counters": [
+      {
+        "statId": "the-thing",
+        "score": 5.3,
+        "type": "duel"
+      },
+      {
+        "statId": "venom",
+        "score": 4.8,
+        "type": "mixed"
+      },
+      {
+        "statId": "gorr",
+        "score": 4.4,
+        "type": "mixed"
+      },
+      {
+        "statId": "rogue",
+        "score": 4.1,
+        "type": "duel"
+      },
+      {
+        "statId": "magneto",
+        "score": 3.4,
+        "type": "mixed"
+      }
+    ],
+    "strongAgainst": [
+      "iron-man",
+      "invisible-woman",
+      "mantis"
+    ]
+  },
+  {
+    "id": "namor",
+    "heroSlug": "namor",
+    "variantRole": null,
+    "label": "네이머",
+    "tier": "D",
+    "rank": 50,
+    "winRate": 47.2,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.8,
+      "d": 0.4,
+      "r": 0.6
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "rocket-raccoon",
+        "score": 11.4,
+        "type": null
+      },
+      {
+        "statId": "invisible-woman",
+        "score": 7.3,
+        "type": "team"
+      },
+      {
+        "statId": "magneto",
+        "score": 7.3,
+        "type": "mixed"
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 6.2,
+        "type": "team"
+      },
+      {
+        "statId": "loki",
+        "score": 6.2,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "spider-man",
+      "scarlet-witch",
+      "iron-fist"
+    ]
+  },
+  {
+    "id": "jeff-the-land-shark",
+    "heroSlug": "jeff-the-land-shark",
+    "variantRole": null,
+    "label": "땅상어 제프",
+    "tier": "F",
+    "rank": 51,
+    "winRate": 46.9,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.6,
+      "d": 0.4,
+      "r": 0.5
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "black-panther",
+        "score": 22.3,
+        "type": "team"
+      },
+      {
+        "statId": "spider-man",
+        "score": 11.7,
+        "type": "team"
+      },
+      {
+        "statId": "black-cat",
+        "score": 9.5,
+        "type": "team"
+      },
+      {
+        "statId": "daredevil",
+        "score": 9.3,
+        "type": "team"
+      },
+      {
+        "statId": "blade",
+        "score": 5.8,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "elsa-bloodstone",
+      "winter-soldier",
+      "wolverine"
+    ]
+  },
+  {
+    "id": "deadpool-vanguard",
+    "heroSlug": "deadpool",
+    "variantRole": "vanguard",
+    "label": "데드풀(뱅가드)",
+    "tier": "F",
+    "rank": 52,
+    "winRate": 46.3,
+    "playstyles": [
+      "R"
+    ],
+    "pdr": {
+      "p": 0.4,
+      "d": 0.7,
+      "r": 1
+    },
+    "pdrNote": "러쉬 중심",
+    "counters": [
+      {
+        "statId": "jubilee",
+        "score": 7.5,
+        "type": "team"
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 5.3,
+        "type": null
+      },
+      {
+        "statId": "white-fox",
+        "score": 5.1,
+        "type": "team"
+      },
+      {
+        "statId": "mantis",
+        "score": 4.6,
+        "type": "team"
+      },
+      {
+        "statId": "luna-snow",
+        "score": 3.4,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "iron-man",
+      "human-torch",
+      "ultron"
+    ]
+  },
+  {
+    "id": "cyclops",
+    "heroSlug": "cyclops",
+    "variantRole": null,
+    "label": "사이클롭스",
+    "tier": "F",
+    "rank": 53,
+    "winRate": 45.8,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.9,
+      "d": 0.2,
+      "r": 0.5
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "rocket-raccoon",
+        "score": 8,
+        "type": null
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 6.3,
+        "type": "team"
+      },
+      {
+        "statId": "jubilee",
+        "score": 5,
+        "type": "team"
+      },
+      {
+        "statId": "black-widow",
+        "score": 4.2,
+        "type": "duel"
+      },
+      {
+        "statId": "hela",
+        "score": 3.9,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "devil-dinosaur",
+      "wolverine",
+      "iron-man"
+    ]
+  },
+  {
+    "id": "phoenix",
+    "heroSlug": "phoenix",
+    "variantRole": null,
+    "label": "피닉스",
+    "tier": "F",
+    "rank": 54,
+    "winRate": 45.6,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.9,
+      "d": 0.8,
+      "r": 0.7
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "cloak-and-dagger",
+        "score": 10.9,
+        "type": null
+      },
+      {
+        "statId": "jubilee",
+        "score": 9.9,
+        "type": "team"
+      },
+      {
+        "statId": "invisible-woman",
+        "score": 9.8,
+        "type": null
+      },
+      {
+        "statId": "black-panther",
+        "score": 9.4,
+        "type": "duel"
+      },
+      {
+        "statId": "rocket-raccoon",
+        "score": 7.7,
+        "type": null
+      }
+    ],
+    "strongAgainst": [
+      "devil-dinosaur",
+      "peni-parker",
+      "wolverine"
+    ]
+  },
+  {
+    "id": "the-punisher",
+    "heroSlug": "the-punisher",
+    "variantRole": null,
+    "label": "퍼니셔",
+    "tier": "F",
+    "rank": 55,
+    "winRate": 45.6,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.9,
+      "d": 0.5,
+      "r": 0.7
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "invisible-woman",
+        "score": 12.5,
+        "type": null
+      },
+      {
+        "statId": "rocket-raccoon",
+        "score": 10.8,
+        "type": null
+      },
+      {
+        "statId": "cloak-and-dagger",
+        "score": 10.3,
+        "type": null
+      },
+      {
+        "statId": "jubilee",
+        "score": 9.6,
+        "type": "team"
+      },
+      {
+        "statId": "luna-snow",
+        "score": 8.9,
+        "type": "team"
+      }
+    ],
+    "strongAgainst": [
+      "devil-dinosaur",
+      "peni-parker",
+      "the-thing"
+    ]
+  },
+  {
+    "id": "squirrel-girl",
+    "heroSlug": "squirrel-girl",
+    "variantRole": null,
+    "label": "스쿼럴 걸",
+    "tier": "F",
+    "rank": 56,
+    "winRate": 45.2,
+    "playstyles": [
+      "P"
+    ],
+    "pdr": {
+      "p": 0.7,
+      "d": 0.2,
+      "r": 0.6
+    },
+    "pdrNote": "포킹 중심",
+    "counters": [
+      {
+        "statId": "ultron",
+        "score": 14.5,
+        "type": "team"
+      },
+      {
+        "statId": "spider-man",
+        "score": 14.2,
+        "type": "duel"
+      },
+      {
+        "statId": "black-panther",
+        "score": 14,
+        "type": "duel"
+      },
+      {
+        "statId": "human-torch",
+        "score": 13.3,
+        "type": "duel"
+      },
+      {
+        "statId": "iron-man",
+        "score": 11.9,
+        "type": "duel"
+      }
+    ],
+    "strongAgainst": [
+      "devil-dinosaur",
+      "scarlet-witch",
+      "peni-parker"
+    ]
+  }
+]
