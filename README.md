@@ -13,7 +13,20 @@
 | 데이터 | 영웅 54 · 통계 56(데드풀 역할별) · 스킬 601 · 협공 112 · 맵 18 — 2026-10-15 수집 |
 | 배포 | (Vercel 배포 후 주소 추가) |
 
-<!-- SCREENSHOTS -->
+### 화면
+
+| 데스크톱 · 라이트 | 데스크톱 · 다크 |
+|---|---|
+| ![홈](docs/screenshots/desktop-home-light.webp) | ![영웅 목록 + 미리보기 패널](docs/screenshots/desktop-heroes-dark.webp) |
+| 홈 — 검색 · 역할별 메타 | 영웅 목록 — 기울어진 카드 + 오른쪽 미리보기 패널 |
+| ![영웅 상세](docs/screenshots/desktop-detail-light.webp) | ![상성·성향](docs/screenshots/desktop-detail-counters-dark.webp) |
+| 영웅 상세 — 스킬 표 | 상성(카운터 TOP5) · 조합 성향 레이더 |
+| ![팀 빌더](docs/screenshots/desktop-team-builder-light.webp) | |
+| 팀 빌더 — 우리/상대 팀 레이더 비교 | |
+
+| 모바일 · 다크 | 미리보기 시트 | 영웅 상세 · 라이트 | 티어 · 라이트 | 팀 분석 시트 |
+|---|---|---|---|---|
+| ![](docs/screenshots/mobile-heroes-dark.webp) | ![](docs/screenshots/mobile-preview-dark.webp) | ![](docs/screenshots/mobile-detail-light.webp) | ![](docs/screenshots/mobile-tier-light.webp) | ![](docs/screenshots/mobile-team-sheet-dark.webp) |
 
 ---
 
