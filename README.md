@@ -11,7 +11,7 @@
 | 형태 | 반응형 웹 (모바일 우선, 360 ~ 1920px) · 라이트/다크 테마 |
 | 스택 | Next.js 16 (App Router, Cache Components) · React 19 · TypeScript · Tailwind CSS v4 · TanStack Query · Zustand |
 | 데이터 | 영웅 54 · 통계 56(데드풀 역할별) · 스킬 601 · 협공 112 · 맵 18 — 2026-10-15 수집 |
-| 배포 | (Vercel 배포 후 주소 추가) |
+| 배포 | **https://marvelrivals-ten.vercel.app** (Vercel, `main` 푸시 시 자동 배포) |
 
 ### 화면
 
