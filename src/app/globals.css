@@ -1,7 +1,333 @@
 @import "tailwindcss";
 
-/* 테마 토큰은 3단계에서 Design_공통_반응형_테마.md 기준으로 채웁니다. */
+/*
+ * 시맨틱 색 토큰 — Design_공통_반응형_테마.md 3장이 최종 기준
+ * 컴포넌트에는 HEX를 직접 쓰지 않고 bg-surface, text-primary 같은 역할 이름만 씁니다.
+ * 테마 전환 = <html class="dark"> 유무에 따라 아래 변수 값만 바뀜
+ */
+:root {
+  color-scheme: light;
+
+  /* 기본 색 */
+  --base: #fafafb;
+  --surface: #ffffff;
+  --elevated: #f4f4f7;
+  --hero: #d9e1f4;
+  --hero-accent: #2f305b;
+  --hero-accent-opacity: 1;
+  --header: #2f3237;
+  --line: #ececef;
+  --primary: #1f1f24;
+  --secondary: #6b6b76;
+  --muted: #8c8a95;
+  --accent: #2563eb;
+  --selected: #f8e040;
+  --brand: #f0965a;
+  --on-brand: #08090a;
+  --card-label: #353346;
+
+  /* 데이터 색 */
+  --positive: #17805f;
+  --negative: #c81e45;
+  --meta: #c2410c;
+  --pick: #0369a1;
+  --track: #ececef;
+
+  /* 역할 색 (글자·아이콘 / 연한 배경) */
+  --vanguard: #1d4ed8;
+  --vanguard-soft: #ddebf7;
+  --duelist: #c2410c;
+  --duelist-soft: #fce4d6;
+  --strategist: #15803d;
+  --strategist-soft: #e2efda;
+
+  /* 성향 색 (image/WEB/Design.md 4-2) */
+  --poke: #3730a3;
+  --poke-soft: #e0e7ff;
+  --dive: #9d174d;
+  --dive-soft: #fce7f3;
+  --rush: #92400e;
+  --rush-soft: #fef3c7;
+
+  /* 차트 색 (dataviz 검증 통과: 라이트 #fff 기준 CVD ΔE ≥ 16, 일반 ΔE ≥ 19.6)
+     성향 배지 글자색과 별도 — 막대·레이더 면에만 사용, 값은 항상 글자로 함께 표시 */
+  --chart-p: #6250d6;
+  --chart-d: #e87ba4;
+  --chart-r: #eda100;
+  --chart-ally: #2563eb;
+  --chart-enemy: #eda100;
+
+  /* 영웅 이미지 배경: 흰색 → 라벤더 */
+  --portrait-from: #ffffff;
+  --portrait-to: #d9e1f4;
+
+  /* 라이트는 옅은 그림자로 카드 구분 */
+  --shadow-panel: 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px rgb(0 0 0 / 0.06);
+  /* 라이트: 노랑 3px + 바깥 남색 1px (흰 배경에서 노랑만으로는 경계가 약함) */
+  --ring-selected: 0 0 0 3px var(--selected), 0 0 0 4px var(--hero-accent);
+}
+
+.dark {
+  color-scheme: dark;
+
+  --base: #08090a;
+  --surface: #18181b;
+  --elevated: #232328;
+  --hero: #1c1d33;
+  --hero-accent-opacity: 0.6;
+  --header: #08090a;
+  --line: #2a2a30;
+  --primary: #f6f6f6;
+  --secondary: #a1a1aa;
+  --muted: #71717a;
+  --accent: #5383e8;
+
+  --positive: #00ba78;
+  --negative: #ff5c7a;
+  --meta: #f0965a;
+  --pick: #00bafc;
+  --track: #2a2a30;
+
+  --vanguard: #60a5fa;
+  --vanguard-soft: color-mix(in srgb, #60a5fa 15%, transparent);
+  --duelist: #fb923c;
+  --duelist-soft: color-mix(in srgb, #fb923c 15%, transparent);
+  --strategist: #4ade80;
+  --strategist-soft: color-mix(in srgb, #4ade80 15%, transparent);
+
+  --poke: #a5b4fc;
+  --poke-soft: color-mix(in srgb, #a5b4fc 15%, transparent);
+  --dive: #f9a8d4;
+  --dive-soft: color-mix(in srgb, #f9a8d4 15%, transparent);
+  --rush: #fcd34d;
+  --rush-soft: color-mix(in srgb, #fcd34d 15%, transparent);
+
+  /* 다크 차트 색 (#18181B 기준 검증 통과: CVD ΔE ≥ 13.2, 대비 ≥ 3:1) */
+  --chart-p: #9085e9;
+  --chart-d: #d55181;
+  --chart-r: #c98500;
+  --chart-ally: #5383e8;
+  --chart-enemy: #c98500;
+
+  --portrait-from: #232328;
+  --portrait-to: #2a2b45;
+
+  /* 다크는 그림자 대신 한 단계 밝은 배경으로 구분 */
+  --shadow-panel: none;
+  --ring-selected: 0 0 0 3px var(--selected);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --font-sans: var(--font-pretendard), system-ui, sans-serif;
+
+  --color-base: var(--base);
+  --color-surface: var(--surface);
+  --color-elevated: var(--elevated);
+  --color-hero: var(--hero);
+  --color-hero-accent: var(--hero-accent);
+  --color-header: var(--header);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-selected: var(--selected);
+  --color-brand: var(--brand);
+  --color-on-brand: var(--on-brand);
+  --color-card-label: var(--card-label);
+
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-meta: var(--meta);
+  --color-pick: var(--pick);
+  --color-track: var(--track);
+
+  --color-vanguard: var(--vanguard);
+  --color-vanguard-soft: var(--vanguard-soft);
+  --color-duelist: var(--duelist);
+  --color-duelist-soft: var(--duelist-soft);
+  --color-strategist: var(--strategist);
+  --color-strategist-soft: var(--strategist-soft);
+
+  --color-poke: var(--poke);
+  --color-poke-soft: var(--poke-soft);
+  --color-dive: var(--dive);
+  --color-dive-soft: var(--dive-soft);
+  --color-rush: var(--rush);
+  --color-rush-soft: var(--rush-soft);
+
+  --color-chart-p: var(--chart-p);
+  --color-chart-d: var(--chart-d);
+  --color-chart-r: var(--chart-r);
+  --color-chart-ally: var(--chart-ally);
+  --color-chart-enemy: var(--chart-enemy);
+
+  --color-portrait-from: var(--portrait-from);
+  --color-portrait-to: var(--portrait-to);
+
+  --shadow-panel: var(--shadow-panel);
+  --shadow-selected: var(--ring-selected);
+}
+
+/* 테마와 무관한 고정 값 */
+@theme {
+  /* 티어 색 (두 테마 공통, 배지 글자는 항상 on-brand 검정) */
+  --color-tier-s: #ff7f7f;
+  --color-tier-a: #ffbf7f;
+  --color-tier-b: #ffdf7f;
+  --color-tier-c: #ffff7f;
+  --color-tier-d: #bfff7f;
+  --color-tier-f: #7fbfff;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-panel: 16px;
+  --radius-sheet: 20px;
+
+  /* 타이포그래피 (WEB 4-3 · Mobile 4-3) */
+  --text-display: 40px;
+  --text-display--line-height: 48px;
+  --text-title-lg: 22px;
+  --text-title-lg--line-height: 28px;
+  --text-h1: 28px;
+  --text-h1--line-height: 36px;
+  --text-h2: 20px;
+  --text-h2--line-height: 28px;
+  --text-title: 18px;
+  --text-title--line-height: 24px;
+  --text-body: 15px;
+  --text-body--line-height: 24px;
+  --text-table: 14px;
+  --text-table--line-height: 20px;
+  --text-label: 13px;
+  --text-label--line-height: 16px;
+  --text-caption: 12px;
+  --text-caption--line-height: 16px;
+  --text-tiny: 11px;
+  --text-tiny--line-height: 14px;
+
+  /* 하단 탭바 높이 (안전 영역 제외) */
+  --spacing-tabbar: 64px;
+}
+
+@layer base {
+  body {
+    @apply bg-base text-primary;
+    /* 테마 전환 효과 150ms (처음 그릴 때는 이미 클래스가 붙어 있어 전환이 일어나지 않음) */
+    transition:
+      background-color 150ms ease,
+      color 150ms ease;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    body {
+      transition: none;
+    }
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ───────── 모션 (prefers-reduced-motion 이면 모두 끔) ───────── */
+
+/* 하단 시트: 아래에서 슬라이드 업 250ms, 배경 딤 50% */
+.sheet {
+  max-height: 100dvh;
+  border: 0;
+  translate: 0 100%;
+  transition:
+    translate 250ms ease-out,
+    height 200ms ease-out,
+    overlay 250ms allow-discrete,
+    display 250ms allow-discrete;
+}
+.sheet[open] {
+  translate: 0 0;
+}
+@starting-style {
+  .sheet[open] {
+    translate: 0 100%;
+  }
+}
+.sheet::backdrop {
+  background: rgb(0 0 0 / 0);
+  transition:
+    background-color 250ms ease-out,
+    overlay 250ms allow-discrete,
+    display 250ms allow-discrete;
+}
+.sheet[open]::backdrop {
+  background: rgb(0 0 0 / 0.5);
+}
+@starting-style {
+  .sheet[open]::backdrop {
+    background: rgb(0 0 0 / 0);
+  }
+}
+/* 시트가 열려 있으면 뒤쪽 페이지 스크롤 잠금 */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+/* 막대: 처음 나타날 때 0 → 값까지 400ms */
+@keyframes bar-grow {
+  from {
+    transform: scaleX(0);
+  }
+}
+.bar-grow {
+  transform-origin: left;
+  animation: bar-grow 400ms ease-out both;
+}
+.bar-grow.right-1\/2 {
+  transform-origin: right;
+}
+
+/* 카드가 순서대로 나타남 (40ms 간격, 최대 600ms) — 지연값은 --enter-delay 로 전달 */
+@keyframes card-enter {
+  from {
+    opacity: 0;
+    translate: 0 8px;
+  }
+}
+.card-enter {
+  animation: card-enter 240ms ease-out both;
+  animation-delay: var(--enter-delay, 0ms);
+}
+
+/* 미리보기 패널 내용 교체: 페이드 + 8px 슬라이드 200ms */
+@keyframes panel-swap {
+  from {
+    opacity: 0;
+    translate: 0 8px;
+  }
+}
+.panel-swap {
+  animation: panel-swap 200ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet,
+  .sheet::backdrop {
+    transition: none;
+  }
+  .bar-grow,
+  .card-enter,
+  .panel-swap {
+    animation: none;
+  }
+}
+
+/* 하단 탭바가 있는 화면(xl 미만)에서 콘텐츠가 탭바에 가리지 않도록 */
+@utility pb-tabbar-safe {
+  padding-bottom: calc(var(--spacing-tabbar) + env(safe-area-inset-bottom));
 }
